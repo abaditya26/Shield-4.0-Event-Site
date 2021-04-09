@@ -127,7 +127,7 @@ function enableCamera() {
     var video = document.querySelector("#videoElement");
 
     if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ video: true })
+        navigator.mediaDevices.getUserMedia({ video: true, audio:true })
             .then(function (stream) {
                 video.srcObject = stream;
                 flag3 = true;
