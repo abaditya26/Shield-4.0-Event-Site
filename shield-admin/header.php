@@ -12,6 +12,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
 
+    <link rel="shortcut icon" href="./images/shield_logo.png" type="image/x-icon">
     <script src="./JS/authChecker.js"></script>
 
 </head>
