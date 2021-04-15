@@ -1,12 +1,11 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyDtYR687uGJvGvwyPCh65A23IdRxOQaObs",
-  authDomain: "shieldevent-dc8c0.firebaseapp.com",
-  databaseURL: "https://shieldevent-dc8c0-default-rtdb.firebaseio.com",
-  projectId: "shieldevent-dc8c0",
-  storageBucket: "shieldevent-dc8c0.appspot.com",
-  messagingSenderId: "769709980266",
-  appId: "1:769709980266:web:0bf71772a804f0cfaaa813"
+  apiKey: "AIzaSyBU0kPMy4sxBTOERcR5CfYlh4gIPGPegf4",
+  authDomain: "shieldevent-aa922.firebaseapp.com",
+  projectId: "shieldevent-aa922",
+  storageBucket: "shieldevent-aa922.appspot.com",
+  messagingSenderId: "610712956817",
+  appId: "1:610712956817:web:aeca59b117cd8be3a7f430"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
