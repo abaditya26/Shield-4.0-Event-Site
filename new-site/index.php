@@ -41,14 +41,16 @@
             </h5>
         </div>
 
-        <h3 class="font-styled-header">
+        <!-- <h3 class="font-styled-header">
             SPONSORED BY
         </h3>
-        <div class="container" id="sponsors"></div>
+        <div class="container" id="sponsors">
+        </div> -->
     </center>
 
 </section>
 
+<hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
 
 <section id="events">
     <center>
