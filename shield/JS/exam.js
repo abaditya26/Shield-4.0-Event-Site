@@ -16,7 +16,7 @@ var flag4 = true; //status check flag
 var flag5 = false;
 
 window.onload = function () {
-    showLoading()
+    showLoading();
     enableCamera();
     fetchUserData();
     document.getElementById('examName').innerHTML = examId;
