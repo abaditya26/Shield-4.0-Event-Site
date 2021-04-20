@@ -52,7 +52,7 @@ $imageData = [
 
 
 <script>
-    function openImage(path){
-        document.location=''+path;
+    function openImage(path) {
+        document.location = '' + path;
     }
 </script>
