@@ -49,4 +49,13 @@
 
 </section>
 
+
+<section id="events">
+    <center>
+        <h3 class="font-styled-header">
+            Events
+        </h4>
+    </center>
+</section>
+
 <?php include "./footer.php"; ?>

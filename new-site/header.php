@@ -67,13 +67,6 @@
                         </small>
                     </a>
                 </li>
-                <li class="nav-item navlink">
-                    <a class="nav-link" href="./contact-us.php">
-                        <small id="contact-us-txt">
-                            Contact Us
-                        </small>
-                    </a>
-                </li>
             </ul>
         </div>
         <br><br>
