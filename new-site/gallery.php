@@ -15,21 +15,17 @@ $imageData = [
     ["./images/gallery/10.jpg", "Shield Gallery 10"],
     ["./images/gallery/11.jpg", "Shield Gallery 11"],
     ["./images/gallery/12.jpg", "Shield Gallery 12"],
-    ["./images/gallery/13.jpg", "Shield Gallery 13"],
     ["./images/gallery/14.jpg", "Shield Gallery 14"],
     ["./images/gallery/15.jpg", "Shield Gallery 15"],
     ["./images/gallery/16.jpg", "Shield Gallery 16"],
     ["./images/gallery/17.jpg", "Shield Gallery 17"],
-    ["./images/gallery/18.jpg", "Shield Gallery 18"],
-    ["./images/gallery/19.jpg", "Shield Gallery 19"],
-    ["./images/gallery/20.jpg", "Shield Gallery 20"],
-    ["./images/gallery/21.jpg", "Shield Gallery 21"]
+    ["./images/gallery/18.jpg", "Shield Gallery 18"]
 ]
 ?>
 
 <!-- content goes here -->
 <div class="container">
-    <img src="./images/shield_poster.png" alt="Shield Poster" style="max-width: 100%;">
+    <img src="./images/shield_poster.png" alt="Shield Poster" style="max-width: 100%;" onclick="openImage('./images/shield_poster.png')">
     <div class="row">
 
         <?php for ($i = 0; $i < sizeof($imageData); $i++) {
@@ -37,10 +33,9 @@ $imageData = [
             <div class="col-md-4" style="height: 400px;">
                 <center>
                     <img loading="lazy" src="<?php echo $imageData[$i][0]; ?>" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="width:auto;max-width: 100%; max-height: 250px; border: ridge; margin:10px;">
-                    <h3>
+                    <h3 class="font-styled-header">
                         <?php echo $imageData[$i][1]; ?>
                     </h3>
-                    <!-- <img src="<?php echo $imageData[$i][0]; ?>" alt="<?php echo $imageData[$i][1]; ?>" style="max-width: 100%; max-height: 250px; border: ridge; margin:10px;"> -->
                 </center>
             </div>
         <?php
