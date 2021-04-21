@@ -5,7 +5,7 @@ $imageData =
 [
 
     ["./images/events/1.jpg", "The Game is totally dependent on your ability to search things on internet."],
-    ["./images/events/2.jpg", "Shield Gallery 2"],
+    ["./images/events/2.jpg", "The Project Presentation is totally based on knowledge and creativity of all participants."],
     ["./images/events/3.jpg", "Shield Gallery 3"],
     ["./images/events/4.jpg", "Shield Gallery 4"],
     ["./images/events/5.jpg", "Shield Gallery 5"],
