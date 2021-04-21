@@ -6,6 +6,7 @@ $eventData = [
 ];
 ?>
 <?php include "./header.php"; ?>
+<?php include "./data.php"; ?>
 
 <!-- todo:paste sample.php -->
 <!-- about -->

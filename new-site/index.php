@@ -2,6 +2,8 @@
 
 <?php include "./header.php"; ?>
 
+<?php include "./data.php"; ?>
+
 
 <style>
     .title {
@@ -56,20 +58,6 @@
 <br><br>
 <section id="events">
 
-    <?php
-    $imageData =
-        [
-
-            ["./images/events/1.jpg", "The Game is totally dependent on your ability to search things on internet."],
-            ["./images/events/1.jpg", "The Project Presentation is totally based on knowledge and creativity of all participants."],
-            ["./images/events/1.jpg", "Shield Gallery 3"],
-            ["./images/events/1.jpg", "Shield Gallery 4"],
-            ["./images/events/1.jpg", "Shield Gallery 5"],
-            ["./images/events/1.jpg", "Shield Gallery 6"],
-            ["./images/events/1.jpg", "Shield Gallery 7"],
-
-        ]
-    ?>
 
     <style>
         .event-container {
@@ -83,8 +71,33 @@
             }
         }
 
-        .event-container:hover {
+        .main {
+
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .event-container:hover .main {
             opacity: 0.3;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .event-container:hover .middle {
+            opacity: 1;
         }
     </style>
     <!-- content goes here -->
@@ -92,21 +105,21 @@
 
         <div class="row">
 
-            <?php for ($i = 0; $i < sizeof($imageData); $i++) {
+            <?php for ($i = 0; $i < sizeof($eventData); $i++) {
             ?>
-                <div class="col-md-4" style="min-height: 400px; padding: 10px;">
+                <div class="col-md-4" style="padding: 10px;">
 
                     <center>
 
-                        <div class="event-container">
+                        <div class="event-container" onclick="openPage('<?php echo $eventData[$i][0]; ?>')">
                             <div class="main">
-                                <img loading="lazy" src="<?php echo $imageData[$i][0]; ?>" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="width:auto;max-width: 90%; max-height: 250px; border: ridge; margin:10px;">
+                                <img loading="lazy" src="<?php echo $eventData[$i][2]; ?>" alt="<?php echo $eventData[$i][1]; ?>" style="width:auto;max-width: 90%; max-height: 250px; border: ridge; margin:10px;">
                                 <!-- <h5 class="font-styled-header">
-                                    <?php echo $imageData[$i][1]; ?>
+                                    <?php echo $eventData[$i][1]; ?>
                                 </h5> -->
                             </div>
                             <div class="middle">
-                                <div class="btn btn-danger"><?php echo $imageData[$i][1]; ?></div>
+                                <div class="btn btn-danger">View Details</div>
                             </div>
 
                         </div>
@@ -125,7 +138,7 @@
 <?php include "./footer.php"; ?>
 
 <script>
-    function openImage(path) {
-        document.location = '' + path;
+    function openPage(path) {
+        document.location = './event.php?id=' + path;
     }
 </script>
