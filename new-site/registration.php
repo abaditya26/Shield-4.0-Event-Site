@@ -1,4 +1,5 @@
 <?php include "./header.php"; ?>
+<?php include "./data.php"; ?>
 
 
 <!-- registration form goes here -->
@@ -76,8 +77,11 @@ follow the given IDs
             </label>
             <select name="event" id="event" class="form-control">
                 <option value="select">--Select Event--</option>
-                <option value="CQuiz">C-Quiz</option>
-                <option value="JavaQuiz">Java-Quiz</option>
+                <?php for($i=0;$i<sizeof($eventData);$i++){
+                    ?>
+                        <option value="<?php echo $eventData[$i][0]; ?>"><?php echo $eventData[$i][1]; ?></option>
+                    <?php
+                } ?>
             </select>
         </div>
         <div class="form-group">
