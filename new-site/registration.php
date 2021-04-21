@@ -3,6 +3,14 @@
 
 <!-- registration form goes here -->
 
+<!-- 
+############################################################################
+remove or change following code
+follow the given IDs
+############################################################################
+ -->
+
+
 <!-- temp code to be removed -->
 
 <div class="container" id="loading" style="display: none;">
