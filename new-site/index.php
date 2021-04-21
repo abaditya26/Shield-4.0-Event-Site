@@ -52,12 +52,5 @@
 
 <hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
 
-<section id="events">
-    <center>
-        <h3 class="font-styled-header">
-            Events
-        </h4>
-    </center>
-</section>
 
 <?php include "./footer.php"; ?>
