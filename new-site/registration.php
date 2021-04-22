@@ -41,6 +41,12 @@ follow the given IDs
 
 <div class="container">
     <form action="" method="post" id="registrationForm" style="display: none;" onsubmit="return registerUser()">
+        <center>
+            <h3>
+                Registrations
+            </h3>
+            <button onclick="document.location='./viewRegistrations.php'" type="button" id="old-reg-btn" style="display: none;" class="btn btn-sm btn-secondary">View Old Registrations</button>
+        </center>
         <div class="form-group">
             <label for="name">
                 Enter Your Name

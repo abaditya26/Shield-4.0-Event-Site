@@ -36,10 +36,9 @@ function checkIfUserExist(user) {
                     emailId: email
                 };
 
-                console.log(data)
-                console.log(userData)
-
+                
                 // todo: send to view
+                document.getElementById('old-reg-btn').style.display="block";
                 document.getElementById('name').value = name;
                 document.getElementById('email').value = email;
                 document.getElementById('collageName').value = collage;
