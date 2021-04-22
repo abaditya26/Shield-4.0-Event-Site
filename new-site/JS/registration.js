@@ -52,8 +52,8 @@ function checkIfUserExist(user) {
         }
         // show the registration form
         console.log(user);
-        document.getElementById('phoneNumber').value = user.phoneNumber+""
-        document.getElementById('phoneNo').value = user.phoneNumber+""
+        document.getElementById('phoneNumber').value = user.phoneNumber + ""
+        document.getElementById('phoneNo').value = user.phoneNumber + ""
         showRegistration();
     }).catch((error) => {
         alert('error');
@@ -111,8 +111,8 @@ function showLogin() {
     document.getElementById('registrationForm').style.display = "none"
 }
 
-function 
-showRegistration() {
+function
+    showRegistration() {
     document.getElementById('loading').style.display = "none"
     document.getElementById('otpVerificationForm').style.display = "none"
     document.getElementById('registrationForm').style.display = "block"
@@ -132,39 +132,39 @@ function registerUser() {
     const collageCity = document.getElementById('collageCity').value;
     const event = document.getElementById('event').value;
 
-    if (!validateUserInput()) {
-        return;
-    }
-    showLoading();
+    if (validateUserInput()) {
 
-    userData = {
-        name: name,
-        phoneNo: phoneNo,
-        collageName: collageName,
-        collageCity: collageCity,
-        emailId: email,
-        uid: userId
-    };
+        showLoading();
+
+        userData = {
+            name: name,
+            phoneNo: phoneNo,
+            collageName: collageName,
+            collageCity: collageCity,
+            emailId: email,
+            uid: userId
+        };
 
 
-    // check if the user has already registered for the current event
+        // check if the user has already registered for the current event
 
-    firebase.database().ref('Events/' + event + '/' + userId).once('value').then((snapshot) => {
-        if (snapshot.child('uid').exists()) {
-            if (confirm('You have already registered to this event.\nDo You want to overwrite entry?')) {
-                //do entry
-                registerEntry(userData, event);
+        firebase.database().ref('Events/' + event + '/' + userId).once('value').then((snapshot) => {
+            if (snapshot.child('uid').exists()) {
+                if (confirm('You have already registered to this event.\nDo You want to overwrite entry?')) {
+                    //do entry
+                    registerEntry(userData, event);
+                } else {
+                    //cancel entry
+                    document.location = './registration.php';
+                }
             } else {
-                //cancel entry
-                document.location = './registration.php';
+                registerEntry(userData, event);
             }
-        } else {
-            registerEntry(userData, event);
-        }
-    }).catch((e) => {
-        alert('error');
-        console.log(e);
-    });
+        }).catch((e) => {
+            alert('error');
+            console.log(e);
+        });
+    }
 
     return false;
 }
@@ -203,6 +203,11 @@ function registerEntry(user, event) {
 
 
 function validateUserInput() {
+    const e = document.getElementById('event').value;
+    if (e == "select") {
+        alert('Please select event');
+        return false;
+    }
     return true;
 }
 
