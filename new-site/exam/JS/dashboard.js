@@ -49,24 +49,23 @@ function fetchEvents(user){
             }
         });
         firebase.database().ref('Links/').once('value').then((s)=>{
-            s.forEach(snap => {
-                const data = snap.val();
-                if(data.event!=undefined){
-                    f = true;
-                    var eObj = {
-                        CQuiz:"C Quiz",
-                        GkQuiz:"GK Quiz",
-
-                    };
-                    e.forEach(ev => {
-                        if(ev==data.event){
-                            eventData.push(ev,ev);
-                            f = false;
+            var eObj = {
+                CQuiz:"C Quiz",
+                GkQuiz:"GK Quiz"
+            };
+            e.forEach(ev => {
+                f=true;
+                s.forEach(snap => {
+                    const data = snap.val();
+                    if(data.event!=undefined){
+                        if(ev == data.event){
+                            eventData.push([eObj[ev],ev,ev]);
+                            f=false;
                         }
-                    });
-                    if(f){
-                        eventData.push(ev,"none");
                     }
+                });
+                if(f){
+                    eventData.push([eObj[ev],ev,"none"]);
                 }
             });
             showCards();
@@ -82,7 +81,7 @@ function fetchEvents(user){
 
 
 function showCards(){
-    
+    console.log(eventData);
 }
 
 
