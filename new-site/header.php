@@ -13,17 +13,6 @@
 <body>
 
 
-    <!-- goto top button -->
-    <div>
-        <button onclick="topFunction()" id="scrollButton" title="Go to top">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
-            </svg>
-        </button>
-    </div>
-    <!-- goto top end -->
-
-
     <div class="header">
 
         <center>
@@ -37,7 +26,15 @@
             </div>
         </center>
     </div>
-
+        <!-- goto top button -->
+			<div>
+				<button onclick="topFunction()" id="myBtn" title="Go to top">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+					</svg>
+				</button>
+			</div>
+		<!-- goto top end -->
     
     <nav class="navbar-light" style="padding-top: 2%; padding-bottom: 2%;">
         <div id="navbar1">
@@ -64,6 +61,16 @@
                     <a class="nav-link" href="./gallery.php">
                         <small id="gallery-txt">
                             Gallery
+                        </small>
+                    </a>
+                </li>
+                <li class="nav-item navlink">
+                    <a class="nav-link" href="">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-lines-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+						</svg>
+                        <small id="contact-txt">
+                            Contact Us
                         </small>
                     </a>
                 </li>

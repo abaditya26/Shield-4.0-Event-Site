@@ -33,7 +33,7 @@ $eventData = [
     [
         "chess",
         "Chess",
-        "./images/events/1.jpg",
+        "./images/events/chess.jpeg",
         "The Description Of the event goes here"
     ],
     [

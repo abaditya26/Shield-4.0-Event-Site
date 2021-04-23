@@ -16,10 +16,42 @@
         color: #FFFFFF;
         min-height: 400px;
     }
+    #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: rgba(255,255,255,0.6);
+            color: black;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #FFFFFF;
+            color: black;
+        }
 </style>
 
 
 <!-- main code here -->
+
+ <!-- goto top button -->
+ <div>
+        <button onclick="topFunction()" id="scrollButton" title="Go to top">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+            </svg>
+        </button>
+    </div>
+    <!-- goto top end -->
+
+
 <section id="home">
 
     <center>
@@ -138,6 +170,7 @@
 </section>
 
 <?php include "./footer.php"; ?>
+<script src="./JS/scroll.js"></script>
 
 <script>
     function openPage(path) {
