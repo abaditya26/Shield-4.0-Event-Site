@@ -1,5 +1,3 @@
-<?php include 'ip.php'; ?>
-
 <?php include "./header.php"; ?>
 
 <?php include "./data.php"; ?>
