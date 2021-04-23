@@ -137,6 +137,6 @@
 
 <script>
     function openPage(path) {
-        document.location = './event.php?id=' + path;
+        document.location = './events.php?id=' +path;
     }
 </script>

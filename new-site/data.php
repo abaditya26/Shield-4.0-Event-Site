@@ -13,8 +13,8 @@ $eventData = [
         "The Description Of the event goes here"
     ],
     [
-        "JavaQuiz",
-        "Java Quiz",
+        "GkQuiz",
+        "GKQuiz",
         "./images/events/1.jpg",
         "The Description Of the event goes here"
     ],

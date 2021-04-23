@@ -8,11 +8,50 @@ $eventData = [
 <?php include "./header.php"; ?>
 <?php include "./data.php"; ?>
 
-<!-- todo:paste sample.php -->
-<!-- about -->
-<!-- date -->
-<!-- time -->
-<!-- link -->
+<?php
+$eData = [];
+if(isset($_GET['id'])){
+$id = $_GET['id'];
+for($i=0;$i<sizeof($eventData);$i++){
+    if($eventData[$i][0]==$id){
+        $eData = $eventData[$i];
+    }
+}
+}else{
+    echo "<script>alert('invalid navigation');document.location='./#events';</script>";
+}
+?>
+
+<!-- 
+Treasure Hunt
+ -->
+
+<section id="treasure">
+
+    <center>
+
+    <div class="card" style="width: 48rem; background: black;">
+    <img src="<?php echo $eData[2]; ?>" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">
+        <?php echo $eData[1]; ?>
+        </h5>
+        <p class="card-text">
+        <?php echo $eData[3]; ?>
+        </p>
+        <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-primary">
+            Register
+        </a>
+    </div>
+</div>   
+       
+    </center>
+
+</section>
+
+
+
+
 
 <?php include "./footer.php"; ?>
 
