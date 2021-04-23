@@ -1,5 +1,5 @@
 </body>
-
+<script src="./JS/scroll.js"></script>
 </html>
 <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
 <script src="./JS/init.js"></script>

@@ -16,26 +16,6 @@
         color: #FFFFFF;
         min-height: 400px;
     }
-    #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 20px;
-            border: none;
-            outline: none;
-            background-color: rgba(255,255,255,0.6);
-            color: black;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 4px;
-        }
-
-        #myBtn:hover {
-            background-color: #FFFFFF;
-            color: black;
-        }
 </style>
 
 
