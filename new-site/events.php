@@ -31,7 +31,7 @@ Treasure Hunt
     <center>
 
     <div class="card" style="width: 48rem; background: black;">
-    <img src="<?php echo $eData[2]; ?>" class="card-img-top" alt="...">
+    <img src="<?php echo $eData[2]; ?>" class="card-img-top" alt="..." style="width:auto;max-width: 90%; max-height: 250px; border: ridge; margin:10px;">
     <div class="card-body">
         <h5 class="card-title">
         <?php echo $eData[1]; ?>
