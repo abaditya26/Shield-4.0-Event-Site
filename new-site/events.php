@@ -43,7 +43,7 @@ Treasure Hunt
             Register
         </a>
         <a href="" class="btn btn-primary">
-            Download Instructions
+            Download Instructions(pdf)
         </a>
     </div>
 </div>   
