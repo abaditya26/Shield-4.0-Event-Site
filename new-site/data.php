@@ -40,24 +40,30 @@ $eventData = [
         "Project Copetition",
         "./images/events/project.gif",
         "./docs/pro_pres.pdf",
-        "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
+        "The game is totally based on knowledge and creativity of all participants.Project quality matters irrespective of method (e.g. if there is a code then code complexity, time complexity.)Every member has specific role in project.",
+        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact No:-<a href=\"tel:+9173050103025\">+9173050103025</a>"  
     ],
     [
         "chess",
         "Online Chess",
         "./images/events/chess.gif",
         "./docs/Chess.pdf",
-        "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
+        "The competition will be conducted on website”lichess.org”.All participants should be register on website”lichess.org” Participants should only use WhatsApp mobile no for registration of Shield4.0. Each participant will be informed via Email or WhatsApp for further activities.",
+        "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li>Komal Dhake</li></ul>Contact No:-<a href=\"tel:+918149874939\">+918149874939</a>"  
     ],
     [
         "talent",
         "Talent Hunt",
         "./images/events/talhunt.gif",
         "./docs/talent_hunt.pdf",
-        "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
+        "This competition is based on your talent and skills. This competition is conducted to search real talent. There will be 3 rounds.
+ Categories:
+        a. Dance: All type of dance style.
+        b. Song: All types of singing.
+        c. Speaking: Speech, poetry, stand-up comedy
+        d. Art: Doodle
+        e. Instrument Playing ",
+        "Coordinators:-\n<ul><li>Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact No:-<a href=\"tel:+917588330219\">+917588330219</a>"  
     ],
 ];
 ?>
