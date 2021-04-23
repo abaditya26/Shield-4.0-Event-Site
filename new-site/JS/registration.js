@@ -51,6 +51,15 @@ function checkIfUserExist(user) {
         }
         // show the registration form
         console.log(user);
+        if(user.phoneNumber == undefined){
+            firebase.auth().signOut()
+                .then(function () {
+                    document.location='./registration.php';
+                }).catch(function (error) {
+                    // An error happened.
+                    alert(error);
+                });
+        }
         document.getElementById('phoneNumber').value = user.phoneNumber + ""
         document.getElementById('phoneNo').value = user.phoneNumber + ""
         showRegistration();
@@ -173,7 +182,7 @@ function registerEntry(user, event) {
         firebase.database().ref('Events/' + event + '/' + user.uid).set({
             name: user.name,
             phoneNo: user.phoneNo,
-            collageName: user.phoneNo,
+            collageName: user.collageName,
             collageCity: user.collageCity,
             emailId: user.emailId,
             uid: user.uid,

@@ -14,7 +14,11 @@ $eventData = [
     ],
     [
         "GkQuiz",
+<<<<<<< HEAD
         "GKQuiz",
+=======
+        "GK Quiz",
+>>>>>>> cb80fd209b5913d88a5a1d3bc157cb4f9286ca30
         "./images/events/1.jpg",
         "The Description Of the event goes here"
     ],
@@ -33,7 +37,7 @@ $eventData = [
     [
         "chess",
         "Chess",
-        "./images/events/1.jpg",
+        "./images/events/chess.jpeg",
         "The Description Of the event goes here"
     ],
     [
