@@ -128,9 +128,9 @@
                         <div class="event-container" onclick="openPage('<?php echo $eventData[$i][0]; ?>')">
                             <div class="main">
                                 <img loading="lazy" src="<?php echo $eventData[$i][2]; ?>" alt="<?php echo $eventData[$i][1]; ?>" style="width:auto;max-width: 90%; max-height: 250px; border: ridge; margin:10px;">
-                                <!-- <h5 class="font-styled-header">
+                                 <h5 class="font-styled-header">
                                     <?php echo $eventData[$i][1]; ?>
-                                </h5> -->
+                                </h5> 
                             </div>
                             <div class="middle">
                                 <div class="btn btn-danger">View Details</div>
