@@ -37,12 +37,12 @@ Treasure Hunt
         <?php echo $eData[1]; ?>
         </h5>
         <p class="card-text">
-        <?php echo $eData[3]; ?>
+        <?php echo $eData[4]; ?>
         </p>
         <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-primary">
             Register
         </a>
-        <a href="" class="btn btn-primary">
+        <a href="<?php echo $eData[3]; ?>" class="btn btn-primary">
             Download Instructions(pdf)
         </a>
     </div>
