@@ -6,7 +6,7 @@ $eventData = [
         "./images/events/1.gif",
         "./docs/tre_hunt.pdf",
         "The Game totally depends on your ability to search things on internet. \n Find Codes Crack Codes And Win! Game based on CTF (CAPTURE THE FLAG).
-        You have to find passwords and decode some codes.This activity are also known as an Online Scavenger Hunt, Digital Scavenger Hunt or Virtual Treasure Hunt. ",
+        You have to find passwords and decode some codes.This game is also known as an Online Scavenger Hunt, Digital Scavenger Hunt or Virtual Treasure Hunt. ",
         "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"
     ],
     [
