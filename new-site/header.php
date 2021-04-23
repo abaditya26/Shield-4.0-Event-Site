@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li class="nav-item navlink">
-                    <a class="nav-link" href="./events.php">
+                    <a class="nav-link" href="./#events">
                         <small id="events-txt">
                             Events
                         </small>
