@@ -15,7 +15,7 @@ $eventData = [
     [
         "GkQuiz",
         "GKQuiz",
-        "./images/events/1.jpg",
+        "./images/events/gk.gif",
         "The Description Of the event goes here"
     ],
     [
