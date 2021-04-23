@@ -9,7 +9,7 @@ $eventData = [
     [
         "CQuiz",
         "C Quiz",
-        "./images/events/1.jpg",
+        "./images/events/c.gif",
         "The Description Of the event goes here"
     ],
     [
