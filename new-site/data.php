@@ -6,7 +6,7 @@ $eventData = [
         "./images/events/1.gif",
         "./docs/tre_hunt.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>Contact No:-<a href=\"tel:+911234567890\">1234567890</a>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"
     ],
     [
         "CQuiz",
@@ -14,7 +14,7 @@ $eventData = [
         "./images/events/c.gif",
         "./docs/c_quiz.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
     ],
     [
         "GkQuiz",
@@ -22,7 +22,7 @@ $eventData = [
         "./images/events/gk.gif",
         "./docs/About_gk.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
     ],
     [
         "ppt",
@@ -30,7 +30,7 @@ $eventData = [
         "./images/events/ppt.gif",
         "./docs/ppt.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
     ],
     [
         "project",
@@ -38,7 +38,7 @@ $eventData = [
         "./images/events/project.gif",
         "./docs/pro_pres.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
     ],
     [
         "chess",
@@ -46,7 +46,7 @@ $eventData = [
         "./images/events/chess.gif",
         "./docs/Chess.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
     ],
     [
         "talent",
@@ -54,7 +54,7 @@ $eventData = [
         "./images/events/talhunt.gif",
         "./docs/talent_hunt.pdf",
         "The Description Of the event goes here",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Yash Chaudhari</li></ul>"
+        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"  
     ],
 ];
 ?>

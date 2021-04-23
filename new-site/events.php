@@ -46,7 +46,7 @@ Treasure Hunt
             Register
         </a>
         <a href="<?php echo $eData[3]; ?>" class="btn btn-primary">
-            Download Instructions(pdf)
+            Download Instructions(PDF)
         </a>
     </div>
     
