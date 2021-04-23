@@ -2,7 +2,7 @@
 $eventData = [
     [
         "treasure",
-        "Virtual Treasure Hunt",
+        "Virtuall Treasure Hunt",
         "./images/events/1.gif",
         "The Description Of the event goes here"
     ],
