@@ -27,7 +27,7 @@ $eventData = [
     [
         "project",
         "Project Copetition",
-        "./images/events/1.jpg",
+        "./images/events/project.gif",
         "The Description Of the event goes here"
     ],
     [
