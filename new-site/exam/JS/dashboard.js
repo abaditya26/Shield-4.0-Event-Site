@@ -82,7 +82,80 @@ function fetchEvents(user){
 
 function showCards(){
     console.log(eventData);
+    eventData.forEach(e => {
+        createCard(e[0],e[2]);
+    });
 }
+
+function createCard(title, examLink) {
+    var mainDiv = document.getElementById('mainList')
+
+    var parent = document.createElement('div')
+    parent.classList.add('col-md-4')
+
+    var parent1 = document.createElement('div')
+    parent1.classList.add('card')
+    parent1.classList.add('text-dark')
+    parent1.classList.add('border-dark')
+    parent1.classList.add('mb-3')
+    parent1.classList.add('card-quiz')
+
+    var cardHeader = document.createElement('div')
+    cardHeader.classList.add('card-header')
+    cardHeader.innerHTML = "<h3>" + title + "</h3>"
+
+    var cardBody = document.createElement('div')
+    cardBody.classList.add('card-body')
+    cardBody.classList.add('text-dark')
+
+    var cardTitle = document.createElement('h5')
+    cardTitle.classList.add('card-title')
+    if (examLink == "" || examLink == "none") {
+        // link.classList.add('disabled')
+        cardTitle.innerHTML = "Link Will Be Active on event timing"
+    } else {
+        cardTitle.innerHTML = "Click Start Exam to continue"
+    }
+
+    var cardText = document.createElement('p')
+    cardText.classList.add('card-text')
+
+    var formDiv = document.createElement('form');
+    formDiv.setAttribute('action','./startExam.php');
+    formDiv.setAttribute('method','POST');
+    
+    var valStore = document.createElement('input');
+    valStore.setAttribute('type','text');
+    valStore.style.display="none";
+    valStore.setAttribute('name','examId');
+    valStore.value = examLink;
+
+    var submitBtn = document.createElement('button');
+    submitBtn.setAttribute('type','submit');
+    submitBtn.classList.add('btn');
+    submitBtn.classList.add('btn-success');
+    if(examLink == "" || examLink == "none" || examLink == undefined ||examLink=="undefined"){
+        submitBtn.setAttribute('disabled','')
+    }
+    submitBtn.innerHTML = "Start Exam";
+
+    formDiv.appendChild(valStore);
+    formDiv.appendChild(submitBtn);
+
+
+    cardText.appendChild(formDiv)
+
+    cardBody.appendChild(cardTitle)
+    cardBody.appendChild(cardText)
+
+    parent1.appendChild(cardHeader)
+    parent1.appendChild(cardBody)
+
+    parent.appendChild(parent1)
+
+    mainDiv.appendChild(parent)
+}
+
 
 
 function showLoading(){

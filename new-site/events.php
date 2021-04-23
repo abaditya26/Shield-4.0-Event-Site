@@ -39,7 +39,7 @@ Treasure Hunt
         <p class="card-text">
         <?php echo $eData[4]; ?>
         </p>
-        <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-primary">
+        <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success">
             Register
         </a>
         <a href="<?php echo $eData[3]; ?>" class="btn btn-primary">
