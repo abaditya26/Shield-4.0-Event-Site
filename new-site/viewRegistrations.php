@@ -10,6 +10,9 @@
     <h3>
         Registrations
     </h3>
+    <p>
+        Please take a Screenshot of following Details.
+    </p>
 </center>
 
 <div class="container" id="loading">
@@ -44,6 +47,14 @@
             </th>
             <td>
                 <span id="email"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Your Registration ID
+            </th>
+            <td>
+                <span id="regid"></span>
             </td>
         </tr>
         <tr>
