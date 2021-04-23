@@ -30,15 +30,18 @@ Treasure Hunt
 
     <center>
 
-    <div class="card" style="width: 48rem; background: black;">
-    <img src="<?php echo $eData[2]; ?>" class="card-img-top" alt="..." style="width:auto;max-width: 90%; max-height: 250px; border: ridge; margin:10px;">
+    <div class="card" style="width: 48rem; background: black; border: ridge; border-radius:15px;">
+    <img src="<?php echo $eData[2]; ?>" class="card-img-top" alt="..." style="width:auto;max-width: 100%; border: ridge; margin:2%;">
     <div class="card-body">
-        <h5 class="card-title">
-        <?php echo $eData[1]; ?>
-        </h5>
-        <p class="card-text">
-        <?php echo $eData[4]; ?>
-        </p>
+        <h3 class="card-title font-styled-header" >
+        <b><?php echo $eData[1]; ?></b>
+        </h3>
+        <div class="card-text text-left">
+        &emsp;&emsp;<?php echo nl2br($eData[4]); ?>
+        </div><br><br>
+        <div class="text-left">
+            <?php echo nl2br($eData[5]); ?>
+        </div>
         <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success">
             Register
         </a>
@@ -46,12 +49,12 @@ Treasure Hunt
             Download Instructions(pdf)
         </a>
     </div>
+    
 </div>   
-       
     </center>
 
 </section>
-
+<br><br>    
 
 
 

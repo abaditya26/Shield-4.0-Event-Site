@@ -1,5 +1,12 @@
 <?php include "./header.php"; ?>
 <?php include "./data.php"; ?>
+<?php 
+$eId="";
+if(isset($_GET['id'])){
+    extract(($_GET));
+    $eId = $id;
+}
+?>
 
 
 <!-- registration form goes here -->
@@ -85,7 +92,7 @@ follow the given IDs
                 <option value="select">--Select Event--</option>
                 <?php for($i=0;$i<sizeof($eventData);$i++){
                     ?>
-                        <option value="<?php echo $eventData[$i][0]; ?>"><?php echo $eventData[$i][1]; ?></option>
+                        <option value="<?php echo $eventData[$i][0]; ?>" <?php if($eId==$eventData[$i][0]){echo "selected";} ?>  ><?php echo $eventData[$i][1]; ?></option>
                     <?php
                 } ?>
             </select>
