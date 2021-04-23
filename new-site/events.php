@@ -42,6 +42,9 @@ Treasure Hunt
         <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-primary">
             Register
         </a>
+        <a href="" class="btn btn-primary">
+            Download Instructions
+        </a>
     </div>
 </div>   
        
