@@ -1,0 +1,23 @@
+.container{
+    max-width: 400px;
+    margin-top: 7%;
+    border: ridge;
+    border-radius: 10px;
+    padding: 30px;
+}
+.form-control{
+    padding: 25px;
+}
+#title {
+    background-image: url("../images/shield_logo_bg_only.png");
+    /* Used if the image is unavailable */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: 300px;
+    /* Resize the background image to cover the entire container */
+    color: #FFFFFF;
+    min-height: 300px;
+    padding-top : 100px;
+}

@@ -57,7 +57,11 @@
 <hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
 <br><br>
 <section id="events">
-
+    <center>
+        <h3 class="font-styled-header">
+            EVENTS
+        </h3>
+    </center>
 
     <style>
         .event-container {

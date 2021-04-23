@@ -10,9 +10,9 @@ eventData = {
         id:"CQuiz",
         name:"C Quiz"
     },
-    "JavaQuiz":{
-        id:"JavaQuiz",
-        name:"Java Quiz"
+    "GkQuiz":{
+        id:"GkQuiz",
+        name:"GK Quiz"
     },
     "ppt":{
         id:"ppt",
