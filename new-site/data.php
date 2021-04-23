@@ -21,7 +21,7 @@ $eventData = [
     [
         "ppt",
         "PPT/Poster Presentation",
-        "./images/events/1.jpg",
+        "./images/events/ppt.gif",
         "The Description Of the event goes here"
     ],
     [
