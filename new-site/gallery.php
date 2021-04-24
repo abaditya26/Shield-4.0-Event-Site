@@ -26,14 +26,38 @@ $imageData = [
 <!-- content goes here -->
 <div class="container">
     <div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <?php for($i=0;$i<sizeof($imageData);$i++){ ?>
+                <li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if($i==0){echo 'class="active"';} ?>></li>
+                <?php } ?>
+            </ol>
+            <div class="carousel-inner">
+            <?php for($i=0;$i<sizeof($imageData);$i++){ ?>
+                <div class="carousel-item <?php if($i==0){echo "active"; } ?>">
+                    <img src="<?php echo $imageData[$i][0]; ?>" class="d-block w-100" alt="<?php echo $imageData[$i][1]; ?>">
+                </div>
+                <?php } ?>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <?php for ($i = 0; $i < 5; $i++) {
         ?>
                 <div class="carousel-item ">
                     <img src="<?php echo $imageData[$i][0]; ?>" class="d-block w-100" alt="<?php echo $imageData[$i][1]; ?>">
                 </div>
-                
+                <?php } ?>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,7 +67,7 @@ $imageData = [
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div> -->
     </div>
     <img src="./images/shield_poster.png" alt="Shield Poster" style="max-width: 100%;" onclick="openImage('./images/shield_poster.png')">
     <div class="row">
