@@ -28,23 +28,23 @@ follow the given IDs
 </center>
 
 </div>
-
-<div class="container login">
+<center>
+<div class="container login " >
     <form action="" method="post" onsubmit="return false" id="otpVerificationForm">
 
         <div class="form-group">
-            <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control" required placeholder="Enter Phone Number">
+            <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control  w-50 mb-2" required placeholder="Enter Phone Number">
             <div id="recaptcha-container"></div>
-            <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success" id="sendOtpBtn">
+            <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success my-2" id="sendOtpBtn">
         </div>
         <div class="form-group">
-            <input type="number" name="otp-input" id="otp-input" class="form-control" required placeholder="Enter the OTP">
-            <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success">
+            <input type="number" name="otp-input" id="otp-input" class="form-control w-50 mb-2" required placeholder="Enter the OTP">
+            <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success mb-2">
         </div>
 
     </form>
 </div>
-
+</center>
 
 <div class="container">
     <form action="" method="post" id="registrationForm" style="display: none;" onsubmit="return registerUser()">
