@@ -17,12 +17,12 @@
 
         <center>
         <div class="top-header-div">
-                <img src="./images/gpj_logo.png" alt="GPJ Logo" style="width: 100px;height: 100px;">
-                <h4 class="font-styled-header">
+                <img src="./images/gpj_logo.png" alt="GPJ Logo" style="width: 75px;height: 75px;">
+                <h5 class="font-styled-header">
                     Government Polytechnic ,Jalgaon <br>
                     (An Institute of Government Of Maharashtra) <br>
                     Since 1960
-                </h4>
+                </h5>
             </div>
         </center>
     </div>

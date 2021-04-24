@@ -19,6 +19,7 @@ body {
 
 .font-styled-header {
     font-family: 'Courier New', Courier, monospace;
+  
     margin: 10px;
 }
 
@@ -118,3 +119,10 @@ li {
 	height: 150px;
 	background-color: #666;
 } */
+@media only screen and (max-device-width: 480px) {
+    .font-styled-header {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        margin: 10px;
+    }
+  }
