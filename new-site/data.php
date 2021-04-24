@@ -14,7 +14,7 @@ $eventData = [
         "C Quiz",
         "./images/events/c.gif",
         "./docs/c_quiz.pdf",
-        "The game is totally based on c programming knowledge of participant. 30 MCQ (Multiple Choice Question) in 30 minutes. In the case of tie then maximum score and minimum time taken for solving all the questions will considered. Solve all the questions in minimum time and win prizes! ",
+        "The game is totally based on c programming knowledge of participant. 20 MCQ (Multiple Choice Question) in 30 minutes. In the case of tie then maximum score and minimum time taken for solving all the questions will considered. Solve all the questions in minimum time and win prizes! ",
         "Coordinators:-\n<ul><li>Kalpak Nemade</li><li>Mahesh Pimparkar</li></ul>Contact No:-<a href=\"tel:+9173050103025\">+9173050103025</a>"  
     ],
     [

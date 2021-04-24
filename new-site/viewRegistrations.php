@@ -51,14 +51,6 @@
         </tr>
         <tr>
             <th>
-                Your Registration ID
-            </th>
-            <td>
-                <span id="regid"></span>
-            </td>
-        </tr>
-        <tr>
-            <th>
                 Your College Name
             </th>
             <td>
