@@ -1,4 +1,10 @@
 <?php include "./header.php"; ?>
+<style>
+    
+    .card-quiz{
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+</style>
 <div class="container" id="main" style="border: ridge; border-radius: 10px;">
     <hr class="hr" style="border-color: white;">
     <div class="row">

@@ -1,7 +1,9 @@
 <?php include "./header.php"; ?>
 
 <style>
-    tr,th,td{
+    tr,
+    th,
+    td {
         color: white;
     }
 </style>
@@ -10,9 +12,6 @@
     <h3>
         Registrations
     </h3>
-    <p>
-        Please take a Screenshot of following Details.
-    </p>
 </center>
 
 <div class="container" id="loading">
@@ -23,7 +22,11 @@
 </div>
 
 <div class="container" id="registration">
-
+    <center>
+        <p>
+            Please take a Screenshot of following Details.
+        </p>
+    </center>
     <table class="table table-stripped table-hover">
         <tr>
             <th>

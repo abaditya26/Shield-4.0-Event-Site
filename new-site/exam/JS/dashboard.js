@@ -45,7 +45,10 @@ function fetchEvents(user){
         snapshot.forEach(s => {
             const data = s.val();
             if(data.event!=undefined){
-                e.push(data.event);
+                console.log(data.event);
+                if(data.event=="CQuiz" || data.event=="GkQuiz" || data.event=="CQuiz2" || data.event=="GkQuiz2"){
+                    e.push(data.event);
+                }
             }
         });
         firebase.database().ref('Links/').once('value').then((s)=>{
@@ -134,14 +137,13 @@ function createCard(title, examLink) {
     submitBtn.setAttribute('type','submit');
     submitBtn.classList.add('btn');
     submitBtn.classList.add('btn-success');
-    if(examLink == "" || examLink == "none" || examLink == undefined ||examLink=="undefined"){
+    if(examLink == "" || examLink == "none" || examLink == undefined || examLink=="undefined"){
         submitBtn.setAttribute('disabled','')
     }
     submitBtn.innerHTML = "Start Exam";
 
     formDiv.appendChild(valStore);
     formDiv.appendChild(submitBtn);
-
 
     cardText.appendChild(formDiv)
 
@@ -155,8 +157,6 @@ function createCard(title, examLink) {
 
     mainDiv.appendChild(parent)
 }
-
-
 
 function showLoading(){
     document.getElementById('main').style.display="none"

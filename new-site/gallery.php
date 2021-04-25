@@ -22,6 +22,16 @@ $imageData = [
 ]
 ?>
 
+<style>
+    .col-hover:hover {
+        cursor: pointer;
+    }
+
+    .item-hover:hover {
+        cursor: pointer;
+    }
+</style>
+
 <!-- content goes here -->
 <div class="container">
     <div>
@@ -34,7 +44,7 @@ $imageData = [
             <div class="carousel-inner">
                 <?php for ($i = 0; $i < sizeof($imageData) && $i < 5; $i++) { ?>
                     <div class="carousel-item <?php if ($i == 0) { echo "active"; } ?>">
-                        <img src="<?php echo $imageData[$i][0]; ?>" class="d-block w-100" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="max-height: 500px; object-fit: scale-down;object-position: center;">
+                        <img src="<?php echo $imageData[$i][0]; ?>" class="d-block w-100 item-hover" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="max-height: 500px; object-fit: scale-down;object-position: center;">
                     </div>
                 <?php } ?>
             </div>
@@ -50,12 +60,11 @@ $imageData = [
 
 
     </div>
-    <!-- <img src="./images/shield_poster.png" alt="Shield Poster" style="max-width: 100%;" onclick="openImage('./images/shield_poster.png')"> -->
     <div class="row">
 
         <?php for ($i = 0; $i < sizeof($imageData); $i++) {
         ?>
-            <div class="col-md-4" style="height: 400px;">
+            <div class="col-md-4 col-hover" style="height: 400px;">
                 <center>
                     <img loading="lazy" src="<?php echo $imageData[$i][0]; ?>" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="width:auto;max-width: 100%; height: 250px; border: ridge; margin:10px; object-fit: scale-down; object-position: center; background: rgba(255, 255, 255, 0.05);">
                     <h3 class="font-styled-header">
