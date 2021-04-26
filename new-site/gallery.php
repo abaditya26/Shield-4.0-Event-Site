@@ -27,6 +27,9 @@ $imageData = [
         cursor: pointer;
         transform: scale(1.1);
     }
+    .col-hover{
+        transition: .5s ease;
+    }
 
     .item-hover:hover {
         cursor: pointer;
