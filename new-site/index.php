@@ -55,13 +55,14 @@
 </section>
 
 <hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
-<br><br>
+
 <section id="events">
     <center>
         <h3 class="font-styled-header">
             EVENTS
         </h3>
     </center>
+    <hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
 
     <style>
         .event-container {
@@ -87,6 +88,7 @@
 
         .event-container:hover .main {
             opacity: 0.3;
+            transform: scale(1,1);
         }
 
         .middle {
@@ -108,8 +110,7 @@
             max-width: 90%; 
             height: 180px; 
             object-fit: cover;
-            object-position: center;
-            border: ridge; 
+            object-position: center; 
             margin:10px;
         }
     </style>
