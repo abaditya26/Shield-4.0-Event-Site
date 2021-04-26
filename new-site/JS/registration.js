@@ -36,9 +36,9 @@ function checkIfUserExist(user) {
                     emailId: email
                 };
 
-                
+
                 // todo: send to view
-                document.getElementById('old-reg-btn').style.display="block";
+                document.getElementById('old-reg-btn').style.display = "block";
                 document.getElementById('name').value = name;
                 document.getElementById('email').value = email;
                 document.getElementById('collageName').value = collage;
@@ -51,10 +51,10 @@ function checkIfUserExist(user) {
         }
         // show the registration form
         console.log(user);
-        if(user.phoneNumber == undefined){
+        if (user.phoneNumber == undefined) {
             firebase.auth().signOut()
                 .then(function () {
-                    document.location='./registration.php';
+                    document.location = './registration.php';
                 }).catch(function (error) {
                     // An error happened.
                     alert(error);
@@ -179,30 +179,79 @@ function registerUser() {
 
 function registerEntry(user, event) {
     firebase.database().ref('Users/' + user.uid).set(user).then((result) => {
-        firebase.database().ref('Events/' + event + '/' + user.uid).set({
-            name: user.name,
-            phoneNo: user.phoneNo,
-            collageName: user.collageName,
-            collageCity: user.collageCity,
-            emailId: user.emailId,
-            uid: user.uid,
-            event: event,
-            type: "participant"
-        }).then((result1) => {
-            firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+        if (event == "project") {
+            const c = parseInt(document.getElementById('participantCount').value);
+            firebase.database().ref('Events/'+event+'/'+user.uid+'/Participant1').set({
+                name: user.name,
+                phoneNo: user.phoneNo,
+                collageName: user.collageName,
+                collageCity: user.collageCity,
+                emailId: user.emailId,
                 uid: user.uid,
-                event: event
-            }).then((r) => {
-                alert('Registration Complete.');
-                document.location = './viewRegistrations.php';
-            }).catch((e1) => {
-                alert('Entry Registration incomplete');
-                showRegistration();
-                firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                event: event,
+                type: "participant"
+            }).then((res)=>{
+                var ct = 0;
+                for(i = 0; i < c;i++){
+                    const n = document.getElementById('participant'+(i+1)+'name').value;
+                    const e = document.getElementById('participant'+(i+1)+'email').value;
+                    firebase.database().ref('Events/'+event+'/'+user.uid+'/Participant'+(i+2)).set({
+                        name: n,
+                        phoneNo: user.phoneNo,
+                        collageName: user.collageName,
+                        collageCity: user.collageCity,
+                        emailId: e,
+                        uid: user.uid,
+                        event: event,
+                        type: "participant"
+                    }).then((res)=>{
+                        ct++;
+                        if(ct==c){
+                            firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                                uid: user.uid,
+                                event: event
+                            }).then((r) => {
+                                alert('Registration Complete.');
+                                document.location = './viewRegistrations.php';
+                            }).catch((e1) => {
+                                alert('Entry Registration incomplete');
+                                showRegistration();
+                                firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                            });
+                        }
+                    }).catch((error1)=>{
+                        console.log(error1);
+                    });
+                }
+            }).catch((error1)=>{
+                console.log(error1);
             });
-        }).catch((error) => {
-            alert('Error => ' + error);
-        });
+        } else {
+            firebase.database().ref('Events/' + event + '/' + user.uid).set({
+                name: user.name,
+                phoneNo: user.phoneNo,
+                collageName: user.collageName,
+                collageCity: user.collageCity,
+                emailId: user.emailId,
+                uid: user.uid,
+                event: event,
+                type: "participant"
+            }).then((result1) => {
+                firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                    uid: user.uid,
+                    event: event
+                }).then((r) => {
+                    alert('Registration Complete.');
+                    document.location = './viewRegistrations.php';
+                }).catch((e1) => {
+                    alert('Entry Registration incomplete');
+                    showRegistration();
+                    firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                });
+            }).catch((error) => {
+                alert('Error => ' + error);
+            });
+        }
     }).catch((e) => {
         alert('Error => ' + e);
     });
@@ -223,53 +272,37 @@ function validateUserInput() {
 
 
 
+function enableEntries(){
+    const c = parseInt(document.getElementById('participantCount').value);
+    if(c==0){
+        document.getElementById('participant1div').style.display="none";
+        document.getElementById('participant2div').style.display="none";
+        document.getElementById('participant3div').style.display="none";
+    }
+    if(c>=1){
+        document.getElementById('participant1div').style.display="block";
+        document.getElementById('participant2div').style.display="none";
+        document.getElementById('participant3div').style.display="none";
+    }
+    if(c>=2){
+        document.getElementById('participant2div').style.display="block";
+        document.getElementById('participant3div').style.display="none";
+    }
+    if(c>=3){
+        document.getElementById('participant3div').style.display="block";
+    }
+}
+
+
+function verifyIfPro(){
+    const e = document.getElementById('event').value;
+    if(e=="project"){
+        document.getElementById('prodiv').style.display="block";
+    }else{
+        document.getElementById('prodiv').style.display="none";
+    }
+}
 
 
 
 
-
-
-
-
-
-
-// algo
-
-/*
-onload render captcha
-    check if user exist
-    if yes
-        check if its entry present in database
-        if yes
-            render the stored data to view
-            show registration
-        else
-            shoe registration
-    else
-        show registration
-
-
-on send otp button clcik
-verify captcha
-send the otp
-
-on verify otp button
-verify otp
-if match
-    show registration
-    again check for user availiability
-    if user exists follow onload
-else
-    show registration
-
-onregistration submit
-    check if already registered
-    if available
-        give error
-    else
-        register user to event
-br
-
-
-
-*/

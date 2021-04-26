@@ -62,7 +62,7 @@ li {
     width: fit-content;
 }
 
-#myBtn {
+#scrollButton {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -78,47 +78,15 @@ li {
     border-radius: 4px;
 }
 
-#myBtn:hover {
+#scrollButton:hover {
     background-color: #FFFFFF;
     color: black;
 }
 
-/* 
-@media only screen and (max-width: 600px) {
-    .top-header-div{
-        display: block; 
-        width: fit-content;
-    }
-} 
-
-#mainContent, #main-content-div{
-    display: block;
-}
-#loading{
-    display: none;
-}
-#otpWindow{
-    display: none;
-}
-#saving{
-    display: none;
-}
-
-.welcomeContainer{
-    color: black;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
 #videoElement {
 	height: 150px;
 	background-color: #666;
-} */
+}
 @media only screen and (max-device-width: 480px) {
     .font-styled-header {
         font-family: 'Courier New', Courier, monospace;
