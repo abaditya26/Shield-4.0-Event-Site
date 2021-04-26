@@ -119,7 +119,6 @@
             height: 180px; 
             object-fit: cover;
             object-position: center;
-            border: ridge; 
             margin:10px;
         }
     </style>
