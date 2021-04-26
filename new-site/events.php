@@ -42,9 +42,16 @@ Treasure Hunt511
         <div class="text-left">
             <?php echo nl2br($eData[5]); ?>
         </div>
-        <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success">
+        
+        <a href="./temp.php" class="btn btn-success">
             Register
         </a>
+        
+        <!--
+        <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success">
+            Register
+        </a> -->
+
         <a href="<?php echo $eData[3]; ?>" class="btn btn-primary">
             Download Instructions(PDF)
         </a>
