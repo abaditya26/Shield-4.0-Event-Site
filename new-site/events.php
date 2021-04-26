@@ -1,7 +1,7 @@
-<?php 
+<?php
 $eventData = [
     [
-        "th","Treasure Hunt","path to image", "description"
+        "th", "Treasure Hunt", "path to image", "description"
     ]
 ];
 ?>
@@ -10,14 +10,14 @@ $eventData = [
 
 <?php
 $eData = [];
-if(isset($_GET['id'])){
-$id = $_GET['id'];
-for($i=0;$i<sizeof($eventData);$i++){
-    if($eventData[$i][0]==$id){
-        $eData = $eventData[$i];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    for ($i = 0; $i < sizeof($eventData); $i++) {
+        if ($eventData[$i][0] == $id) {
+            $eData = $eventData[$i];
+        }
     }
-}
-}else{
+} else {
     echo "<script>alert('invalid navigation');document.location='./#events';</script>";
 }
 ?>
@@ -30,38 +30,41 @@ Treasure Hunt511
 
     <center>
 
-    <div class="card w-75" style="width: auto; background: black; border: ridge; border-radius:15px;">
-    <img src="<?php echo $eData[2]; ?>" class="card-img-top" alt="..." style="width:auto;max-width: 100%; border: ridge; margin:2%;">
-    <div class="card-body">
-        <h3 class="card-title font-styled-header" >
-        <b><?php echo $eData[1]; ?></b>
-        </h3>
-        <div class="card-text text-left">
-        &emsp;&emsp;<?php echo nl2br($eData[4]); ?>
-        </div><br><br>
-        <div class="text-left">
-            <?php echo nl2br($eData[5]); ?>
-        </div>
-        
-        <a href="./temp.php" class="btn btn-success">
-            Register
-        </a>
-        
-        <!--
+        <div class="card w-75" style="width: auto; background: black;">
+        <center>
+
+            <img src="<?php echo $eData[2]; ?>" class="card-img-top" style="width:auto;max-width: 80%; border: ridge; margin:2%;">
+        </center>
+            <div class="card-body">
+                <h3 class="card-title font-styled-header">
+                    <b><?php echo $eData[1]; ?></b>
+                </h3>
+                <div class="card-text text-left">
+                    &emsp;&emsp;<?php echo nl2br($eData[4]); ?>
+                </div><br><br>
+                <div class="text-left">
+                    <?php echo nl2br($eData[5]); ?>
+                </div>
+
+                <a href="./temp.php" class="btn btn-success">
+                    Register
+                </a>
+
+                <!--
         <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success">
             Register
         </a> -->
 
-        <a href="<?php echo $eData[3]; ?>" class="btn btn-primary">
-            Download Instructions(PDF)
-        </a>
-    </div>
-    
-</div>   
+                <a href="<?php echo $eData[3]; ?>" class="btn btn-primary">
+                    Download Instructions(PDF)
+                </a>
+            </div>
+
+        </div>
     </center>
 
 </section>
-<br><br>    
+<br><br>
 
 
 
