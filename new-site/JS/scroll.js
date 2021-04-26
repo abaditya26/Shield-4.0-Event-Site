@@ -1,7 +1,7 @@
 // Scroll Button Code 
-
+try{
 	//Get the button
-	var mybutton = document.getElementById("myBtn");
+	var mybutton = document.getElementById("scrollButton");
 
 	// When the user scrolls down 20px from the top of the document, show the button
 	window.onscroll = function() {scrollFunction()};
@@ -20,5 +20,7 @@
 	document.documentElement.scrollTop = 0;
 	}
 
-
+}catch(e){
+	
+}
 // Scroll Button Code End 

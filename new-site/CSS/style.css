@@ -62,7 +62,7 @@ li {
     width: fit-content;
 }
 
-#myBtn {
+#scrollButton {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -78,7 +78,7 @@ li {
     border-radius: 4px;
 }
 
-#myBtn:hover {
+#scrollButton:hover {
     background-color: #FFFFFF;
     color: black;
 }
