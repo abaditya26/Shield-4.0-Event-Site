@@ -88,7 +88,7 @@
 
         .event-container:hover .main {
             opacity: 0.3;
-            transform: scale(1,1);
+            transform: scale(1.1);
         }
 
         .middle {
@@ -147,7 +147,43 @@
     </div>
 
 </section>
-
+<footer class="" style="background-color: rgba(255,255,255,0.1);">
+        <div class="container">
+          <span class="">
+            <center>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div style="text-align: left; margin-left: 15%;" class="font-styled-header"><br>
+                            <h5>
+                                <b>
+                                    Government Polytechnic, Jalgaon<br>
+                                </b>
+                            </h5>
+                            शासकीय तंत्रनिकेतन, जळगांव
+                            <p>
+                                NH6, Jalgaon-425002, Maharashtra
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="font-styled-header">
+                            Site Developed By:-
+                        </h5>
+                        <div style="display: block;align-content: space-evenly;" class="font-styled-header">
+                            Aditya Bodhankar<br>
+                            Kalpak Nemade&nbsp;&nbsp;&nbsp;<br>
+                            Vishal Chaudhari<br>
+                            Mahesh Pimparkar<br>
+                        </div>
+                    </div>
+                </div>
+            <br>
+            
+            </center>
+          </span>
+        </div>
+      </footer>
 <?php include "./footer.php"; ?>
 <script src="./JS/scroll.js"></script>
 

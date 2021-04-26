@@ -19,12 +19,22 @@ body {
 
 .font-styled-header {
     font-family: 'Courier New', Courier, monospace;
-  
     margin: 10px;
 }
+.nav-link{
+    display: inline;
+    font-size: 120%;
+}
 
-.navlink:hover {
-    font-size: 110%;
+.navlink:hover a{
+    font-size: 120%;
+    background-color: rgba(194, 40, 86, 0.404);
+    border: ridge;
+    border-radius: 10px;
+    border-color: rgba(194, 40, 86, 0.404);
+    color: white;
+    font-size: 100%!important;
+    transform: scale(1)!important;
 }
 
 .monospace {
