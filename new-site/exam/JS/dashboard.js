@@ -32,12 +32,11 @@ function chechIfUserExists(user){
         }
         hideLoading();
     }).catch((error)=>{
-        hideLoading();  
+        hideLoading();
         alert('error');
         console.log(error);
     });
 }
-
 
 function fetchEvents(user){
     firebase.database().ref('Registrations/'+user.uid).once('value').then((snapshot)=>{
@@ -84,7 +83,6 @@ function fetchEvents(user){
 
 
 function showCards(){
-    console.log(eventData);
     eventData.forEach(e => {
         createCard(e[0],e[2]);
     });
@@ -114,7 +112,6 @@ function createCard(title, examLink) {
     var cardTitle = document.createElement('h5')
     cardTitle.classList.add('card-title')
     if (examLink == "" || examLink == "none") {
-        // link.classList.add('disabled')
         cardTitle.innerHTML = "Link Will Be Active on event timing"
     } else {
         cardTitle.innerHTML = "Click Start Exam to continue"
@@ -126,6 +123,7 @@ function createCard(title, examLink) {
     var formDiv = document.createElement('form');
     formDiv.setAttribute('action','./startExam.php');
     formDiv.setAttribute('method','POST');
+    formDiv.setAttribute('onsubmit','return confirmStart(\''+title+'\')');
     
     var valStore = document.createElement('input');
     valStore.setAttribute('type','text');
@@ -156,6 +154,13 @@ function createCard(title, examLink) {
     parent.appendChild(parent1)
 
     mainDiv.appendChild(parent)
+}
+
+function confirmStart(title){
+    if(confirm('Start Exam?\nExam Name:-'+title)){
+        return true;
+    }
+    return false;
 }
 
 function showLoading(){

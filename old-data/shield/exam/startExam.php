@@ -136,7 +136,7 @@ if(!isset($_POST['examId'])){
             <div class="row">
                 <div class="col-md-4">
                     <!-- user camera preview -->
-                    <video autoplay="true" id="videoElement"></video>
+                    <video autoplay="true" id="videoElement" ></video>
                 </div>
                 <div class="col-md-4">
                     <!-- question numbers -->
