@@ -110,7 +110,11 @@
             max-width: 90%; 
             height: 180px; 
             object-fit: cover;
+<<<<<<< HEAD
             object-position: center; 
+=======
+            object-position: center;
+>>>>>>> e681572b1d0e2b952e7e328e4470896fa136cb76
             margin:10px;
         }
     </style>

@@ -25,6 +25,7 @@ $imageData = [
 <style>
     .col-hover:hover {
         cursor: pointer;
+        transform: scale(1.1);
     }
 
     .item-hover:hover {
@@ -57,6 +58,7 @@ $imageData = [
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <hr>
 
 
     </div>
