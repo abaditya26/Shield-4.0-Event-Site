@@ -7,7 +7,7 @@ if (isset($_POST['examId'])) {
 ?>
 
 <?php include "./header.php"; ?>
-<div class="main">
+<div id="main">
     <hr class="hr" style="border-color: white; margin: 5px;">
     <div class="row" style="max-width: 100%;">
         <div class="col-md-4" style="margin-top: 5px;padding: 0;">
@@ -88,8 +88,8 @@ if (isset($_POST['examId'])) {
             <div class="controls">
                 <hr class="hr" style="border-color: white;">
                 <center>
-                    <button class="btn btn-primary">Previous</button>
-                    <button class="btn btn-primary">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    <button class="btn btn-primary" onclick="changeQuestion(-1)">Previous</button>
+                    <button class="btn btn-primary" onclick="changeQuestion(1)">&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;</button>
                 </center>
                 <hr class="hr" style="border-color: white;">
             </div>
@@ -118,5 +118,7 @@ if (isset($_POST['examId'])) {
 </div>
 <br><br>
 <?php include "./footer.php"; ?>
-
+<script>
+    const quizId = '<?php echo $_POST['examId']; ?>';
+</script>
 <script src="./JS/exam.js"></script>
