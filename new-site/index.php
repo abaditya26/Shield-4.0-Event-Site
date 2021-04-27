@@ -56,13 +56,12 @@
 
 <hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
 
-<section id="events">
+<section id="events" data-aos="fade-down">
     <center>
         <h3 class="font-styled-header">
             EVENTS
         </h3>
     </center>
-    <hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
 
     <style>
         .event-container {
@@ -125,7 +124,7 @@
 
                     <center>
 
-                        <div class="event-container" onclick="openPage('<?php echo $eventData[$i][0]; ?>')">
+                        <div class="event-container" data-aos="zoom-in" onclick="openPage('<?php echo $eventData[$i][0]; ?>')">
                             <div class="main">
                                 <img loading="lazy" src="<?php echo $eventData[$i][2]; ?>" alt="<?php echo $eventData[$i][1]; ?>" class="image-event">
                                  <h5 class="font-styled-header">
@@ -147,6 +146,7 @@
     </div>
 
 </section>
+
 <footer class="" style="background-color: rgba(255,255,255,0.1);">
         <div class="container">
           <span class="">
@@ -186,6 +186,11 @@
       </footer>
 <?php include "./footer.php"; ?>
 <script src="./JS/scroll.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 <script>
     function openPage(path) {

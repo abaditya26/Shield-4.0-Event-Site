@@ -28,7 +28,7 @@ body {
 
 .navlink:hover a{
     font-size: 120%;
-    background-color: rgba(194, 40, 86, 0.404);
+    background-color: rgb(255, 0, 255,0.4);
     border: ridge;
     border-radius: 10px;
     border-color: rgba(194, 40, 86, 0.404);

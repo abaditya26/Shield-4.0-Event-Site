@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shield 4.0</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="shortcut icon" href="./images/shield_logo.png" type="image/x-icon">
 </head>
@@ -18,13 +19,13 @@
 
         <center>
             <div class="top-header-div">
-                <img src="./images/gpj_logo.png" alt="GPJ Logo" style="width: 75px;height: 75px;">
+                <img src="./images/gpj_logo.png" alt="GPJ Logo" style="width: 75px;height: 75px; margin-right: 20px;">
                 <h5 class="font-styled-header">
                     Government Polytechnic ,Jalgaon <br>
                     (An Institute of Government Of Maharashtra) <br>
                     Since 1960
                 </h5>
-                <img src="./images/shield_logo.png" alt="GPJ Logo" style="width: 75px;height: 75px;">
+                <img src="./images/shield_logo.png" alt="GPJ Logo" style="width: 75px;height: 75px; margin-left: 20px;">
             </div>
         </center>
     </div>
