@@ -154,7 +154,7 @@
           <span class="">
             <center>
                 
-                <div class="row">
+                <div class="row" >
                     <div class="col-md-6">
                         <div style="text-align: left; margin-left: 15%;" class="font-styled-header"><br>
                             <h5>
