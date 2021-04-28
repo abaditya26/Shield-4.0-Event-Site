@@ -7,9 +7,7 @@ $eventData = [
         "./docs/tre_hunt.pdf",
         "Virtual Treasure Hunt totally dependens on your ability to search things on the Internet as soon as possible.
         It consist of 2 rounds as follows:
-        1.Crack Me and Capture The Flag.
-        2.Quick Meet.
-        Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.
+        <ol><li>Crack Me and Capture The Flag.</li><li>Quick Meet.</li></ol>Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.
         You have to find passwords by decoding some Codes. 
         Stratigically, Find Codes, Crack them and Win!.
         Virtual Treasure Hunt is also known as Digital Scavenger Hunt.",

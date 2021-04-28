@@ -155,7 +155,7 @@
             <center>
                 
                 <div class="row" >
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <div style="text-align: left; margin-left: 15%;" class="font-styled-header"><br>
                             <h5>
                                 <b>
@@ -168,7 +168,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <h5 class="font-styled-header">
                             Site Developed By:-
                         </h5>
