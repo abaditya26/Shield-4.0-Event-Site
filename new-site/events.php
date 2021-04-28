@@ -42,7 +42,7 @@ Treasure Hunt511
                 <div class="card-text text-left">
                     &emsp;&emsp;<?php echo nl2br($eData[4]); ?>
                 </div><br><br>
-                <div class="text-left">
+                <div class="text-left" >
                     <?php echo nl2br($eData[5]); ?>
                 </div>
 

@@ -10,7 +10,7 @@ $eventData = [
         <ol><li>Crack Me and Capture The Flag.</li><li>Quick Meet.</li></ol>Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.
         You have to find passwords by decoding some Codes. 
         Virtual Treasure Hunt is also known as Digital Scavenger Hunt. \n
-        <center><h5><i><b> \"Stratigically, Find Codes, Crack them and Win!.\" <b> </i> </h5> </center> ",
+        <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Stratigically, Find Codes, Crack them and Win!.\" </b> </i> </h5> </center> ",
         "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact :- <a href=\"tel:+918975311578\">Call For Inquiry</a>"
     ],
     [
@@ -22,7 +22,7 @@ $eventData = [
         There will be 20 MCQ (Multiple Choice Questions) and time allocated will be 30 minutes.
         In case of tie the Time Complexity will be considered as an important parameter in the Scene. 
         Solve all the questions in minimum time \n
-        Think like a Compiler and win amazing prizes! ",
+        <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Think like a Compiler and win amazing prizes!\" </b> </i> </h5> </center> ",
         "Coordinators:-\n<ul><li>Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For Inquiry</a>"  
     ],
     [
