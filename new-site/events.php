@@ -36,9 +36,9 @@ Treasure Hunt511
             <img src="<?php echo $eData[2]; ?>" class="card-img-top" style="width:auto;max-width: 80%; border: ridge; margin:2%;">
         </center>
             <div class="card-body">
-                <h3 class="card-title font-styled-header">
+                <h2 class="card-title font-styled-header">
                     <b><?php echo $eData[1]; ?></b>
-                </h3>
+                </h2>
                 <div class="card-text text-left">
                     &emsp;&emsp;<?php echo nl2br($eData[4]); ?>
                 </div><br><br>
