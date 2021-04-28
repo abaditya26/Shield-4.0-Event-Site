@@ -86,12 +86,18 @@ function generateOtp() {
     firebase.auth().signInWithPhoneNumber(number, appVerifier).then((result) => {
         window.confirmationResult = result;
         alert('OTP SENT. VALIDATE OTP.')
+        showOtpInput();
         showLogin();
     }).catch((err) => {
         console.log(err);
+        showOtpInput();
         showLogin();
     });
 
+}
+
+function showOtpInput(){
+    document.getElementById('otp-div').style.display="block";
 }
 
 function verifyOtp() {
@@ -119,8 +125,7 @@ function showLogin() {
     document.getElementById('registrationForm').style.display = "none"
 }
 
-function
-    showRegistration() {
+function showRegistration() {
     document.getElementById('loading').style.display = "none"
     document.getElementById('otpVerificationForm').style.display = "none"
     document.getElementById('registrationForm').style.display = "block"

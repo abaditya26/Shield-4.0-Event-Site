@@ -56,7 +56,7 @@
                 <center>
                     <img src="../images/shield_title.png" alt="Shield 4.0" style="max-width: 80%; margin-left: 30px; margin-right: 30px;">
                     <h3>4.0</h3>
-                    <h4>Exam Login</h4>
+                    <h4>Registration</h4>
                 </center>
             </div>
 

@@ -21,21 +21,12 @@ if (isset($_GET['id'])) {
 
 <!-- registration form goes here -->
 
-<!-- 
-############################################################################
-remove or change following code
-follow the given IDs
-############################################################################
- -->
-
-
 <!-- temp code to be removed -->
 
 <div class="container" id="loading" style="display: none; top: 45%; -ms-transform: translateY(-50%); ">
     <center>
         <div class="loader"></div>
     </center>
-</div>
 </div>
 
 <style>
@@ -47,32 +38,38 @@ follow the given IDs
 
 
 
-    <div class="container" style="width: 500px; padding: 50px; background: rgba(255,255,255,0.2); border: ridge; border-radius: 10px;">
-        
-        <form action="" method="post" onsubmit="return false" id="otpVerificationForm">
-            <div class="form-group">
-                <!-- <i class="fa fa-lock" aria-hidden="true"></i>&emsp;Phone No -->
-                <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control mb-3" required placeholder="Enter Phone Number">
-                
-                <center>
+<div class="container" id="otpVerificationForm" style="width: 500px; padding: 50px; background: rgba(255,255,255,0.2); border: ridge; border-radius: 10px;">
+    <div id="title">
+        <center>
+            <img src="./images/shield_title.png" alt="Shield 4.0" style="max-width: 80%; margin-left: 30px; margin-right: 30px;">
+            <h3>4.0</h3>
+            <h4>Exam Login</h4>
+        </center>
+    </div>
+    <form action="" method="post" onsubmit="return false">
+
+        <div class="form-group">
+            <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control mb-3" required placeholder="Enter Phone Number">
+
+            <center>
                 <div id="recaptcha-container" style="width: 100%;"></div>
-                </center>
-            </div>
-            <div class="form-group">
-                <!-- <label for="password">
+            </center>
+        </div>
+        <div class="form-group">
+            <!-- <label for="password">
                     <i class="fa fa-lock" aria-hidden="true"></i>&emsp;Password
                 </label> -->
-                <center>
+            <center>
                 <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success mb-2 mr-2" id="sendOtpBtn">
-                </center>
-            </div>
-            <div class="form-group" align='center' style="display: none;">
-                <input type="number" name="otp-input" id="otp-input" class="form-control mb-2 login-control" required placeholder="Enter the OTP">
-                <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success mb-2 mr-2">
-                <input type="reset" value="Reset" class="btn btn-danger mb-2 mr-2">
-            </div>
-        </form>
-    </div>
+            </center>
+        </div>
+        <div class="form-group" align='center' style="display: none;" id="otp-div">
+            <input type="number" name="otp-input" id="otp-input" class="form-control mb-2 login-control" required placeholder="Enter the OTP">
+            <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success mb-2 mr-2">
+            <input type="reset" value="Reset" class="btn btn-danger mb-2 mr-2">
+        </div>
+    </form>
+</div>
 
 
 
