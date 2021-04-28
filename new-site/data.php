@@ -5,8 +5,14 @@ $eventData = [
         "Virtual Treasure Hunt",
         "./images/events/1.gif",
         "./docs/tre_hunt.pdf",
-        "The Game totally depends on your ability to search things on internet. \n Find Codes Crack Codes And Win! Game based on CTF (CAPTURE THE FLAG).
-        You have to find passwords and decode some codes.This game is also known as an Online Scavenger Hunt, Digital Scavenger Hunt or Virtual Treasure Hunt. ",
+        "Virtual Treasure Hunt totally dependens on your ability to search things on the Internet as soon as possible.
+        It consist of 2 rounds as follows:
+        1.Crack Me and Capture The Flag.
+        2.Quick Meet.
+        Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.
+        You have to find passwords by decoding some Codes. 
+        Stratigically, Find Codes, Crack them and Win!.
+        This game is also known as Digital Scavenger Hunt.",
         "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"
     ],
     [
@@ -14,7 +20,11 @@ $eventData = [
         "C Quiz",
         "./images/events/c.gif",
         "./docs/c_quiz.pdf",
-        "The game is totally based on c programming knowledge of participant. 20 MCQ (Multiple Choice Question) in 30 minutes. In the case of tie then maximum score and minimum time taken for solving all the questions will considered. Solve all the questions in minimum time and win prizes! ",
+        "C Quiz is just based on deep knowledge and conceptual understanding of C programming language of the aspirant.
+        There will be 20 MCQ (Multiple Choice Questions) and time allocated will be 30 minutes.
+        In case of tie the Time Complexity will be considered as an important parameter in the Scene. 
+        Solve all the questions in minimum time \n
+        Think like a Compiler and win amazing prizes! ",
         "Coordinators:-\n<ul><li>Kalpak Nemade</li><li>Mahesh Pimparkar</li></ul>Contact No:-<a href=\"tel:+9173050103025\">+9173050103025</a>"  
     ],
     [
@@ -22,8 +32,11 @@ $eventData = [
         "GK Quiz",
         "./images/events/gk.gif",
         "./docs/About_gk.pdf",
-        "The Game totally depends on the intelligence/GK of the participants.
-        There are 2 rounds of this game. First round will be of Online MCQ (Multiple Choice Question) which is fully based on general knowledge , current affairs, etc. ",
+        "The Game totally depends on the intelligence and General Knowledge of the participant.
+        It consist of 2 rounds as follows:
+        1.Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.
+        2.Quick Meet will be arranged on aptitute and questioning.
+        Final Winners will be decided on the basis of 2nd round.",
         "Coordinators:-\n<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact No:-<a href=\"tel:+919370440747\">+919370440747    </a>"  
     ],
     [
@@ -31,8 +44,9 @@ $eventData = [
         "PPT/Poster Presentation",
         "./images/events/ppt.gif",
         "./docs/ppt.pdf",
-        "The competition mainly focuses on your speaking skills and your way of
-        presentation on any of the given topics.You will be given merit points on the basis of your presentation. Participants with most merit points will be declared winner by the authorities. PPTs will be given more precedence than Posters. ",
+        "The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.
+        You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.
+        Note:PPTs will be given more precedence over Posters. ",
         "Coordinators:-\n<ul><li>Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact No:-<a href=\"tel:+917666124625\">+917666124625</a>"  
     ],
     [
@@ -40,7 +54,9 @@ $eventData = [
         "Project Copetition",
         "./images/events/project.gif",
         "./docs/pro_pres.pdf",
-        "The game is totally based on knowledge and creativity of all participants.Project quality matters irrespective of method (e.g. if there is a code then code complexity, time complexity.)Every member has specific role in project.",
+        "The Compitition is based on knowledge coupled with cleverness of participant.
+        Project quality matters irrespective of methods (e.g. if there is a code then Space complexity, time complexity)
+        Every member should have crucial role in project.",
         "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact No:-<a href=\"tel:+9173050103025\">+9173050103025</a>"  
     ],
     [
@@ -48,7 +64,10 @@ $eventData = [
         "Online Chess",
         "./images/events/chess.gif",
         "./docs/Chess.pdf",
-        "The competition will be conducted on website”lichess.org”.All participants should be register on website”lichess.org” Participants should only use WhatsApp mobile no for registration of Shield4.0. Each participant will be informed via Email or WhatsApp for further activities.",
+        "The competition is based on foresightedness and perseverance of participant. 
+        It will be conducted on website ”lichess.org”.
+        All participants should register on the website ”lichess.org” to paricipate in the compitition. 
+        Participants should only use their respective WhatsApp mobile no. for registrating in Shield4.0, Further details will be informed to each aspirant via Email or WhatsApp.",
         "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li>Komal Dhake</li></ul>Contact No:-<a href=\"tel:+918149874939\">+918149874939</a>"  
     ],
     [
@@ -56,13 +75,14 @@ $eventData = [
         "Talent Hunt",
         "./images/events/talhunt.gif",
         "./docs/talent_hunt.pdf",
-        "This competition is based on your talent and skills. This competition is conducted to search real talent. There will be 3 rounds.
- Categories:
-        a. Dance: All type of dance style.
-        b. Song: All types of singing.
-        c. Speaking: Speech, poetry, stand-up comedy
-        d. Art: Doodle
-        e. Instrument Playing ",
+        "This competition is based on your talents and skills. This competition is conducted in investiagtion of real talent. 
+        It consist of 3 rounds.
+        Categories:
+        a. Dance:             All forms of dance.
+        b. Song:              All types of singing.
+        c. Speaking:          Speech, poetry, stand-up comedy.
+        d. Art:               Doodle
+        e. Instrumental Art : Guitar Flute etc.",
         "Coordinators:-\n<ul><li>Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact No:-<a href=\"tel:+917588330219\">+917588330219</a>"  
     ],
 ];
