@@ -43,7 +43,7 @@ Treasure Hunt511
                     &emsp;&emsp;<?php echo nl2br($eData[5]); ?>
                 </div><br><br>
                 <div class="text-left" >
-                    <?php echo nl2br($eData[5]); ?>
+                    <?php echo nl2br($eData[6]); ?>
                 </div>
 
                 <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success" style=" margin-bottom: 10px; margin-top:10px;">
