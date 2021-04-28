@@ -20,6 +20,7 @@ $eventData = [
         "C Quiz",
         "./images/events/c.gif",
         "./docs/c_quiz.pdf",
+        "./images/comp/c.gif",
         "C Quiz is just based on deep knowledge and conceptual understanding of C programming language of the aspirant.
         There will be 20 MCQ (Multiple Choice Questions) and time allocated will be 30 minutes.
         In case of tie the Time Complexity will be considered as an important parameter in the Scene. 
@@ -32,6 +33,7 @@ $eventData = [
         "GK Quiz",
         "./images/events/gk.gif",
         "./docs/About_gk.pdf",
+        "./images/comp/gk.gif",
         "The Quiz totally depends on the intelligence and General Knowledge of the participant.
         It consist of 2 rounds as follows:
         1.Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.
@@ -44,6 +46,7 @@ $eventData = [
         "PPT/Poster Presentation",
         "./images/events/ppt.gif",
         "./docs/ppt.pdf",
+        "./images/comp/ppt.gif",
         "The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.
         You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.
         Note:PPTs will be given more precedence over Posters. ",
@@ -54,6 +57,7 @@ $eventData = [
         "Project Copetition",
         "./images/events/project.gif",
         "./docs/pro_pres.pdf",
+        "./images/comp/project.gif",
         "The Compitition is based on knowledge coupled with cleverness of participant.
         Project quality matters irrespective of methods (e.g. if there is a code then Space complexity, time complexity)
         Every member should have crucial role in project.",
@@ -64,6 +68,7 @@ $eventData = [
         "Online Chess",
         "./images/events/chess.gif",
         "./docs/Chess.pdf",
+        "./images/comp/chess.gif",
         "The competition is based on foresightedness and perseverance of participant. 
         It will be conducted on website ”lichess.org”.
         All participants should register on the website ”lichess.org” to paricipate in the compitition. 
@@ -75,6 +80,7 @@ $eventData = [
         "Talent Hunt",
         "./images/events/talhunt.gif",
         "./docs/talent_hunt.pdf",
+        "./images/comp/talhunt.gif",
         "This competition is based on your talents and skills. This competition is conducted in investiagtion of real talent. 
         It consist of 3 rounds.
         Categories:

@@ -128,7 +128,7 @@
 
                         <div class="event-container" data-aos="zoom-in" onclick="openPage('<?php echo $eventData[$i][0]; ?>')">
                             <div class="main">
-                                <img loading="lazy" src="<?php echo $eventData[$i][2]; ?>" alt="<?php echo $eventData[$i][1]; ?>" class="image-event">
+                                <img loading="lazy" src="<?php echo $eventData[$i][4]; ?>" alt="<?php echo $eventData[$i][1]; ?>" class="image-event">
                                  <h5 class="font-styled-header">
                                     <?php echo $eventData[$i][1]; ?>
                                 </h5> 
