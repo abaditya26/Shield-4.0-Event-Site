@@ -40,10 +40,10 @@ Treasure Hunt511
                     <b><?php echo $eData[1]; ?></b>
                 </h2>
                 <div class="card-text text-left">
-                    &emsp;&emsp;<?php echo nl2br($eData[4]); ?>
+                    &emsp;&emsp;<?php echo nl2br($eData[5]); ?>
                 </div><br><br>
                 <div class="text-left">
-                    <?php echo nl2br($eData[5]); ?>
+                    <?php echo nl2br($eData[6]); ?>
                 </div>
 
                 <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success" style=" margin-bottom: 10px; margin-top:10px;">

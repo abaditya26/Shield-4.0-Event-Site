@@ -5,6 +5,7 @@ $eventData = [
         "Virtual Treasure Hunt",
         "./images/events/1.gif",
         "./docs/tre_hunt.pdf",
+        "./images/comp/1.gif",
         "Virtual Treasure Hunt totally dependens on your ability to search things on the Internet as soon as possible.
         It consist of 2 rounds as follows:
         <ol><li>Crack Me and Capture The Flag.</li><li>Quick Meet.</li></ol>Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.
@@ -12,6 +13,7 @@ $eventData = [
         Virtual Treasure Hunt is also known as Digital Scavenger Hunt. \n
         <center><h5><i><b> \"Stratigically, Find Codes, Crack them and Win!.\" <b> </i> </h5> </center> ",
         "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact :- <a href=\"tel:+918975311578\">Call For Inquiry</a>"
+        
     ],
     [
         "CQuiz",
