@@ -31,10 +31,10 @@ Treasure Hunt511
     <center>
 
         <div class="card w-75" style="width: auto; background: black;">
-        <center>
+            <center>
 
-            <img src="<?php echo $eData[2]; ?>" class="card-img-top" style="width:auto;max-width: 80%; border: ridge; margin:2%;">
-        </center>
+                <img src="<?php echo $eData[2]; ?>" class="card-img-top" style="width:auto;max-width: 80%; border: ridge; margin:2%;">
+            </center>
             <div class="card-body">
                 <h2 class="card-title font-styled-header">
                     <b><?php echo $eData[1]; ?></b>
@@ -45,12 +45,12 @@ Treasure Hunt511
                 <div class="text-left">
                     <?php echo nl2br($eData[5]); ?>
                 </div>
-        
-                <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success">
+
+                <a href="./registration.php?id=<?php echo $eData[0]; ?>" class="btn btn-success" style=" margin-bottom: 10px; margin-top:10px;">
                     Register
                 </a>
 
-                <a href="<?php echo $eData[3]; ?>" class="btn btn-primary" style="margin-left: 10px;">
+                <a href="<?php echo $eData[3]; ?>" class="btn btn-primary" style="margin-left: 10px; margin-bottom: 10px;">
                     Download Instructions(PDF)
                 </a>
             </div>
