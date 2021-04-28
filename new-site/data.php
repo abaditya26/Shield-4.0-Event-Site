@@ -12,8 +12,8 @@ $eventData = [
         Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.
         You have to find passwords by decoding some Codes. 
         Stratigically, Find Codes, Crack them and Win!.
-        This game is also known as Digital Scavenger Hunt.",
-        "Coordinators:-\n<ul><li>Mahesh Pimparkar</li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"
+        Virtual Treasure Hunt is also known as Digital Scavenger Hunt.",
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"
     ],
     [
         "CQuiz",
@@ -32,7 +32,7 @@ $eventData = [
         "GK Quiz",
         "./images/events/gk.gif",
         "./docs/About_gk.pdf",
-        "The Game totally depends on the intelligence and General Knowledge of the participant.
+        "The Quiz totally depends on the intelligence and General Knowledge of the participant.
         It consist of 2 rounds as follows:
         1.Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.
         2.Quick Meet will be arranged on aptitute and questioning.
