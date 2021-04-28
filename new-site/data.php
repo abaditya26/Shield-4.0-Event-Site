@@ -55,7 +55,7 @@ $eventData = [
         "The Compitition is based on knowledge coupled with cleverness of participant.
         Project quality matters irrespective of methods (e.g. if there is a code then Space complexity, time complexity)
         Every member should have crucial role in project.",
-        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For Inquiry</a>"  
+        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact :- <a href=\"tel:+917350103025\">Call For Inquiry</a>"  
     ],
     [
         "chess",
