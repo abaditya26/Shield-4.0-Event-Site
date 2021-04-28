@@ -14,6 +14,7 @@ window.onload = function () {
             showLogin();
         }
     });
+    verifyIfPro()
 }
 
 function checkIfUserExist(user) {
@@ -74,6 +75,7 @@ function generateOtp() {
     var number = document.getElementById('phoneNo').value;
     if (number.length < 10) {
         alert('enter valid number');
+        return;
     }
     showLoading();
     const appVerifier = window.recaptchaVerifier;
@@ -108,6 +110,8 @@ function verifyOtp() {
         checkIfUserExist(user);
     }).catch((e) => {
         console.log(e);
+        showOtpInput();
+        showLogin();
         alert(e);
     });
 }

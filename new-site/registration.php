@@ -38,7 +38,7 @@ if (isset($_GET['id'])) {
 
 
 
-<div class="container" id="otpVerificationForm" style="width: 500px; padding: 50px; background: rgba(255,255,255,0.2); border: ridge; border-radius: 10px;">
+<div class="container" id="otpVerificationForm" style="max-width: 500px; padding: 50px; background: rgba(255,255,255,0.2); border: ridge; border-radius: 10px;">
     <div id="title">
         <center>
             <img src="./images/shield_title.png" alt="Shield 4.0" style="max-width: 80%; margin-left: 30px; margin-right: 30px;">
@@ -73,7 +73,7 @@ if (isset($_GET['id'])) {
 
 
 
-<div class="container">
+<div class="container" onload="verifyIfPro()">
     <form action="" method="post" id="registrationForm" style="display: none;" onsubmit="return registerUser()">
         <center>
             <h3>
