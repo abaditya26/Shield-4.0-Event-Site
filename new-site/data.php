@@ -13,7 +13,7 @@ $eventData = [
         You have to find passwords by decoding some Codes. 
         Stratigically, Find Codes, Crack them and Win!.
         Virtual Treasure Hunt is also known as Digital Scavenger Hunt.",
-        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact No:-<a href=\"tel:+918975311578\">+918975311578</a>"
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact :- <a href=\"tel:+918975311578\">Call For Inquiry</a>"
     ],
     [
         "CQuiz",
@@ -25,7 +25,7 @@ $eventData = [
         In case of tie the Time Complexity will be considered as an important parameter in the Scene. 
         Solve all the questions in minimum time \n
         Think like a Compiler and win amazing prizes! ",
-        "Coordinators:-\n<ul><li>Kalpak Nemade</li><li>Mahesh Pimparkar</li></ul>Contact No:-<a href=\"tel:+9173050103025\">+9173050103025</a>"  
+        "Coordinators:-\n<ul><li>Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For Inquiry</a>"  
     ],
     [
         "GkQuiz",
@@ -37,7 +37,7 @@ $eventData = [
         1.Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.
         2.Quick Meet will be arranged on aptitute and questioning.
         Final Winners will be decided on the basis of 2nd round.",
-        "Coordinators:-\n<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact No:-<a href=\"tel:+919370440747\">+919370440747    </a>"  
+        "Coordinators:-\n<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For Inquiry</a>"  
     ],
     [
         "ppt",
@@ -47,7 +47,7 @@ $eventData = [
         "The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.
         You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.
         Note:PPTs will be given more precedence over Posters. ",
-        "Coordinators:-\n<ul><li>Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact No:-<a href=\"tel:+917666124625\">+917666124625</a>"  
+        "Coordinators:-\n<ul><li>Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For Inquiry</a>"  
     ],
     [
         "project",
@@ -57,7 +57,7 @@ $eventData = [
         "The Compitition is based on knowledge coupled with cleverness of participant.
         Project quality matters irrespective of methods (e.g. if there is a code then Space complexity, time complexity)
         Every member should have crucial role in project.",
-        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact No:-<a href=\"tel:+9173050103025\">+9173050103025</a>"  
+        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For Inquiry</a>"  
     ],
     [
         "chess",
@@ -68,7 +68,7 @@ $eventData = [
         It will be conducted on website ”lichess.org”.
         All participants should register on the website ”lichess.org” to paricipate in the compitition. 
         Participants should only use their respective WhatsApp mobile no. for registrating in Shield4.0, Further details will be informed to each aspirant via Email or WhatsApp.",
-        "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li>Komal Dhake</li></ul>Contact No:-<a href=\"tel:+918149874939\">+918149874939</a>"  
+        "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li>Komal Dhake</li></ul>Contact :- <a href=\"tel:+918149874939\">Call For Inquiry</a>"  
     ],
     [
         "talent",
@@ -83,7 +83,7 @@ $eventData = [
         c. Speaking:          Speech, poetry, stand-up comedy.
         d. Art:               Doodle
         e. Instrumental Art : Guitar Flute etc.",
-        "Coordinators:-\n<ul><li>Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact No:-<a href=\"tel:+917588330219\">+917588330219</a>"  
+        "Coordinators:-\n<ul><li>Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact :- <a href=\"tel:+917588330219\">Call For Inquiry</a>"  
     ],
 ];
 ?>
