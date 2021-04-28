@@ -1,13 +1,23 @@
 <?php include "./header.php"; ?>
 <?php include "./data.php"; ?>
-<?php 
-$eId="";
-if(isset($_GET['id'])){
+<?php
+$eId = "";
+if (isset($_GET['id'])) {
     extract(($_GET));
     $eId = $id;
 }
 ?>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .main-container {
+        margin-top: 2%;
+        border-radius: 10px;
+        padding: 10px;
+        border: inset;
+        border-width: 5px;
+        outline: none;
+    }
+</style>
 
 <!-- registration form goes here -->
 
@@ -21,30 +31,50 @@ follow the given IDs
 
 <!-- temp code to be removed -->
 
-<div class="container" id="loading" style="display: none;">
-
-<center>
-    Loading...
-</center>
-
+<div class="container" id="loading" style="display: none; top: 45%; -ms-transform: translateY(-50%); ">
+    <center>
+        <div class="loader"></div>
+    </center>
 </div>
-<center>
-<div class="container login " >
-    <form action="" method="post" onsubmit="return false" id="otpVerificationForm">
-
-        <div class="form-group">
-            <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control  w-50 mb-2" required placeholder="Enter Phone Number">
-            <div id="recaptcha-container"></div>
-            <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success my-2" id="sendOtpBtn">
-        </div>
-        <div class="form-group">
-            <input type="number" name="otp-input" id="otp-input" class="form-control w-50 mb-2" required placeholder="Enter the OTP">
-            <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success mb-2">
-        </div>
-
-    </form>
 </div>
-</center>
+
+<style>
+    .login {
+        max-width: 330px;
+    }
+</style>
+
+
+
+
+    <div class="container" style="width: 500px; padding: 50px; background: rgba(255,255,255,0.2); border: ridge; border-radius: 10px;">
+        
+        <form action="" method="post" onsubmit="return false" id="otpVerificationForm">
+            <div class="form-group">
+                <!-- <i class="fa fa-lock" aria-hidden="true"></i>&emsp;Phone No -->
+                <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control mb-3" required placeholder="Enter Phone Number">
+                
+                <center>
+                <div id="recaptcha-container" style="width: 100%;"></div>
+                </center>
+            </div>
+            <div class="form-group">
+                <!-- <label for="password">
+                    <i class="fa fa-lock" aria-hidden="true"></i>&emsp;Password
+                </label> -->
+                <center>
+                <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success mb-2 mr-2" id="sendOtpBtn">
+                </center>
+            </div>
+            <div class="form-group" align='center' style="display: none;">
+                <input type="number" name="otp-input" id="otp-input" class="form-control mb-2 login-control" required placeholder="Enter the OTP">
+                <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success mb-2 mr-2">
+                <input type="reset" value="Reset" class="btn btn-danger mb-2 mr-2">
+            </div>
+        </form>
+    </div>
+
+
 
 <div class="container">
     <form action="" method="post" id="registrationForm" style="display: none;" onsubmit="return registerUser()">
@@ -64,7 +94,7 @@ follow the given IDs
             <label for="email">
                 Enter Your Email
             </label>
-            <input type="email" name="email" id="email"  class="form-control" required placeholder="Enter Your Email Address">
+            <input type="email" name="email" id="email" class="form-control" required placeholder="Enter Your Email Address">
         </div>
         <div class="form-group">
             <label for="phoneNo">
@@ -90,24 +120,26 @@ follow the given IDs
             </label>
             <select name="event" id="event" class="form-control" onchange="verifyIfPro()">
                 <option value="select">--Select Event--</option>
-                <?php for($i=0;$i<sizeof($eventData);$i++){
-                    ?>
-                        <option value="<?php echo $eventData[$i][0]; ?>" <?php if($eId==$eventData[$i][0]){echo "selected";} ?>  ><?php echo $eventData[$i][1]; ?></option>
-                    <?php
+                <?php for ($i = 0; $i < sizeof($eventData); $i++) {
+                ?>
+                    <option value="<?php echo $eventData[$i][0]; ?>" <?php if ($eId == $eventData[$i][0]) {
+                                                                            echo "selected";
+                                                                        } ?>><?php echo $eventData[$i][1]; ?></option>
+                <?php
                 } ?>
             </select>
         </div>
         <div class="container" id="prodiv" style="display: none; border:ridge; padding:10px;border-radius: 15px;">
             <div class="form-group">
-            <label for="participantCount">
-                Select Number Of Participant For Your Team (Participants Should Be From Same Collage)
-            </label>
-            <select name="participantCount" id="participantCount" class="form-control" onchange="enableEntries()">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
+                <label for="participantCount">
+                    Select Number Of Participant For Your Team (Participants Should Be From Same Collage)
+                </label>
+                <select name="participantCount" id="participantCount" class="form-control" onchange="enableEntries()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
             </div>
             <br>
             <div class="container" id="participant1div" style="border: ridge;display: none; padding:10px; border-radius: 15px;">
