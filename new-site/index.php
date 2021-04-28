@@ -174,9 +174,9 @@
                         </h5>
                         <div style="display: block;align-content: space-evenly;" class="font-styled-header">
                         <a href="https://instagram.com\ab_aditya_26\"> Aditya Bodhankar </a><br>
-                        <a href="https://instagram.com\ab_aditya_26\"> Kalpak Nemade </a><br>&nbsp;&nbsp;&nbsp;<br>
-                        <a href="https://instagram.com\ab_aditya_26\"> Vishal Chaudhary </a><br><br>
-                        <a href="https://instagram.com\ab_aditya_26\"> Mahesh Pimparkar </a><br><br>
+                        <a href="https://instagram.com\ab_aditya_26\"> Kalpak Nemade </a>&nbsp;<br>
+                        <a href="https://instagram.com\ab_aditya_26\"> Vishal Chaudhary </a><br>
+                        <a href="https://instagram.com\ab_aditya_26\"> Mahesh Pimparkar </a><br>
                         </div>
                     </div>
                 </div>
