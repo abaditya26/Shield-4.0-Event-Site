@@ -1,11 +1,14 @@
 
 /* common stylesheet */
-html,body{
+html,
+body {
     height: 100%;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(rgba(1, 1, 1, 0.92), rgba(1, 1, 1, 0.8)), url("../images/background.png");
@@ -25,20 +28,21 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
 }
-.nav-link{
+
+.nav-link {
     display: inline;
     font-size: 120%;
 }
 
-.navlink:hover a{
+.navlink:hover a {
     font-size: 120%;
-    background-color: rgb(255, 0, 255,0.4);
+    background-color: rgb(255, 0, 255, 0.4);
     border: ridge;
     border-radius: 10px;
     border-color: rgba(194, 40, 86, 0.404);
     color: white;
-    font-size: 100%!important;
-    transform: scale(1)!important;
+    font-size: 100% !important;
+    transform: scale(1) !important;
 }
 
 .monospace {
@@ -71,8 +75,8 @@ li {
     color: white;
 }
 
-.top-header-div{
-    display: flex; 
+.top-header-div {
+    display: flex;
     width: fit-content;
 }
 
@@ -85,7 +89,7 @@ li {
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     color: black;
     cursor: pointer;
     padding: 5px;
@@ -98,38 +102,51 @@ li {
 }
 
 #videoElement {
-	height: 150px;
-	background-color: #666;
+    height: 150px;
+    background-color: #666;
 }
+
 @media only screen and (max-device-width: 480px) {
     .font-styled-header {
         font-family: 'Courier New', Courier, monospace;
         font-size: 16px;
         margin: 10px;
     }
-  }
-  .loader {
+}
+
+.loader {
     border: 10px solid #f3f3f3;
     border-radius: 50%;
     border-top: 10px solid blue;
     border-bottom: 10px solid blue;
-  
+
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
-#loading{
-    display: none; 
-    top: 65%; 
+
+#loading {
+    display: none;
+    top: 65%;
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
