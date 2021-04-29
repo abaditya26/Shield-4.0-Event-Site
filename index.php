@@ -173,9 +173,9 @@
                             Site Developed By:-
                         </h5>
                         <div style="display: block;align-content: space-evenly;" class="font-styled-header">
-                        <a href="https://instagram.com\ab_aditya_26\"> Aditya Bodhankar </a><br>
-                        <a href="https://instagram.com\kalpak_jn\"> Kalpak Nemade </a>&nbsp;<br>
-                        <a href="https://instagram.com\__.v.ishal__\"> Vishal Chaudhary </a><br>
+                        <a href="https://instagram.com\ab_aditya.zip\"> Aditya Bodhankar </a><br>
+                        <a href="https://instagram.com\kalpak_jn.zip\"> Kalpak Nemade </a>&nbsp;<br>
+                        <a href="https://instagram.com\vishal.zip\"> Vishal Chaudhary </a><br>
                         <a href="https://instagram.com\mahesh.zip\"> Mahesh Pimparkar </a><br>
                         </div>
                     </div>
