@@ -27,7 +27,7 @@ $eventData = [
         <li>In case of tie the Time Complexity will be considered as an important parameter in the Scene. </li>
         <li>Solve all the questions in minimum time </li></ul><br>
         <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Think like a Compiler and win amazing prizes!\" </b> </i> </h5> </center> ",
-        "Coordinators:-\n<ul><li>Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\kalpak_jn.zip\">Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For More Inquiry</a>"  
     ],
     [
         "GkQuiz",
