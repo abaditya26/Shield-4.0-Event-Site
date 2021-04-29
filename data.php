@@ -74,7 +74,7 @@ $eventData = [
         <li>It will be conducted on website ”lichess.org”.</li>
         <li>All participants should register on the website ”lichess.org” to paricipate in the compitition. </li>
         <li>Participants should only use their respective WhatsApp mobile no. for registrating in Shield4.0, Further details will be informed to each aspirant via Email or WhatsApp.</li></ul>",
-        "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li>Komal Dhake</li></ul>Contact :- <a href=\"tel:+918149874939\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</li></ul>Contact :- <a href=\"tel:+918149874939\">Call For More Inquiry</a>"  
     ],
     [
         "talent",
