@@ -11,7 +11,7 @@ $eventData = [
         <ol><li>Crack Me and Capture The Flag.</li><li>Quick Meet.</li></ol></li>
         <li>Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.</li>
         <li>You have to find passwords by decoding some Codes.</li>
-        Virtual Treasure Hunt is also known as Digital Scavenger Hunt. \n
+        <li>Virtual Treasure Hunt is also known as Digital Scavenger Hunt.<br></li></ul>
         <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Stratigically, Find Codes, Crack them and Win!.\" </b> </i> </h5> </center> ",
         "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact :- <a href=\"tel:+918975311578\">Call For Inquiry</a>"
         

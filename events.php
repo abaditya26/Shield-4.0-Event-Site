@@ -30,7 +30,7 @@ Treasure Hunt511
 
     <center>
 
-        <div class="card w-75" style="width: auto; background: black;">
+        <div class="card container" style="width: auto; background: black;">
             <center>
 
                 <img src="<?php echo $eData[2]; ?>" class="card-img-top" style="width:auto;max-width: 80%; border: ridge; margin:2%;">
