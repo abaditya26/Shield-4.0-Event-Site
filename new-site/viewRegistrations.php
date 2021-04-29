@@ -16,8 +16,7 @@
 
 <div class="container" id="loading">
     <center>
-        <br><br><br><br>
-        Loading...
+        <div class="loader"></div>
     </center>
 </div>
 

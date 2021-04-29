@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
 
 <!-- temp code to be removed -->
 
-<div class="container" id="loading" style="display: none; top: 45%; -ms-transform: translateY(-50%); ">
+<div class="container" id="loading">
     <center>
         <div class="loader"></div>
     </center>
