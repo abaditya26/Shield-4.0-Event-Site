@@ -40,7 +40,7 @@ $eventData = [
         <ol><li>Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.</li>
         <li>Quick Meet will be arranged on aptitute and questioning.</li></ol></li>
         <li>Final Winners will be decided on the basis of 2nd round.</li></ul>",
-        "Coordinators:-\n<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
     ],
     [
         "ppt",
