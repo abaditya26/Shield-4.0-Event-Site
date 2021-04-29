@@ -27,7 +27,7 @@ $eventData = [
         <li>In case of tie the Time Complexity will be considered as an important parameter in the Scene. </li>
         <li>Solve all the questions in minimum time </li></ul><br>
         <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Think like a Compiler and win amazing prizes!\" </b> </i> </h5> </center> ",
-        "Coordinators:-\n<ul><li>Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\kalpak_jn.zip\">Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For More Inquiry</a>"  
     ],
     [
         "GkQuiz",
@@ -40,7 +40,7 @@ $eventData = [
         <ol><li>Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.</li>
         <li>Quick Meet will be arranged on aptitute and questioning.</li></ol></li>
         <li>Final Winners will be decided on the basis of 2nd round.</li></ul>",
-        "Coordinators:-<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
     ],
     [
         "ppt",
@@ -51,7 +51,7 @@ $eventData = [
         "<ul><li>The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.</li>
         <li>You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.</li>
         <li>Note:PPTs will be given more precedence over Posters. </li></ul>",
-        "Coordinators:-\n<ul><li>Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\ajinkya__mahajan\">Ajinkya Mahajan</a> </li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
     ],
     [
         "project",
@@ -74,7 +74,7 @@ $eventData = [
         <li>It will be conducted on website ”lichess.org”.</li>
         <li>All participants should register on the website ”lichess.org” to paricipate in the compitition. </li>
         <li>Participants should only use their respective WhatsApp mobile no. for registrating in Shield4.0, Further details will be informed to each aspirant via Email or WhatsApp.</li></ul>",
-        "Coordinators:-\n<ul><li>Sankalp Suryawanshi</li><li>Komal Dhake</li></ul>Contact :- <a href=\"tel:+918149874939\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Sankalp Suryawanshi</li><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</li></ul>Contact :- <a href=\"tel:+918149874939\">Call For More Inquiry</a>"  
     ],
     [
         "talent",
@@ -92,6 +92,6 @@ $eventData = [
         <li>Art:               Doodle</li>
         <li>Instrumental Art : Guitar Flute etc.</li></ol>
         </li></ul>",
-        "Coordinators:-\n<ul><li>Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact :- <a href=\"tel:+917588330219\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\skateryash\">Yash Chaudhary</a> </li><li>Ashwini Pawar </li></ul>Contact :- <a href=\"tel:+917588330219\">Call For More Inquiry</a>"  
     ],
 ];
