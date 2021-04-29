@@ -1,11 +1,14 @@
 var userData = [];
 var userId = "";
+var flag1 = false;
+var flag2 = false;
 
 window.onload = function () {
     hideOtpBtn();
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
         'size': 'normal',
         'callback': (response) => {
+            flag1 = true;
             showOtpBtn();
         },
         'expired-callback': () => {
@@ -148,7 +151,9 @@ function showRegistration() {
 }
 
 function showOtpBtn() {
-    document.getElementById('sendOtpBtn').style.display = "block";
+    if(flag1 && flag2){
+        document.getElementById('sendOtpBtn').style.display = "block";
+    }
 }
 
 function hideOtpBtn() {
@@ -338,5 +343,15 @@ function verifyIfPro() {
 }
 
 
-
+document.getElementById('phoneNo').addEventListener('input', function (evt) {
+    const d = document.getElementById('phoneNo').value;
+    console.log(d)
+    if(d==""){
+        flag2 = false;
+        hideOtpBtn();
+    }else{
+        flag2=true;
+        showOtpBtn();
+    }
+})
 
