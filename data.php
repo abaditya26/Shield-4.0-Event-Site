@@ -40,7 +40,7 @@ $eventData = [
         <ol><li>Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.</li>
         <li>Quick Meet will be arranged on aptitute and questioning.</li></ol></li>
         <li>Final Winners will be decided on the basis of 2nd round.</li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
     ],
     [
         "ppt",
@@ -51,7 +51,7 @@ $eventData = [
         "<ul><li>The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.</li>
         <li>You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.</li>
         <li>Note:PPTs will be given more precedence over Posters. </li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\ajinkya__mahajan\">Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\ajinkya__mahajan\">Ajinkya Mahajan</a> </li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
     ],
     [
         "project",
@@ -92,7 +92,7 @@ $eventData = [
         <li>Art:               Doodle</li>
         <li>Instrumental Art : Guitar Flute etc.</li></ol>
         </li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact :- <a href=\"tel:+917588330219\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\skateryash\">Yash Chaudhary</a> </li><li>Ashwini Pawar </li></ul>Contact :- <a href=\"tel:+917588330219\">Call For More Inquiry</a>"  
     ],
 ];
 ?>
