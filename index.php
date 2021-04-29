@@ -28,8 +28,8 @@
 
         <h1 class="font-styled-header">
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-  <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
-</svg> COMPUTER DEPARTMENT PRESENTS
+                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+            </svg> COMPUTER DEPARTMENT PRESENTS
         </h1>
         <div class="title"><br><br><br><br><br>
             <h1>
@@ -106,13 +106,14 @@
         .event-container:hover .middle {
             opacity: 1;
         }
-        .image-event{
-            width:auto;
-            max-width: 90%; 
-            height: 180px; 
+
+        .image-event {
+            width: auto;
+            max-width: 90%;
+            height: 180px;
             object-fit: cover;
-            object-position: center; 
-            margin:10px;
+            object-position: center;
+            margin: 10px;
         }
     </style>
     <!-- content goes here -->
@@ -129,9 +130,9 @@
                         <div class="event-container" data-aos="zoom-in" onclick="openPage('<?php echo $eventData[$i][0]; ?>')">
                             <div class="main">
                                 <img loading="lazy" src="<?php echo $eventData[$i][4]; ?>" alt="<?php echo $eventData[$i][1]; ?>" class="image-event">
-                                 <h5 class="font-styled-header">
+                                <h5 class="font-styled-header">
                                     <?php echo $eventData[$i][1]; ?>
-                                </h5> 
+                                </h5>
                             </div>
                             <div class="middle">
                                 <div class="btn btn-danger">View Details</div>
@@ -150,11 +151,11 @@
 </section>
 
 <footer class="" style="background-color: rgba(255,255,255,0.1);">
-        <div class="container">
-          <span class="">
+    <div class="container">
+        <span class="">
             <center>
-                
-                <div class="row" >
+
+                <div class="row">
                     <div class="col-md-6" data-aos="fade-left">
                         <div style="text-align: left; margin-left: 15%;" class="font-styled-header"><br>
                             <h5>
@@ -173,29 +174,29 @@
                             Site Developed By:-
                         </h5>
                         <div style="display: block;align-content: space-evenly;" class="font-styled-header">
-                        <a href="https://instagram.com\ab_aditya.zip\"> Aditya Bodhankar </a><br>
-                        <a href="https://instagram.com\kalpak_jn.zip\"> Kalpak Nemade </a>&nbsp;&nbsp;<br>
-                        <a href="https://instagram.com\vishal.zip\"> Vishal Chaudhari </a><br>
-                        <a href="https://instagram.com\mahesh.zip\"> Mahesh Pimparkar </a><br>
+                            <a href="https://instagram.com\ab_aditya.zip\"> Aditya Bodhankar </a><br>
+                            <a href="https://instagram.com\kalpak_jn.zip\"> Kalpak Nemade </a>&nbsp;&nbsp;<br>
+                            <a href="https://instagram.com\vishal.zip\"> Vishal Chaudhari </a><br>
+                            <a href="https://instagram.com\mahesh.zip\"> Mahesh Pimparkar </a><br>
                         </div>
                     </div>
                 </div>
-            <br>
-            
+                <br>
+
             </center>
-          </span>
-        </div>
-      </footer>
+        </span>
+    </div>
+</footer>
 <?php include "./footer.php"; ?>
 <script src="./JS/scroll.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+<script>
     AOS.init();
-  </script>
+</script>
 
 <script>
     function openPage(path) {
-        document.location = './events.php?id=' +path;
+        document.location = './events.php?id=' + path;
     }
 </script>

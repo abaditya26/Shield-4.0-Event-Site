@@ -42,7 +42,7 @@ Treasure Hunt511
                 <div class="card-text text-left">
                     &emsp;&emsp;<?php echo $eData[5]; ?>
                 </div><br><br>
-                <div class="text-left" >
+                <div class="text-left">
                     <?php echo nl2br($eData[6]); ?>
                 </div>
 
@@ -65,6 +65,3 @@ Treasure Hunt511
 
 
 <?php include "./footer.php"; ?>
-
-
-

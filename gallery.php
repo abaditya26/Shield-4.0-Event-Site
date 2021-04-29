@@ -27,7 +27,8 @@ $imageData = [
         cursor: pointer;
         transform: scale(1.1);
     }
-    .col-hover{
+
+    .col-hover {
         transition: .5s ease;
     }
 
@@ -42,12 +43,16 @@ $imageData = [
         <div id="carousel" class="carousel slide" data-ride="carousel" style="background: rgba(255, 255, 255, 0.1); border-radius:20px;">
             <ol class="carousel-indicators">
                 <?php for ($i = 0; $i < sizeof($imageData) && $i < 5; $i++) { ?>
-                    <li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if ($i == 0) { echo 'class="active"'; } ?>></li>
+                    <li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if ($i == 0) {
+                                                                                        echo 'class="active"';
+                                                                                    } ?>></li>
                 <?php } ?>
             </ol>
             <div class="carousel-inner">
                 <?php for ($i = 0; $i < sizeof($imageData) && $i < 5; $i++) { ?>
-                    <div class="carousel-item <?php if ($i == 0) { echo "active"; } ?>">
+                    <div class="carousel-item <?php if ($i == 0) {
+                                                    echo "active";
+                                                } ?>">
                         <img src="<?php echo $imageData[$i][0]; ?>" class="d-block w-100 item-hover" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="max-height: 500px; object-fit: scale-down;object-position: center;">
                     </div>
                 <?php } ?>
@@ -83,9 +88,9 @@ $imageData = [
 </div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+<script>
     AOS.init();
-  </script>
+</script>
 
 <script>
     function openImage(path) {

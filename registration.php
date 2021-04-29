@@ -17,11 +17,12 @@ if (isset($_GET['id'])) {
         border-width: 5px;
         outline: none;
     }
-.login-control{
-    padding: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
+
+    .login-control {
+        padding: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 </style>
 
 <!-- registration form goes here -->
@@ -55,7 +56,6 @@ if (isset($_GET['id'])) {
 
         <div class="form-group">
             <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control mb-3" required placeholder="Enter Phone Number">
-
         </div>
         <div class="form-group" align='center' style="display: none;" id="otp-div">
             <input type="number" name="otp-input" id="otp-input" class="form-control mb-2 login-control" required placeholder="Enter the OTP">

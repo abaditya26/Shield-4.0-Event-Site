@@ -105,9 +105,9 @@ if (isset($_POST['examId'])) {
                     Not Attempted Questions :- <span id="notAttemptedQuestionCount">20</span>
                 </div>
                 <div class="col-md-4">
-                <center>
-                <video autoplay="true" id="videoElement"></video>
-                </center>
+                    <center>
+                        <video autoplay="true" id="videoElement"></video>
+                    </center>
                 </div>
                 <div class="col-md-4"></div>
             </div>

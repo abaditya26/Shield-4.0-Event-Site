@@ -40,7 +40,7 @@ $eventData = [
         <ol><li>Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.</li>
         <li>Quick Meet will be arranged on aptitute and questioning.</li></ol></li>
         <li>Final Winners will be decided on the basis of 2nd round.</li></ul>",
-        "Coordinators:-\n<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
+        "Coordinators:-<ul><li>Komal Dhake</li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
     ],
     [
         "ppt",
@@ -95,4 +95,3 @@ $eventData = [
         "Coordinators:-\n<ul><li>Yash Chaudhary</li><li>Ashwini Pawar</li></ul>Contact :- <a href=\"tel:+917588330219\">Call For More Inquiry</a>"  
     ],
 ];
-?>

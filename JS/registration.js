@@ -6,13 +6,13 @@ window.onload = function () {
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
         'size': 'normal',
         'callback': (response) => {
-          showOtpBtn();
+            showOtpBtn();
         },
         'expired-callback': () => {
-          // Response expired. Ask user to solve reCAPTCHA again.
-          // ...
+            // Response expired. Ask user to solve reCAPTCHA again.
+            // ...
         }
-      });
+    });
     recaptchaVerifier.render();
 
     showLoading();
@@ -110,7 +110,7 @@ function generateOtp() {
 
 function showOtpInput() {
     document.getElementById('otp-div').style.display = "block";
-    document.getElementById('recaptcha-container').style.display="none"
+    document.getElementById('recaptcha-container').style.display = "none"
     hideOtpBtn();
 }
 
@@ -147,18 +147,18 @@ function showRegistration() {
     document.getElementById('registrationForm').style.display = "block"
 }
 
-function showOtpBtn(){
-    document.getElementById('sendOtpBtn').style.display="block";
+function showOtpBtn() {
+    document.getElementById('sendOtpBtn').style.display = "block";
 }
 
-function hideOtpBtn(){
-    document.getElementById('sendOtpBtn').style.display="none";
+function hideOtpBtn() {
+    document.getElementById('sendOtpBtn').style.display = "none";
 }
 
-function resendOtp(){
+function resendOtp() {
     hideOtpBtn();
     document.getElementById('otp-div').style.display = "none";
-    document.getElementById('recaptcha-container').style.display="block"
+    document.getElementById('recaptcha-container').style.display = "block"
 }
 
 

@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../images/shield_logo.png" type="image/x-icon">
 
     <style>
-        body{
+        body {
             min-height: 600px;
         }
     </style>

@@ -17,6 +17,13 @@ window.onload = function () {
         event.preventDefault();
         alert('NO COPY!!!!!!!!!');
     }
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            alert('You Have Changed Window.!');
+            document.location = './dashboard.php';
+        }
+    });
+    document.addEventListener('contextmenu', event => event.preventDefault());
     showLoading();
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -28,7 +35,6 @@ window.onload = function () {
             document.location = './';
         }
     });
-
 }
 
 function loadOld() {
@@ -56,30 +62,30 @@ function loadOld() {
     });
 }
 
-function loadOldTimer(){
-    firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).once('value').then((snapshot)=>{
-        if(snapshot.child('timer').exists()){
+function loadOldTimer() {
+    firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).once('value').then((snapshot) => {
+        if (snapshot.child('timer').exists()) {
             const data = snapshot.val();
             currentTimer = data.timer;
-            if(data.status != undefined){
-                if(data.status=="end"){
+            if (data.status != undefined) {
+                if (data.status == "end") {
                     alert('Already Attempted or time end')
-                    document.location='./dashboard.php';
+                    document.location = './dashboard.php';
                     return;
                 }
             }
-        }else{
+        } else {
             currentTimer = totalTime;
-            firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).set({
-                timer:currentTimer,
-                status:'started'
+            firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).set({
+                timer: currentTimer,
+                status: 'started'
             });
         }
         flag4 = true;
-    }).catch((err)=>{
+    }).catch((err) => {
         console.log(err);
         alert(err);
-        document.location='./dashboard.php';
+        document.location = './dashboard.php';
     })
 }
 
@@ -144,24 +150,24 @@ function loadQuestions() {
 
 function changeQuestion(changeIndex) {
     currentIndex = currentIndex + (changeIndex);
-    if (currentIndex<0){
-        currentIndex=totalQuestions-1;
+    if (currentIndex < 0) {
+        currentIndex = totalQuestions - 1;
     }
-    if(currentIndex>=totalQuestions){
-        currentIndex=0;
+    if (currentIndex >= totalQuestions) {
+        currentIndex = 0;
     }
-    document.getElementById('question').innerHTML=questions[currentIndex][0]
-    document.getElementById('option1Text').innerHTML=questions[currentIndex][1]
-    document.getElementById('option2Text').innerHTML=questions[currentIndex][2]
-    document.getElementById('option3Text').innerHTML=questions[currentIndex][3]
-    document.getElementById('option4Text').innerHTML=questions[currentIndex][4]
-    document.getElementById('questionId').innerHTML=(currentIndex+1)+'/'+totalQuestions
-    document.getElementById('attemptedQuestionCount').innerHTML=attempted+'';
-    document.getElementById('notAttemptedQuestionCount').innerHTML=(totalQuestions-attempted)+'';
+    document.getElementById('question').innerHTML = questions[currentIndex][0]
+    document.getElementById('option1Text').innerHTML = questions[currentIndex][1]
+    document.getElementById('option2Text').innerHTML = questions[currentIndex][2]
+    document.getElementById('option3Text').innerHTML = questions[currentIndex][3]
+    document.getElementById('option4Text').innerHTML = questions[currentIndex][4]
+    document.getElementById('questionId').innerHTML = (currentIndex + 1) + '/' + totalQuestions
+    document.getElementById('attemptedQuestionCount').innerHTML = attempted + '';
+    document.getElementById('notAttemptedQuestionCount').innerHTML = (totalQuestions - attempted) + '';
 
     disableAllRadio();
 
-    
+
     if (questions[currentIndex][1] == questions[currentIndex][6]) {
         document.getElementById('option1').checked = true;
     } else if (questions[currentIndex][2] == questions[currentIndex][6]) {
@@ -199,25 +205,25 @@ function showLoading() {
     document.getElementById('loading').style.display = "block"
 }
 
-function startTimer(){
-    if(!flag5){
-        
+function startTimer() {
+    if (!flag5) {
+
         var x = setInterval(function () {
-            
+
             currentTimer--;
-            if(currentTimer%3==0){
-                firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).update({
-                    timer:currentTimer,
-                    status:"started"
+            if (currentTimer % 3 == 0) {
+                firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).update({
+                    timer: currentTimer,
+                    status: "started"
                 });
             }
-            
-            var seconds = currentTimer%60;
-            var minutes = parseInt(currentTimer/60);
-            var rt = parseInt((currentTimer*100)/totalTime);
-            document.getElementById('timeProgressBar').style.width = rt +"%";
-            document.getElementById('timerDiv').innerHTML=minutes+'minutes : '+seconds+'seconds'
-            
+
+            var seconds = currentTimer % 60;
+            var minutes = parseInt(currentTimer / 60);
+            var rt = parseInt((currentTimer * 100) / totalTime);
+            document.getElementById('timeProgressBar').style.width = rt + "%";
+            document.getElementById('timerDiv').innerHTML = minutes + 'minutes : ' + seconds + 'seconds'
+
             // If the count down is finished, write some text
             if (currentTimer < 0) {
                 clearInterval(x);
@@ -229,13 +235,13 @@ function startTimer(){
     }
 }
 
-function finishExam(){
-    alert('end');
-    firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).update({
-        timer:0,
-        status:'end'
-    }).then((res)=>{
-        document.location='./dashboard.php';
+function finishExam() {
+    alert('Exam End');
+    firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).update({
+        timer: 0,
+        status: 'end'
+    }).then((res) => {
+        document.location = './dashboard.php';
     });
 }
 

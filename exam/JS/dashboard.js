@@ -5,7 +5,7 @@ var eventData = [];
 var eCount = 0;
 var rCount = 0;
 
-window.onload = function(){
+window.onload = function () {
     showLoading();
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -13,78 +13,78 @@ window.onload = function(){
             chechIfUserExists(user);
         } else {
             // User is signed out.
-            document.location='./';
+            document.location = './';
         }
     });
 }
 
-function chechIfUserExists(user){
-    firebase.database().ref('Users/'+user.uid).once('value').then((snapshot)=>{
+function chechIfUserExists(user) {
+    firebase.database().ref('Users/' + user.uid).once('value').then((snapshot) => {
         const data = snapshot.val();
-        if(data.uid == undefined){
+        if (data.uid == undefined) {
             alert('Your data is not recorded. Register First.');
             firebase.auth().signOut();
-            document.location='./';
-        }else{
-            document.getElementById('name').innerHTML=data.name;
-            document.getElementById('phone').innerHTML=data.phoneNo;
+            document.location = './';
+        } else {
+            document.getElementById('name').innerHTML = data.name;
+            document.getElementById('phone').innerHTML = data.phoneNo;
             fetchEvents(user);
         }
         hideLoading();
-    }).catch((error)=>{
+    }).catch((error) => {
         hideLoading();
         alert('error');
         console.log(error);
     });
 }
 
-function fetchEvents(user){
-    firebase.database().ref('Registrations/'+user.uid).once('value').then((snapshot)=>{
+function fetchEvents(user) {
+    firebase.database().ref('Registrations/' + user.uid).once('value').then((snapshot) => {
         var e = [];
         snapshot.forEach(s => {
             const data = s.val();
-            if(data.event!=undefined){
+            if (data.event != undefined) {
                 console.log(data.event);
-                if(data.event=="CQuiz" || data.event=="GkQuiz" || data.event=="CQuiz2" || data.event=="GkQuiz2"){
+                if (data.event == "CQuiz" || data.event == "GkQuiz" || data.event == "CQuiz2" || data.event == "GkQuiz2") {
                     e.push(data.event);
                 }
             }
         });
-        firebase.database().ref('Links/').once('value').then((s)=>{
+        firebase.database().ref('Links/').once('value').then((s) => {
             var eObj = {
-                CQuiz:"C Quiz",
-                GkQuiz:"GK Quiz"
+                CQuiz: "C Quiz",
+                GkQuiz: "GK Quiz"
             };
             e.forEach(ev => {
-                f=true;
+                f = true;
                 s.forEach(snap => {
                     const data = snap.val();
-                    if(data.event!=undefined){
-                        if(ev == data.event){
-                            eventData.push([eObj[ev],ev,ev]);
-                            f=false;
+                    if (data.event != undefined) {
+                        if (ev == data.event) {
+                            eventData.push([eObj[ev], ev, ev]);
+                            f = false;
                         }
                     }
                 });
-                if(f){
-                    eventData.push([eObj[ev],ev,"none"]);
+                if (f) {
+                    eventData.push([eObj[ev], ev, "none"]);
                 }
             });
             showCards();
-        }).catch((err)=>{
+        }).catch((err) => {
             alert(err);
             console.log(err);
         });
-    }).catch((e)=>{
+    }).catch((e) => {
         alert(e);
         console.log(e);
     })
 }
 
 
-function showCards(){
+function showCards() {
     eventData.forEach(e => {
-        createCard(e[0],e[2]);
+        createCard(e[0], e[2]);
     });
 }
 
@@ -121,22 +121,22 @@ function createCard(title, examLink) {
     cardText.classList.add('card-text')
 
     var formDiv = document.createElement('form');
-    formDiv.setAttribute('action','./startExam.php');
-    formDiv.setAttribute('method','POST');
-    formDiv.setAttribute('onsubmit','return confirmStart(\''+title+'\')');
-    
+    formDiv.setAttribute('action', './startExam.php');
+    formDiv.setAttribute('method', 'POST');
+    formDiv.setAttribute('onsubmit', 'return confirmStart(\'' + title + '\')');
+
     var valStore = document.createElement('input');
-    valStore.setAttribute('type','text');
-    valStore.style.display="none";
-    valStore.setAttribute('name','examId');
+    valStore.setAttribute('type', 'text');
+    valStore.style.display = "none";
+    valStore.setAttribute('name', 'examId');
     valStore.value = examLink;
 
     var submitBtn = document.createElement('button');
-    submitBtn.setAttribute('type','submit');
+    submitBtn.setAttribute('type', 'submit');
     submitBtn.classList.add('btn');
     submitBtn.classList.add('btn-success');
-    if(examLink == "" || examLink == "none" || examLink == undefined || examLink=="undefined"){
-        submitBtn.setAttribute('disabled','')
+    if (examLink == "" || examLink == "none" || examLink == undefined || examLink == "undefined") {
+        submitBtn.setAttribute('disabled', '')
     }
     submitBtn.innerHTML = "Start Exam";
 
@@ -156,22 +156,22 @@ function createCard(title, examLink) {
     mainDiv.appendChild(parent)
 }
 
-function confirmStart(title){
-    if(confirm('Start Exam?\nExam Name:-'+title)){
+function confirmStart(title) {
+    if (confirm('Start Exam?\nExam Name:-' + title)) {
         return true;
     }
     return false;
 }
 
-function showLoading(){
-    document.getElementById('main').style.display="none"
-    document.getElementById('loading').style.display="block"
+function showLoading() {
+    document.getElementById('main').style.display = "none"
+    document.getElementById('loading').style.display = "block"
 }
 
-function hideLoading(){
-    if(flag){
-        document.getElementById('main').style.display="block"
-        document.getElementById('loading').style.display="none"
+function hideLoading() {
+    if (flag) {
+        document.getElementById('main').style.display = "block"
+        document.getElementById('loading').style.display = "none"
     }
 }
 
@@ -188,12 +188,12 @@ function hideLoading(){
 
 
 
-function logoutUser(){
-    if(confirm('Do You Want To Log Out')){
+function logoutUser() {
+    if (confirm('Do You Want To Log Out')) {
         firebase.auth().signOut()
             .then(function () {
                 // Sign-out successful.
-                document.location='./';
+                document.location = './';
             }).catch(function (error) {
                 // An error happened.
                 alert(error);

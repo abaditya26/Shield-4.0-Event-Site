@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +29,7 @@
     <div class="header">
 
         <center>
-        <div class="top-header-div">
+            <div class="top-header-div">
                 <img src="../images/gpj_logo.png" alt="GPJ Logo" style="width: 100px;height: 100px;">
                 <h4 class="font-styled-header">
                     Government Polytechnic ,Jalgaon <br>
@@ -49,9 +50,9 @@
         </center>
     </div>
 
-    <div class="container"id="main">
-    
-    <form action="" method="post" onsubmit="return false">
+    <div class="container" id="main">
+
+        <form action="" method="post" onsubmit="return false">
             <div id="title">
                 <center>
                     <img src="../images/shield_title.png" alt="Shield 4.0" style="max-width: 80%; margin-left: 30px; margin-right: 30px;">
@@ -73,9 +74,10 @@
 
         </form>
     </div>
-<br><br><br>
+    <br><br><br>
 
 </body>
+
 </html>
 <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
 <script src="../JS/init.js"></script>
