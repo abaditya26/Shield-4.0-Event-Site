@@ -9,7 +9,7 @@ var attempted = 0;
 var questions = [];
 var currentTimer = 0;
 var currentIndex = -1;
-var totalTime = 3600;
+var totalTime = 1800;
 
 
 window.onload = function () {
@@ -144,8 +144,11 @@ function loadQuestions() {
 
 function changeQuestion(changeIndex) {
     currentIndex = currentIndex + (changeIndex);
-    if (currentIndex < 0 || currentIndex >= totalQuestions) {
-        currentIndex = currentIndex - (changeIndex);
+    if (currentIndex<0){
+        currentIndex=totalQuestions-1;
+    }
+    if(currentIndex>=totalQuestions){
+        currentIndex=0;
     }
     document.getElementById('question').innerHTML=questions[currentIndex][0]
     document.getElementById('option1Text').innerHTML=questions[currentIndex][1]
@@ -226,11 +229,6 @@ function startTimer(){
     }
 }
 
-
-
-
-
-
 function finishExam(){
     alert('end');
     firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).update({
@@ -240,11 +238,6 @@ function finishExam(){
         document.location='./dashboard.php';
     });
 }
-
-
-
-
-
 
 function disableAllRadio() {
     document.getElementById('option1').checked = false;
