@@ -1,13 +1,15 @@
-var flag1 = true; //flag for camera and microphone
+var flag1 = false; //flag for camera and microphone
 var flag2 = false; //question fetch flag
 var flag3 = false;
-var flag4 = false;
-var flag5 = false;
+var flag4 = false; //timer
+var flag5 = false; //timer started
 
 var totalQuestions = 0;
 var attempted = 0;
 var questions = [];
+var currentTimer = 0;
 var currentIndex = -1;
+var totalTime = 3600;
 
 
 window.onload = function () {
@@ -19,7 +21,7 @@ window.onload = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             // User is signed in.
-            // enableCamera();
+            enableCamera();
             loadOld();
         } else {
             // User is signed out.
@@ -34,7 +36,6 @@ function loadOld() {
         attempted = 0;
         snap.forEach(s => {
             const data = s.val();
-            console.log(data);
             totalQuestions++;
             questions.push([data.question, data.option1, data.option2, data.option3, data.option4, data.answer, data.selected, data.id]);
             if (data.selected != "") {
@@ -48,10 +49,38 @@ function loadOld() {
             flag2 = true;
             showView();
             changeQuestion(1);
+            loadOldTimer()
         }
     }).catch((err) => {
         alert(err);
     });
+}
+
+function loadOldTimer(){
+    firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).once('value').then((snapshot)=>{
+        if(snapshot.child('timer').exists()){
+            const data = snapshot.val();
+            currentTimer = data.timer;
+            if(data.status != undefined){
+                if(data.status=="end"){
+                    alert('Already Attempted or time end')
+                    document.location='./dashboard.php';
+                    return;
+                }
+            }
+        }else{
+            currentTimer = totalTime;
+            firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).set({
+                timer:currentTimer,
+                status:'started'
+            });
+        }
+        flag4 = true;
+    }).catch((err)=>{
+        console.log(err);
+        alert(err);
+        document.location='./dashboard.php';
+    })
 }
 
 function enableCamera() {
@@ -72,7 +101,7 @@ function enableCamera() {
 
     setTimeout(() => {
         enableCamera()
-    }, 5000);
+    }, 15000);
 }
 
 function loadQuestions() {
@@ -106,6 +135,7 @@ function loadQuestions() {
         }
         flag2 = true;
         showView();
+        loadOldTimer();
     }).catch((error) => {
         alert(error);
         console.log(error);
@@ -125,6 +155,19 @@ function changeQuestion(changeIndex) {
     document.getElementById('questionId').innerHTML=(currentIndex+1)+'/'+totalQuestions
     document.getElementById('attemptedQuestionCount').innerHTML=attempted+'';
     document.getElementById('notAttemptedQuestionCount').innerHTML=(totalQuestions-attempted)+'';
+
+    disableAllRadio();
+
+    
+    if (questions[currentIndex][1] == questions[currentIndex][6]) {
+        document.getElementById('option1').checked = true;
+    } else if (questions[currentIndex][2] == questions[currentIndex][6]) {
+        document.getElementById('option2').checked = true;
+    } else if (questions[currentIndex][3] == questions[currentIndex][6]) {
+        document.getElementById('option3').checked = true;
+    } else if (questions[currentIndex][4] == questions[currentIndex][6]) {
+        document.getElementById('option4').checked = true;
+    }
 }
 
 const chooseRandom = (arr, num = 1) => {
@@ -141,13 +184,71 @@ const chooseRandom = (arr, num = 1) => {
 };
 
 function showView() {
-    if (flag1 && flag2 && flag3 && flag4 && flag5) {
+    if (flag1 && flag2 && flag4) {
         document.getElementById('main').style.display = "block"
         document.getElementById('loading').style.display = "none"
+        startTimer();
     }
 }
 
 function showLoading() {
     document.getElementById('main').style.display = "none"
     document.getElementById('loading').style.display = "block"
+}
+
+function startTimer(){
+    if(!flag5){
+        
+        var x = setInterval(function () {
+            
+            currentTimer--;
+            if(currentTimer%3==0){
+                firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).update({
+                    timer:currentTimer,
+                    status:"started"
+                });
+            }
+            
+            var seconds = currentTimer%60;
+            var minutes = parseInt(currentTimer/60);
+            var rt = parseInt((currentTimer*100)/totalTime);
+            document.getElementById('timeProgressBar').style.width = rt +"%";
+            document.getElementById('timerDiv').innerHTML=minutes+'minutes : '+seconds+'seconds'
+            
+            // If the count down is finished, write some text
+            if (currentTimer < 0) {
+                clearInterval(x);
+                finishExam();
+                showLoading();
+            }
+        }, 1000);
+        flag5 = true;
+    }
+}
+
+
+
+
+
+
+function finishExam(){
+    alert('end');
+    firebase.database().ref('UserQuestions/'+firebase.auth().currentUser.uid+'/status/'+quizId).update({
+        timer:0,
+        status:'end'
+    }).then((res)=>{
+        document.location='./dashboard.php';
+    });
+}
+
+
+
+
+
+
+function disableAllRadio() {
+    document.getElementById('option1').checked = false;
+    document.getElementById('option2').checked = false;
+    document.getElementById('option3').checked = false;
+    document.getElementById('option4').checked = false;
 }
