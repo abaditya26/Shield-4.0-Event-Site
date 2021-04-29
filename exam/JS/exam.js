@@ -1,4 +1,4 @@
-var flag1 = false; //flag for camera and microphone
+var flag1 = true; //flag for camera and microphone
 var flag2 = false; //question fetch flag
 var flag3 = false;
 var flag4 = false;

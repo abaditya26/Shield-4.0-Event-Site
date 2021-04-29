@@ -1,4 +1,8 @@
+
 /* common stylesheet */
+html,body{
+    height: 100%;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -117,9 +121,7 @@ li {
 }
 #loading{
     display: none; 
-    top: 45%; 
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%); 
+    top: 65%; 
 }
 
 @-webkit-keyframes spin {
