@@ -2,7 +2,17 @@ var userData = [];
 var userId = "";
 
 window.onload = function () {
-    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+    hideOtpBtn();
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+        'size': 'normal',
+        'callback': (response) => {
+          showOtpBtn();
+        },
+        'expired-callback': () => {
+          // Response expired. Ask user to solve reCAPTCHA again.
+          // ...
+        }
+      });
     recaptchaVerifier.render();
 
     showLoading();
@@ -79,6 +89,7 @@ function generateOtp() {
     }
     showLoading();
     const appVerifier = window.recaptchaVerifier;
+    console.log(appVerifier)
     if (!number.includes('+91', 0)) {
         number = "+91" + number
     }
@@ -92,14 +103,15 @@ function generateOtp() {
         showLogin();
     }).catch((err) => {
         console.log(err);
-        showOtpInput();
         showLogin();
     });
 
 }
 
-function showOtpInput(){
-    document.getElementById('otp-div').style.display="block";
+function showOtpInput() {
+    document.getElementById('otp-div').style.display = "block";
+    document.getElementById('recaptcha-container').style.display="none"
+    hideOtpBtn();
 }
 
 function verifyOtp() {
@@ -135,6 +147,19 @@ function showRegistration() {
     document.getElementById('registrationForm').style.display = "block"
 }
 
+function showOtpBtn(){
+    document.getElementById('sendOtpBtn').style.display="block";
+}
+
+function hideOtpBtn(){
+    document.getElementById('sendOtpBtn').style.display="none";
+}
+
+function resendOtp(){
+    hideOtpBtn();
+    document.getElementById('otp-div').style.display = "none";
+    document.getElementById('recaptcha-container').style.display="block"
+}
 
 
 // code for registration
@@ -190,7 +215,7 @@ function registerEntry(user, event) {
     firebase.database().ref('Users/' + user.uid).set(user).then((result) => {
         if (event == "project") {
             const c = parseInt(document.getElementById('participantCount').value);
-            firebase.database().ref('Events/'+event+'/'+user.uid+'/Participant1').set({
+            firebase.database().ref('Events/' + event + '/' + user.uid + '/Participant1').set({
                 name: user.name,
                 phoneNo: user.phoneNo,
                 collageName: user.collageName,
@@ -199,12 +224,12 @@ function registerEntry(user, event) {
                 uid: user.uid,
                 event: event,
                 type: "participant"
-            }).then((res)=>{
+            }).then((res) => {
                 var ct = 0;
-                for(i = 0; i < c;i++){
-                    const n = document.getElementById('participant'+(i+1)+'name').value;
-                    const e = document.getElementById('participant'+(i+1)+'email').value;
-                    firebase.database().ref('Events/'+event+'/'+user.uid+'/Participant'+(i+2)).set({
+                for (i = 0; i < c; i++) {
+                    const n = document.getElementById('participant' + (i + 1) + 'name').value;
+                    const e = document.getElementById('participant' + (i + 1) + 'email').value;
+                    firebase.database().ref('Events/' + event + '/' + user.uid + '/Participant' + (i + 2)).set({
                         name: n,
                         phoneNo: user.phoneNo,
                         collageName: user.collageName,
@@ -213,9 +238,9 @@ function registerEntry(user, event) {
                         uid: user.uid,
                         event: event,
                         type: "participant"
-                    }).then((res)=>{
+                    }).then((res) => {
                         ct++;
-                        if(ct==c){
+                        if (ct == c) {
                             firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
                                 uid: user.uid,
                                 event: event
@@ -228,11 +253,11 @@ function registerEntry(user, event) {
                                 firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
                             });
                         }
-                    }).catch((error1)=>{
+                    }).catch((error1) => {
                         console.log(error1);
                     });
                 }
-            }).catch((error1)=>{
+            }).catch((error1) => {
                 console.log(error1);
             });
         } else {
@@ -281,34 +306,34 @@ function validateUserInput() {
 
 
 
-function enableEntries(){
+function enableEntries() {
     const c = parseInt(document.getElementById('participantCount').value);
-    if(c==0){
-        document.getElementById('participant1div').style.display="none";
-        document.getElementById('participant2div').style.display="none";
-        document.getElementById('participant3div').style.display="none";
+    if (c == 0) {
+        document.getElementById('participant1div').style.display = "none";
+        document.getElementById('participant2div').style.display = "none";
+        document.getElementById('participant3div').style.display = "none";
     }
-    if(c>=1){
-        document.getElementById('participant1div').style.display="block";
-        document.getElementById('participant2div').style.display="none";
-        document.getElementById('participant3div').style.display="none";
+    if (c >= 1) {
+        document.getElementById('participant1div').style.display = "block";
+        document.getElementById('participant2div').style.display = "none";
+        document.getElementById('participant3div').style.display = "none";
     }
-    if(c>=2){
-        document.getElementById('participant2div').style.display="block";
-        document.getElementById('participant3div').style.display="none";
+    if (c >= 2) {
+        document.getElementById('participant2div').style.display = "block";
+        document.getElementById('participant3div').style.display = "none";
     }
-    if(c>=3){
-        document.getElementById('participant3div').style.display="block";
+    if (c >= 3) {
+        document.getElementById('participant3div').style.display = "block";
     }
 }
 
 
-function verifyIfPro(){
+function verifyIfPro() {
     const e = document.getElementById('event').value;
-    if(e=="project"){
-        document.getElementById('prodiv').style.display="block";
-    }else{
-        document.getElementById('prodiv').style.display="none";
+    if (e == "project") {
+        document.getElementById('prodiv').style.display = "block";
+    } else {
+        document.getElementById('prodiv').style.display = "none";
     }
 }
 

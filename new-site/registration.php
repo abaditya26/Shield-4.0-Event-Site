@@ -51,22 +51,18 @@ if (isset($_GET['id'])) {
         <div class="form-group">
             <input type="tel" name="phoneNo" id="phoneNo" class="form-control login-control mb-3" required placeholder="Enter Phone Number">
 
-            <center>
-                <div id="recaptcha-container" style="width: 100%;"></div>
-            </center>
-        </div>
-        <div class="form-group">
-            <!-- <label for="password">
-                    <i class="fa fa-lock" aria-hidden="true"></i>&emsp;Password
-                </label> -->
-            <center>
-                <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success mb-2 mr-2" id="sendOtpBtn">
-            </center>
         </div>
         <div class="form-group" align='center' style="display: none;" id="otp-div">
             <input type="number" name="otp-input" id="otp-input" class="form-control mb-2 login-control" required placeholder="Enter the OTP">
+            <input type="button" value="Resend OTP" class="btn btn-secondary mb-2 mr-2" onclick="resendOtp()">
             <input type="button" value="Verify" onclick="verifyOtp()" class="btn btn-success mb-2 mr-2">
             <input type="reset" value="Reset" class="btn btn-danger mb-2 mr-2">
+        </div>
+        <div class="form-group">
+            <center>
+                <div id="recaptcha-container" style="width: 100%;"></div>
+                <input type="button" value="Send Otp" onclick="generateOtp()" class="btn btn-success mb-2 mr-2" id="sendOtpBtn">
+            </center>
         </div>
     </form>
 </div>
