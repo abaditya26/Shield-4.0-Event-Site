@@ -51,7 +51,7 @@ $eventData = [
         "<ul><li>The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.</li>
         <li>You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.</li>
         <li>Note:PPTs will be given more precedence over Posters. </li></ul>",
-        "Coordinators:-\n<ul><li>Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\ajinkya__mahajan\">Ajinkya Mahajan</li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
     ],
     [
         "project",
