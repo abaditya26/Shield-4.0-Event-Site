@@ -50,7 +50,7 @@ Treasure Hunt511
                     Register
                 </a>
 
-                <a href="<?php echo $eData[3]; ?>" class="btn btn-primary" style="margin-left: 10px; margin-bottom: 10px;">
+                <a href="<?php echo $eData[3]; ?>" class="btn btn-primary" style="margin-left: 10px; margin-bottom: 0px;">
                     Download Instructions(PDF)
                 </a>
             </div>
