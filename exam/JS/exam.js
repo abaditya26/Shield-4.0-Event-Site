@@ -27,11 +27,9 @@ window.onload = function () {
     showLoading();
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
-            // User is signed in.
             enableCamera();
             loadOld();
         } else {
-            // User is signed out.
             document.location = './';
         }
     });
@@ -167,7 +165,6 @@ function changeQuestion(changeIndex) {
 
     disableAllRadio();
 
-
     if (questions[currentIndex][1] == questions[currentIndex][6]) {
         document.getElementById('option1').checked = true;
     } else if (questions[currentIndex][2] == questions[currentIndex][6]) {
@@ -185,12 +182,12 @@ const chooseRandom = (arr, num = 1) => {
         const random = Math.floor(Math.random() * arr.length);
         if (res.indexOf(arr[random]) !== -1) {
             continue;
-        };
+        }
         res.push(arr[random]);
         i++;
-    };
+    }
     return res;
-};
+}
 
 function showView() {
     if (flag1 && flag2 && flag4) {
@@ -207,9 +204,7 @@ function showLoading() {
 
 function startTimer() {
     if (!flag5) {
-
         var x = setInterval(function () {
-
             currentTimer--;
             if (currentTimer % 3 == 0) {
                 firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).update({
@@ -224,7 +219,6 @@ function startTimer() {
             document.getElementById('timeProgressBar').style.width = rt + "%";
             document.getElementById('timerDiv').innerHTML = minutes + 'minutes : ' + seconds + 'seconds'
 
-            // If the count down is finished, write some text
             if (currentTimer < 0) {
                 clearInterval(x);
                 finishExam();
@@ -250,4 +244,12 @@ function disableAllRadio() {
     document.getElementById('option2').checked = false;
     document.getElementById('option3').checked = false;
     document.getElementById('option4').checked = false;
+}
+
+function selectOption(o){
+    const option = questions[currentIndex][o];
+    questions[currentIndex][6]=option
+    firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/' + quizId + '/' + questions[currentIndex][7]).update({
+        selected:option
+    });
 }

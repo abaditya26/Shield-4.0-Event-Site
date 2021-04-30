@@ -61,25 +61,25 @@ if (isset($_POST['examId'])) {
 
             <div id="optionsDiv">
                 <div class="form-group">
-                    <input type="radio" name="options" id="option1">
+                    <input type="radio" name="options" id="option1" onclick="selectOption(1)">
                     <label for="option1">
                         <span id="option1Text">Option 1 Text Goes Here</span>
                     </label>
                 </div>
                 <div class="form-group">
-                    <input type="radio" name="options" id="option2">
+                    <input type="radio" name="options" id="option2" onclick="selectOption(2)">
                     <label for="option2">
                         <span id="option2Text">Option 2 Text Goes Here</span>
                     </label>
                 </div>
                 <div class="form-group">
-                    <input type="radio" name="options" id="option3">
+                    <input type="radio" name="options" id="option3" onclick="selectOption(3)">
                     <label for="option3">
                         <span id="option3Text">Option 3 Text Goes Here</span>
                     </label>
                 </div>
                 <div class="form-group">
-                    <input type="radio" name="options" id="option4">
+                    <input type="radio" name="options" id="option4" onclick="selectOption(4)">
                     <label for="option4">
                         <span id="option4Text">Option 4 Text Goes Here</span>
                     </label>

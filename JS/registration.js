@@ -345,7 +345,6 @@ function verifyIfPro() {
 
 document.getElementById('phoneNo').addEventListener('input', function (evt) {
     const d = document.getElementById('phoneNo').value;
-    console.log(d)
     if(d==""){
         flag2 = false;
         hideOtpBtn();

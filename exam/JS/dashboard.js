@@ -44,7 +44,6 @@ function fetchEvents(user) {
         snapshot.forEach(s => {
             const data = s.val();
             if (data.event != undefined) {
-                console.log(data.event);
                 if (data.event == "CQuiz" || data.event == "GkQuiz" || data.event == "CQuiz2" || data.event == "GkQuiz2") {
                     e.push(data.event);
                 }
