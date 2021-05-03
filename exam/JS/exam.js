@@ -8,8 +8,9 @@ var totalQuestions = 0;
 var attempted = 0;
 var questions = [];
 var currentTimer = 0;
-var currentIndex = -1;
+var currentIndex = 0;
 var totalTime = 1800;
+var x;
 
 
 window.onload = function () {
@@ -117,6 +118,7 @@ function loadQuestions() {
         });
         questions = chooseRandom(tQuestions, 25);
         totalQuestions = questions.length;
+        var ctr = 0;
         for (x = 0; x < totalQuestions; x++) {
             firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/' + quizId + '/' + questions[x][7]).set({
                 question: questions[x][0],
@@ -128,10 +130,12 @@ function loadQuestions() {
                 selected: questions[x][6],
                 id: questions[x][7]
             }).then((res) => {
-                if (x == totalQuestions - 1) {
+                ctr++;
+                console.log(ctr);
+                if (ctr == totalQuestions - 1) {
                     flag2 = true;
                     showView();
-                    changeQuestion(1);
+                    changeQuestion(0);
                 }
             }).catch((err) => {
                 alert(err);
@@ -204,7 +208,7 @@ function showLoading() {
 
 function startTimer() {
     if (!flag5) {
-        var x = setInterval(function () {
+        x = setInterval(function () {
             currentTimer--;
             if (currentTimer % 3 == 0) {
                 firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).update({
@@ -230,12 +234,15 @@ function startTimer() {
 }
 
 function finishExam() {
-    alert('Exam End');
+    clearInterval(x);
     firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).update({
         timer: 0,
         status: 'end'
     }).then((res) => {
+        alert('Exam Ended');
         document.location = './dashboard.php';
+    }).catch((er)=>{
+        console.log(er)
     });
 }
 
@@ -252,4 +259,12 @@ function selectOption(o){
     firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/' + quizId + '/' + questions[currentIndex][7]).update({
         selected:option
     });
+}
+
+function endExam(){
+    if(confirm("Do You Want to end exam?")){
+        if(confirm("This can't be undone after submit")){
+            finishExam();
+        }
+    }
 }
