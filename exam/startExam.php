@@ -100,9 +100,9 @@ if (isset($_POST['examId'])) {
                             Overall Summary
                         </h5>
                     </center>
-                    Total Questions :- 30 <br>
-                    Attempted Questions :- <span id="attemptedQuestionCount">10</span><br>
-                    Not Attempted Questions :- <span id="notAttemptedQuestionCount">20</span>
+                    Total Questions :- 25 <br>
+                    Attempted Questions :- <span id="attemptedQuestionCount">0</span><br>
+                    Not Attempted Questions :- <span id="notAttemptedQuestionCount">25</span>
                 </div>
                 <div class="col-md-4">
                     <center>

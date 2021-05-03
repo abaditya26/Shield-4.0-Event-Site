@@ -115,7 +115,7 @@ function loadQuestions() {
             const data = s.val();
             tQuestions.push([data.question, data.option1, data.option2, data.option3, data.option4, data.answer, "", data.id]);
         });
-        questions = chooseRandom(tQuestions, 30);
+        questions = chooseRandom(tQuestions, 25);
         totalQuestions = questions.length;
         for (x = 0; x < totalQuestions; x++) {
             firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/' + quizId + '/' + questions[x][7]).set({
