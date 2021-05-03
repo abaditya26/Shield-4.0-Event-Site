@@ -77,9 +77,6 @@ $imageData = [
             <div class="col-md-4 col-hover" style="height: 400px;" data-aos="flip-left" data-aos-duration="2000">
                 <center>
                     <img loading="lazy" src="<?php echo $imageData[$i][0]; ?>" alt="<?php echo $imageData[$i][1]; ?>" onclick="openImage('<?php echo $imageData[$i][0]; ?>')" style="width:auto;max-width: 100%; height: 250px; border: ridge; margin:10px; object-fit: scale-down; object-position: center; background: rgba(255, 255, 255, 0.05);">
-                    <h3 class="font-styled-header">
-                        <?php echo $imageData[$i][1]; ?>
-                    </h3>
                 </center>
             </div>
         <?php
