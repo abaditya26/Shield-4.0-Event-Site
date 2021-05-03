@@ -11,8 +11,7 @@ $eventData = [
         <ol><li>Crack Me and Capture The Flag.</li><li>Quick Meet.</li></ol></li>
         <li>Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.</li>
         <li>You have to find passwords by decoding some Codes.</li>
-        <li>Virtual Treasure Hunt is also known as Digital Scavenger Hunt.<br></li></ul>
-        <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Stratigically, Find Codes, Crack them and Win!.\" </b> </i> </h5> </center> ",
+        <li>Virtual Treasure Hunt is also known as Digital Scavenger Hunt.<br></li></ul> ",
         "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact :- <a href=\"tel:+918975311578\">Call For More Inquiry</a>"
         
     ],
@@ -25,8 +24,7 @@ $eventData = [
         "<ul><li>C Quiz is just based on deep knowledge and conceptual understanding of C programming language of the aspirant.</li>
         <li>There will be 25 MCQ (Multiple Choice Questions) and time allocated will be 30 minutes.</li>
         <li>In case of tie the Time Complexity will be considered as an important parameter in the Scene. </li>
-        <li>Solve all the questions in minimum time </li></ul><br>
-        <center><h5><i><b style=\" font-size: xx-large; font-family: monospace; color: rgb(255 64 230);\"> \"Think like a Compiler and win amazing prizes!\" </b> </i> </h5> </center> ",
+        <li>Solve all the questions in minimum time </li></ul><br> ",
         "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\kalpak_jn.zip\">Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For More Inquiry</a>"  
     ],
     [
