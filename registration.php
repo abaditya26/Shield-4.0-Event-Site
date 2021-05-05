@@ -25,10 +25,6 @@ if (isset($_GET['id'])) {
     }
 </style>
 
-<!-- registration form goes here -->
-
-<!-- temp code to be removed -->
-
 <div class="container" id="loading">
     <center>
         <div class="loader"></div>

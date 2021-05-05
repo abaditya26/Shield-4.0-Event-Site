@@ -1,7 +1,19 @@
 var flag = true;
+var flag1 = false;
 window.onload = function () {
     showLoading();
-    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+    hideOtpBtn();
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+        'size': 'normal',
+        'callback': (response) => {
+            flag1 = true;
+            showOtpBtn();
+        },
+        'expired-callback': () => {
+            // Response expired. Ask user to solve reCAPTCHA again.
+            // ...
+        }
+    });
     recaptchaVerifier.render();
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -30,6 +42,8 @@ function sendOtp() {
     firebase.auth().signInWithPhoneNumber(number, appVerifier).then((result) => {
         window.confirmationResult = result;
         alert('OTP SENT. VALIDATE OTP.')
+        showOtpInputLayout();
+        flag1 = false;
         hideLoading();
     }).catch((err) => {
         console.log(err);
@@ -84,4 +98,41 @@ function hideLoading() {
         document.getElementById('main').style.display = "block"
         document.getElementById('loading').style.display = "none"
     }
+}
+document.getElementById('phoneNo').addEventListener('input', function (evt) {
+    const d = document.getElementById('phoneNo').value;
+    if(d==""){
+        flag2 = false;
+        hideOtpBtn();
+    }else{
+        flag2=true;
+        showOtpBtn();
+    }
+})
+
+function showOtpBtn() {
+    if(flag1 && flag2){
+        document.getElementById('sendOtpBtn').style.display = "block";
+    }
+}
+
+function hideOtpBtn() {
+    document.getElementById('sendOtpBtn').style.display = "none";
+}
+
+function showOtpInputLayout(){
+    document.getElementById('phoneNo').setAttribute('disabled','');
+    document.getElementById('otpLayout').style.display="block";
+    document.getElementById('recaptcha-container').style.display="none"
+    hideOtpBtn();
+}
+
+function hideOtpInputLayout(){
+    document.getElementById('phoneNo').removeAttribute('disabled');
+    document.getElementById('otpLayout').style.display="none";
+    document.getElementById('recaptcha-container').style.display="block"
+}
+
+function resendOtp(){
+    hideOtpInputLayout();
 }

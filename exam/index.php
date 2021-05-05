@@ -40,13 +40,10 @@
         </center>
     </div>
 
-    <div class="container" id="loading" style="display: none;">
+    
+    <div class="container" id="loading">
         <center>
-            <br><br><br>
-            <h3 class="font-styled-header">
-                Loading ...
-            </h3>
-            <br><br><br>
+            <div class="loader"></div>
         </center>
     </div>
 
@@ -67,9 +64,12 @@
                 <input type="button" id="sendOtpBtn" value="Send OTP" class="btn btn-primary w-100" onclick="sendOtp()">
             </div>
 
-            <div class="form-group" id="otpLayout">
+            <div class="form-group" id="otpLayout" style="display: none;">
                 <input type="number" name="otpInput" id="otpInput" class="form-control" required placeholder="Enter OTP">
-                <input type="button" value="Validate OTP" class="btn btn-success btn-lg w-100" id="validateOtpBtn" onclick="validateOtp()">
+                <center>
+                    <input type="button" value="Validate OTP" class="btn btn-success btn-lg" id="validateOtpBtn" onclick="validateOtp()">
+                    <input type="reset" value="Resend OTP" class="btn btn-danger" onclick="resendOtp()">
+                </center>
             </div>
 
         </form>
