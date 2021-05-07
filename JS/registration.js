@@ -10,10 +10,6 @@ window.onload = function () {
         'callback': (response) => {
             flag1 = true;
             showOtpBtn();
-        },
-        'expired-callback': () => {
-            // Response expired. Ask user to solve reCAPTCHA again.
-            // ...
         }
     });
     recaptchaVerifier.render();
@@ -92,16 +88,15 @@ function generateOtp() {
     }
     showLoading();
     const appVerifier = window.recaptchaVerifier;
-    console.log(appVerifier)
     if (!number.includes('+91', 0)) {
-        number = "+91" + number
+        number = "+91" + number;
     }
 
     // show otp view
 
     firebase.auth().signInWithPhoneNumber(number, appVerifier).then((result) => {
         window.confirmationResult = result;
-        alert('OTP SENT. VALIDATE OTP.')
+        alert('OTP SENT. VALIDATE OTP.');
         showOtpInput();
         showLogin();
     }).catch((err) => {
@@ -113,7 +108,7 @@ function generateOtp() {
 
 function showOtpInput() {
     document.getElementById('otp-div').style.display = "block";
-    document.getElementById('recaptcha-container').style.display = "none"
+    document.getElementById('recaptcha-container').style.display = "none";
     hideOtpBtn();
 }
 
@@ -133,21 +128,21 @@ function verifyOtp() {
 
 
 function showLoading() {
-    document.getElementById('loading').style.display = "block"
-    document.getElementById('otpVerificationForm').style.display = "none"
-    document.getElementById('registrationForm').style.display = "none"
+    document.getElementById('loading').style.display = "block";
+    document.getElementById('otpVerificationForm').style.display = "none";
+    document.getElementById('registrationForm').style.display = "none";
 }
 
 function showLogin() {
-    document.getElementById('loading').style.display = "none"
-    document.getElementById('otpVerificationForm').style.display = "block"
-    document.getElementById('registrationForm').style.display = "none"
+    document.getElementById('loading').style.display = "none";
+    document.getElementById('otpVerificationForm').style.display = "block";
+    document.getElementById('registrationForm').style.display = "none";
 }
 
 function showRegistration() {
-    document.getElementById('loading').style.display = "none"
-    document.getElementById('otpVerificationForm').style.display = "none"
-    document.getElementById('registrationForm').style.display = "block"
+    document.getElementById('loading').style.display = "none";
+    document.getElementById('otpVerificationForm').style.display = "none";
+    document.getElementById('registrationForm').style.display = "block";
 }
 
 function showOtpBtn() {
@@ -163,7 +158,7 @@ function hideOtpBtn() {
 function resendOtp() {
     hideOtpBtn();
     document.getElementById('otp-div').style.display = "none";
-    document.getElementById('recaptcha-container').style.display = "block"
+    document.getElementById('recaptcha-container').style.display = "block";
 }
 
 
