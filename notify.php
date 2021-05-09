@@ -9,7 +9,14 @@
 <p>Bookmark this page for upcoming Notificatons and Results.</p>
 
 </center>
-<p>09 MAY 2021 Tentative schedule for event </p>
+
+<li>
+    <p>09 MAY 2021 Tentative schedule for event <a href="">Click To Download</p>
+    <br>
+
+</li>
+<br>
+
 
 
 </div>
