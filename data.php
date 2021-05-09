@@ -12,7 +12,8 @@ $eventData = [
         <li>Top most Winners will be filtered out on the basis of time required to crack all the pdf's with the Flag.</li>
         <li>You have to find passwords by decoding some Codes.</li>
         <li>Virtual Treasure Hunt is also known as Digital Scavenger Hunt.<br></li></ul> ",
-        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>Contact :- <a href=\"tel:+918975311578\">Call For More Inquiry</a>"
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a> </li><li>Shreya Agrawal</li></ul>
+        Contact :- <a href=\"tel:+918975311578\">8975311578</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/918975311578\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"
         
     ],
     [
@@ -25,7 +26,8 @@ $eventData = [
         <li>There will be 25 MCQ (Multiple Choice Questions) and time allocated will be 30 minutes.</li>
         <li>In case of tie the Time Complexity will be considered as an important parameter in the Scene. </li>
         <li>Solve all the questions in minimum time </li></ul><br> ",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\kalpak_jn.zip\">Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>Contact :- <a href=\"tel:+9173050103025\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\kalpak_jn.zip\">Kalpak Nemade</li><li><a href=\"https://instagram.com\\mahesh.zip\">Mahesh Pimparkar</a></li></ul>
+        Contact :- <a href=\"tel:+9173050103025\">73050103025</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/9173050103025\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"  
     ],
     [
         "GkQuiz",
@@ -38,7 +40,8 @@ $eventData = [
         <ol><li>Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.</li>
         <li>Quick Meet will be arranged on aptitute and questioning.</li></ol></li>
         <li>Final Winners will be decided on the basis of 2nd round.</li></ul>",
-        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li><li>Damini Dhangar</li></ul>Contact :- <a href=\"tel:+919370440747\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li><li>Damini Dhangar</li></ul>
+        Contact :- <a href=\"tel:+919370440747\">9370440747</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/919370440747\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"  
     ],
     [
         "ppt",
@@ -49,7 +52,8 @@ $eventData = [
         "<ul><li>The Quiz mainly focuses on speaking skills and the way of presentation of participants on any of the given topic.</li>
         <li>You will be assigned merit points after examining your presentation and the participant with highest merit points will be declared as winner by the authorities.</li>
         <li>Note:PPTs will be given more precedence over Posters. </li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\ajinkya__mahajan\">Ajinkya Mahajan</a> </li><li>Rakshanda Giri</li></ul>Contact :- <a href=\"tel:+917666124625\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\ajinkya__mahajan\">Ajinkya Mahajan</a> </li><li>Rakshanda Giri</li></ul>
+        Contact :- <a href=\"tel:+917666124625\">7666124625</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/917666124625\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"  
     ],
     [
         "project",
@@ -60,7 +64,8 @@ $eventData = [
         "<ul><li>The Compitition is based on knowledge coupled with cleverness of participant.</li>
         <li>Project quality matters irrespective of methods (e.g. if there is a code then Space complexity, time complexity)</li>
         <li>Every member should have crucial role in project.</li></ul>",
-        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>Contact :- <a href=\"tel:+917350103025\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li>Khushboo Kolhe</li><li>Dhanwantari Devre</li></ul>
+        Contact :- <a href=\"tel:+917350103025\">7350103025</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/917350103025\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"  
     ],
     [
         "chess",
@@ -72,7 +77,8 @@ $eventData = [
         <li>It will be conducted on website ”lichess.org”.</li>
         <li>All participants should register on the website ”lichess.org” to paricipate in the compitition. </li>
         <li>Participants should only use their respective WhatsApp mobile no. for registrating in Shield4.0, Further details will be informed to each aspirant via Email or WhatsApp.</li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Sankalp Suryawanshi</a> </li><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li></ul>Contact :- <a href=\"tel:+918149874939\">Call For More Inquiry</a>" 
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Sankalp Suryawanshi</a> </li><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li></ul>
+        Contact :- <a href=\"tel:+918149874939\">8149874939</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/918149874939\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>" 
     ],
     [
         "talent",
@@ -90,6 +96,7 @@ $eventData = [
         <li>Art:               Doodle</li>
         <li>Instrumental Art : Guitar Flute etc.</li></ol>
         </li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\skateryash\">Yash Chaudhary</a> </li><li>Ashwini Pawar </li></ul>Contact :- <a href=\"tel:+917588330219\">Call For More Inquiry</a>"  
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\skateryash\">Yash Chaudhary</a> </li><li>Ashwini Pawar </li></ul>
+        Contact :- <a href=\"tel:+917588330219\">7588330219</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/917588330219\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"  
     ],
 ];

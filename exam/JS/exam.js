@@ -85,7 +85,7 @@ function loadOldTimer() {
         console.log(err);
         alert(err);
         document.location = './dashboard.php';
-    })
+    });
 }
 
 function enableCamera() {

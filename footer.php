@@ -16,8 +16,7 @@ if(mysqli_num_rows($check_ip)>=1)
 	$id=$user[0][0];
 	$count=$user[0][2];
 	if(isset($_SESSION['ipcount'])){
-
-	}else{
+	}else{	
 		$r=mysqli_query($conn,"UPDATE `useripadd` SET `count`=$count+1 WHERE _id=$id");
 		$_SESSION['ipcount']=1;
 	}
@@ -25,12 +24,11 @@ if(mysqli_num_rows($check_ip)>=1)
 else
 {
 	  $query="INSERT INTO `useripadd`(`userip`, `count`) VALUES ('$user_ip',1)";
-	  mysqli_query($conn,$query);
+	  mysqli_query($conn,$query) or die(mysqli_error($conn));
 	  $_SESSION['ipcount']=1;
 
 }
 
-echo $_SERVER['ipcount'];
 
 ?>
 </body>
