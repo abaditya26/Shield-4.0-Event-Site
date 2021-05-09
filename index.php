@@ -47,7 +47,7 @@
             </h5>
             <br>
             <h5>
-                [Date to be announced]
+                20 & 21 MAY 2021
             </h5>
         </div>
 
