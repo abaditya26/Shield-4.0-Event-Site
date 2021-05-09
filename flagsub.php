@@ -12,8 +12,8 @@
 <p>DOWNLOAD CRACKME.ZIP AND INSTRUTIONS.TXT HERE.</p><br>
 
 
-<button type="button" class="btn btn-outline-success" a href="crackme.zip" ><b>CRACKME.ZIP</b></button>
-<button type="button" class="btn btn-outline-danger" a href="http://shield2k2.ml/instructions.txt" ><b>INSTRUTIONS.TXT</b></button><br>
+<button type="button" class="btn btn-outline-success"  ><a href="crackme.zip"><b>CRACKME.ZIP</b></a></button>
+<button type="button" class="btn btn-outline-danger"  ><a href="./instructions.txt"><b>INSTRUTIONS.TXT</b></a></button><br>
 
 
 <br><p>Code never lies, notes sometimes do. 👍</p><br>
