@@ -75,8 +75,8 @@ $eventData = [
         "./images/comp/chess.gif",
         "<ul><li>The competition is based on foresightedness and perseverance of participant. </li>
         <li>It will be conducted on website ”lichess.org”.</li>
-        <li>All participants should register on the website ”lichess.org” to paricipate in the compitition. </li>
-        <li>Participants should only use their respective WhatsApp mobile no. for registrating in Shield4.0, Further details will be informed to each aspirant via Email or WhatsApp.</li></ul>",
+        <li>All participants should register on the website ”lichess.org” to participate in the competition. </li>
+        <li>Participants should only use their respective WhatsApp mobile no. for registrating in Shield 4.0, Further details will be informed to each aspirant via Email or WhatsApp.</li></ul>",
         "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Sankalp Suryawanshi</a> </li><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li></ul>
         Contact :- <a href=\"tel:+918149874939\">8149874939</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/918149874939\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>" 
     ],
