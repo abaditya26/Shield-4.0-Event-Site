@@ -23,7 +23,7 @@ window.onload = function () {
             showLogin();
         }
     });
-    verifyIfPro()
+    verifyIfPro();
 }
 
 function checkIfUserExist(user) {
@@ -146,7 +146,7 @@ function showRegistration() {
 }
 
 function showOtpBtn() {
-    if(flag1 && flag2){
+    if (flag1 && flag2) {
         document.getElementById('sendOtpBtn').style.display = "block";
     }
 }
@@ -211,6 +211,7 @@ function registerUser() {
     return false;
 }
 
+
 function registerEntry(user, event) {
     firebase.database().ref('Users/' + user.uid).set(user).then((result) => {
         if (event == "project") {
@@ -223,7 +224,8 @@ function registerEntry(user, event) {
                 emailId: user.emailId,
                 uid: user.uid,
                 event: event,
-                type: "participant"
+                type: "participant",
+                date:getDateTime()
             }).then((res) => {
                 var ct = 0;
                 for (i = 0; i < c; i++) {
@@ -237,7 +239,8 @@ function registerEntry(user, event) {
                         emailId: e,
                         uid: user.uid,
                         event: event,
-                        type: "participant"
+                        type: "participant",
+                        date:getDateTime()
                     }).then((res) => {
                         ct++;
                         if (ct == c) {
@@ -261,30 +264,61 @@ function registerEntry(user, event) {
                 console.log(error1);
             });
         } else {
-            firebase.database().ref('Events/' + event + '/' + user.uid).set({
-                name: user.name,
-                phoneNo: user.phoneNo,
-                collageName: user.collageName,
-                collageCity: user.collageCity,
-                emailId: user.emailId,
-                uid: user.uid,
-                event: event,
-                type: "participant"
-            }).then((result1) => {
-                firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+            if (event == "talent") {
+                var link = document.getElementById('link-talent').value;
+                firebase.database().ref('Events/' + event + '/' + user.uid).set({
+                    name: user.name,
+                    phoneNo: user.phoneNo,
+                    collageName: user.collageName,
+                    collageCity: user.collageCity,
+                    emailId: user.emailId,
                     uid: user.uid,
-                    event: event
-                }).then((r) => {
-                    alert('Registration Complete.');
-                    document.location = './viewRegistrations.php';
-                }).catch((e1) => {
-                    alert('Entry Registration incomplete');
-                    showRegistration();
-                    firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                    event: event,
+                    type: "participant",
+                    link:link,
+                    date:getDateTime()
+                }).then((result1) => {
+                    firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                        uid: user.uid,
+                        event: event
+                    }).then((r) => {
+                        alert('Registration Complete.');
+                        document.location = './viewRegistrations.php';
+                    }).catch((e1) => {
+                        alert('Entry Registration incomplete');
+                        showRegistration();
+                        firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                    });
+                }).catch((error) => {
+                    alert('Error => ' + error);
                 });
-            }).catch((error) => {
-                alert('Error => ' + error);
-            });
+            } else {
+                firebase.database().ref('Events/' + event + '/' + user.uid).set({
+                    name: user.name,
+                    phoneNo: user.phoneNo,
+                    collageName: user.collageName,
+                    collageCity: user.collageCity,
+                    emailId: user.emailId,
+                    uid: user.uid,
+                    event: event,
+                    type: "participant",
+                    date:getDateTime()
+                }).then((result1) => {
+                    firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                        uid: user.uid,
+                        event: event
+                    }).then((r) => {
+                        alert('Registration Complete.');
+                        document.location = './viewRegistrations.php';
+                    }).catch((e1) => {
+                        alert('Entry Registration incomplete');
+                        showRegistration();
+                        firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                    });
+                }).catch((error) => {
+                    alert('Error => ' + error);
+                });
+            }
         }
     }).catch((e) => {
         alert('Error => ' + e);
@@ -299,9 +333,31 @@ function validateUserInput() {
         alert('Please select event');
         return false;
     }
+    if(e=="talent"){
+        var link = document.getElementById('link-talent').value;
+        if(link == undefined || link == ""){
+            alert('Link For your talent\'s video is required.');
+            showRegistration();
+            return false;
+        }
+        if(!isValidHttpUrl(link)){
+            alert('URL is not valid');
+            return false;
+        }
+    }
     return true;
 }
-
+function isValidHttpUrl(string) {
+    let url;
+    
+    try {
+      url = new URL(string);
+    } catch (_) {
+      return false;  
+    }
+  
+    return url.protocol === "http:" || url.protocol === "https:";
+  }
 
 
 
@@ -335,17 +391,31 @@ function verifyIfPro() {
     } else {
         document.getElementById('prodiv').style.display = "none";
     }
+    if (e == "talent") {
+        document.getElementById('talent-link-div').style.display = "block"
+    } else {
+        document.getElementById('talent-link-div').style.display = "none"
+    }
 }
 
 
 document.getElementById('phoneNo').addEventListener('input', function (evt) {
     const d = document.getElementById('phoneNo').value;
-    if(d==""){
+    if (d == "") {
         flag2 = false;
         hideOtpBtn();
-    }else{
-        flag2=true;
+    } else {
+        flag2 = true;
         showOtpBtn();
     }
 })
 
+
+function getDateTime(){
+    var today = new Date();
+
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    return date+" "+time;
+}

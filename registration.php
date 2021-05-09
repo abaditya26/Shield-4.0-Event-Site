@@ -116,12 +116,16 @@ if (isset($_GET['id'])) {
                 <option value="select">--Select Event--</option>
                 <?php for ($i = 0; $i < sizeof($eventData); $i++) {
                 ?>
-                    <option value="<?php echo $eventData[$i][0]; ?>" <?php if ($eId == $eventData[$i][0]) {
-                                                                            echo "selected";
-                                                                        } ?>><?php echo $eventData[$i][1]; ?></option>
+                    <option value="<?php echo $eventData[$i][0]; ?>" <?php if ($eId == $eventData[$i][0]) { echo "selected"; } ?>><?php echo $eventData[$i][1]; ?></option>
                 <?php
                 } ?>
             </select>
+        </div>
+        <div class="form-group" id="talent-link-div">
+                <label for="link-talent">
+                    Link For Your Video
+                </label>
+                <input type="text" name="link-talent" id="link-talent" class="form-control" placeholder="Enter Your Video Link here">
         </div>
         <div class="container" id="prodiv" style="display: none; border:ridge; padding:10px;border-radius: 15px;">
             <div class="form-group">
@@ -188,7 +192,7 @@ if (isset($_GET['id'])) {
     </form>
 </div>
 
-
+<br><br>
 
 <?php include "./footer.php"; ?>
 <script src="./JS/registration.js"></script>
