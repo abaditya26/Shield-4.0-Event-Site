@@ -98,15 +98,15 @@ if (isset($_GET['id'])) {
         </div>
         <div class="form-group">
             <label for="collageName">
-                Collage Name
+                College Name
             </label>
-            <input type="text" name="collageName" id="collageName" class="form-control" required placeholder="Enter Collage Name">
+            <input type="text" name="collageName" id="collageName" class="form-control" required placeholder="Enter College Name">
         </div>
         <div class="form-group">
             <label for="collageCity">
-                Collage City/Town
+                College City/Town
             </label>
-            <input type="text" name="collageCity" id="collageCity" class="form-control" required placeholder="Enter Collage City">
+            <input type="text" name="collageCity" id="collageCity" class="form-control" required placeholder="Enter College City">
         </div>
         <div class="form-group">
             <label for="event">
