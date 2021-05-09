@@ -10,11 +10,9 @@
 
 </center>
 
-<li>
     <p>09 MAY 2021 Tentative schedule for event <a href="">Click To Download</p>
     <br>
 
-</li>
 <br>
 
 
