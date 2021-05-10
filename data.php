@@ -40,7 +40,7 @@ $eventData = [
         <ol><li>Online MCQ (Multiple Choice Question) based on general knowledge, Current affairs etc.</li>
         <li>Quick Meet will be arranged on aptitute and questioning.</li></ol></li>
         <li>Final Winners will be decided on the basis of 2nd round.</li></ul>",
-        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li><li>Damini Dhangar</li></ul>
+        "Coordinators:-\n<ul><li> <a href=\"https://instagram.com\\komal.zip\">Komal Dhake</a> </li><li>Damini Dhangar</li></ul>
         Contact :- <a href=\"tel:+919370440747\">9370440747</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/919370440747\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>"  
     ],
     [
@@ -77,7 +77,7 @@ $eventData = [
         <li>It will be conducted on website ”lichess.org”.</li>
         <li>All participants should register on the website ”lichess.org” to participate in the competition. </li>
         <li>Participants should only use their respective WhatsApp mobile no. for registrating in Shield 4.0, Further details will be informed to each aspirant via Email or WhatsApp.</li></ul>",
-        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Sankalp Suryawanshi</a> </li><li><a href=\"https://instagram.com\\_kittu__24\">Komal Dhake</a> </li></ul>
+        "Coordinators:-\n<ul><li><a href=\"https://instagram.com\\_sam_sankalp_\">Sankalp Suryawanshi</a> </li><li><a href=\"https://instagram.com\\komal.zip\">Komal Dhake</a> </li></ul>
         Contact :- <a href=\"tel:+918149874939\">8149874939</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://wa.me/918149874939\"><img src='./images/whatsapp.png' style='max-height:30px;'></a>" 
     ],
     [
