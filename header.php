@@ -89,6 +89,7 @@ if(!isset($_SESSION)){
                         Registrations
                     </a>
                 </li>
+                <!--
                 <li class="nav-item navlink">
                     <a class="nav-link" href="./notify.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
@@ -97,6 +98,7 @@ if(!isset($_SESSION)){
                         Notifications
                     </a>
                 </li>
+                -->
             </ul>
         </div>
         <br><br>
