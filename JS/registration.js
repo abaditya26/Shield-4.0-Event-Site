@@ -203,8 +203,9 @@ function registerUser() {
                 registerEntry(userData, event);
             }
         }).catch((e) => {
-            alert('error');
+            alert('Error. Your data does not exist. please register first.');
             console.log(e);
+            document.location='../'
         });
     }
 

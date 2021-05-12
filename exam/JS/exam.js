@@ -236,7 +236,6 @@ function startTimer() {
 function finishExam() {
     clearInterval(x);
     firebase.database().ref('UserQuestions/' + firebase.auth().currentUser.uid + '/status/' + quizId).update({
-        timer: 0,
         status: 'end'
     }).then((res) => {
         alert('Exam Ended');
