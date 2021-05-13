@@ -1,0 +1,30 @@
+___________________________________________________________________
+*******************Virtual Treasure Hunt***************************
+		Government Polytechnic, Jalgaon
+
+For Additonal help:- +91 8975311578 (Mahesh Pimparkar)
+
+___________________________________________________________________
+
+INSTRUCTIONS ,
+
+1) Crackme.zip contains 10 PDF files from 1.pdf to 10.pdf.
+2) Each PDF is password protected.
+3) You have to find “Treasure Code” from each succeeding 'PDF'
+4) After Cracking password of each pdf you have to submit code to google form link mentioned.
+4)For the First round, You will be given 45 minutes
+____________________________________________________________________
+GOOGLE FORM LINK
+
+
+_____________________________________________________________________
+
+			HINT FOR PDF1
+
+	 CONVERSION OF DECIMAL NUMBER (25) TO BINARY.
+_____________________________________________________________________
+
+			BEST LUCK WATWAGHUL!!!
+___________________________________________________________________
+
+
