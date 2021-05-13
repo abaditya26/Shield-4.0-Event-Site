@@ -205,7 +205,7 @@ function registerUser() {
         }).catch((e) => {
             alert('Error. Your data does not exist. please register first.');
             console.log(e);
-            document.location='../'
+            document.location = '../'
         });
     }
 
@@ -226,7 +226,7 @@ function registerEntry(user, event) {
                 uid: user.uid,
                 event: event,
                 type: "participant",
-                date:getDateTime()
+                date: getDateTime()
             }).then((res) => {
                 var ct = 0;
                 for (i = 0; i < c; i++) {
@@ -241,7 +241,7 @@ function registerEntry(user, event) {
                         uid: user.uid,
                         event: event,
                         type: "participant",
-                        date:getDateTime()
+                        date: getDateTime()
                     }).then((res) => {
                         ct++;
                         if (ct == c) {
@@ -276,8 +276,8 @@ function registerEntry(user, event) {
                     uid: user.uid,
                     event: event,
                     type: "participant",
-                    link:link,
-                    date:getDateTime()
+                    link: link,
+                    date: getDateTime()
                 }).then((result1) => {
                     firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
                         uid: user.uid,
@@ -294,31 +294,72 @@ function registerEntry(user, event) {
                     alert('Error => ' + error);
                 });
             } else {
-                firebase.database().ref('Events/' + event + '/' + user.uid).set({
-                    name: user.name,
-                    phoneNo: user.phoneNo,
-                    collageName: user.collageName,
-                    collageCity: user.collageCity,
-                    emailId: user.emailId,
-                    uid: user.uid,
-                    event: event,
-                    type: "participant",
-                    date:getDateTime()
-                }).then((result1) => {
-                    firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                if (event == "CQuiz" || entry == "GkQuiz") {
+                    firebase.database().ref('Events/'+event).once('value').then((s2)=>{
+                        var totalEntries = 0;
+                        s2.forEach(element => {
+                            totalEntries++;
+                        });
+                        if(totalEntries>=100){
+                            alert('Sorry! Entry Full!');
+                        }else{
+                            firebase.database().ref('Events/' + event + '/' + user.uid).set({
+                                name: user.name,
+                                phoneNo: user.phoneNo,
+                                collageName: user.collageName,
+                                collageCity: user.collageCity,
+                                emailId: user.emailId,
+                                uid: user.uid,
+                                event: event,
+                                type: "participant",
+                                date: getDateTime()
+                            }).then((result1) => {
+                                firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                                    uid: user.uid,
+                                    event: event
+                                }).then((r) => {
+                                    alert('Registration Complete.');
+                                    document.location = './viewRegistrations.php';
+                                }).catch((e1) => {
+                                    alert('Entry Registration incomplete');
+                                    showRegistration();
+                                    firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                                });
+                            }).catch((error) => {
+                                alert('Error => ' + error);
+                            });
+                        }
+                    }).catch((error2)=>{
+                        console.log(error2);
+                        alert(error2);
+                    })
+                } else {
+                    firebase.database().ref('Events/' + event + '/' + user.uid).set({
+                        name: user.name,
+                        phoneNo: user.phoneNo,
+                        collageName: user.collageName,
+                        collageCity: user.collageCity,
+                        emailId: user.emailId,
                         uid: user.uid,
-                        event: event
-                    }).then((r) => {
-                        alert('Registration Complete.');
-                        document.location = './viewRegistrations.php';
-                    }).catch((e1) => {
-                        alert('Entry Registration incomplete');
-                        showRegistration();
-                        firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                        event: event,
+                        type: "participant",
+                        date: getDateTime()
+                    }).then((result1) => {
+                        firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
+                            uid: user.uid,
+                            event: event
+                        }).then((r) => {
+                            alert('Registration Complete.');
+                            document.location = './viewRegistrations.php';
+                        }).catch((e1) => {
+                            alert('Entry Registration incomplete');
+                            showRegistration();
+                            firebase.database().ref('Events/' + event + '/' + user.uid).removeValue();
+                        });
+                    }).catch((error) => {
+                        alert('Error => ' + error);
                     });
-                }).catch((error) => {
-                    alert('Error => ' + error);
-                });
+                }
             }
         }
     }).catch((e) => {
@@ -334,14 +375,14 @@ function validateUserInput() {
         alert('Please select event');
         return false;
     }
-    if(e=="talent"){
+    if (e == "talent") {
         var link = document.getElementById('link-talent').value;
-        if(link == undefined || link == ""){
+        if (link == undefined || link == "") {
             alert('Link For your talent\'s video is required.');
             showRegistration();
             return false;
         }
-        if(!isValidHttpUrl(link)){
+        if (!isValidHttpUrl(link)) {
             alert('URL is not valid');
             return false;
         }
@@ -350,15 +391,15 @@ function validateUserInput() {
 }
 function isValidHttpUrl(string) {
     let url;
-    
+
     try {
-      url = new URL(string);
+        url = new URL(string);
     } catch (_) {
-      return false;  
+        return false;
     }
-  
+
     return url.protocol === "http:" || url.protocol === "https:";
-  }
+}
 
 
 
@@ -412,11 +453,11 @@ document.getElementById('phoneNo').addEventListener('input', function (evt) {
 })
 
 
-function getDateTime(){
+function getDateTime() {
     var today = new Date();
 
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-    return date+" "+time;
+    return date + " " + time;
 }
