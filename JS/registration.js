@@ -12,9 +12,8 @@ window.onload = function () {
             showOtpBtn();
         }
     });
-    recaptchaVerifier.render();
-
     showLoading();
+    recaptchaVerifier.render();
     // check if user is already log in
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -37,7 +36,6 @@ function checkIfUserExist(user) {
                 const collage = data.collageName;
                 const city = data.collageCity;
                 const email = data.emailId;
-
                 userData = {
                     name: name,
                     phoneNo: phoneNo,
@@ -45,15 +43,12 @@ function checkIfUserExist(user) {
                     collageCity: city,
                     emailId: email
                 };
-
-
                 // todo: send to view
                 document.getElementById('old-reg-btn').style.display = "block";
                 document.getElementById('name').value = name;
                 document.getElementById('email').value = email;
                 document.getElementById('collageName').value = collage;
                 document.getElementById('collageCity').value = city;
-
             } catch (e) {
                 alert(e);
                 console.log(e);
@@ -295,14 +290,14 @@ function registerEntry(user, event) {
                 });
             } else {
                 if (event == "CQuiz" || entry == "GkQuiz") {
-                    firebase.database().ref('Events/'+event).once('value').then((s2)=>{
+                    firebase.database().ref('Events/' + event).once('value').then((s2) => {
                         var totalEntries = 0;
                         s2.forEach(element => {
                             totalEntries++;
                         });
-                        if(totalEntries>=100){
+                        if (totalEntries >= 100) {
                             alert('Sorry! Entry Full!');
-                        }else{
+                        } else {
                             firebase.database().ref('Events/' + event + '/' + user.uid).set({
                                 name: user.name,
                                 phoneNo: user.phoneNo,
@@ -329,7 +324,7 @@ function registerEntry(user, event) {
                                 alert('Error => ' + error);
                             });
                         }
-                    }).catch((error2)=>{
+                    }).catch((error2) => {
                         console.log(error2);
                         alert(error2);
                     })
