@@ -47,7 +47,7 @@
             </h5>
             <br>
             <h5>
-                20 & 21 MAY 2021
+                22 & 23 MAY 2021
             </h5>
         </div>
 
@@ -119,6 +119,9 @@
             object-position: center;
             margin: 10px;
         }
+        tr,th,td{
+            color: white;
+        }
     </style>
     <!-- content goes here -->
     <div class="container">
@@ -152,6 +155,143 @@
         </div>
     </div>
 
+</section>
+
+<hr class="hr" style="border-color: #FFFFFF; max-width:90%;">
+
+
+<section id="timing">
+    <div class="container">
+        <center>
+            <h3 class="font-styled-header">
+                TIMING
+            </h3>
+        </center>
+        <table class="table table-stripped table-hover">
+            <thead>
+                <th>
+                    EVENT
+                </th>
+                <th>
+                    DATE
+                </th>
+                <th>
+                    TIME
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        C QUIZ
+                    </td>
+                    <td>
+                        22-05-2021
+                    </td>
+                    <td>
+                        11:30 AM – 12:30 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        GK QUIZ
+                    </td>
+                    <td>
+                        22-05-2021
+                    </td>
+                    <td>
+                        1:00 PM – 2:00 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PROJECT COMPETITION
+                    </td>
+                    <td>
+                        22-05-2021
+                    </td>
+                    <td>
+                        11:30 AM – 3:00 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PROJECT COMPETITION
+                    </td>
+                    <td>23-05-2021
+                    </td>
+                    <td>
+                        12:30 PM – 4:30PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PPT/POSTER PRESENTATION
+                    </td>
+                    <td>
+                        22-05-2021
+                    </td>
+                    <td>
+                        2:30 PM – 6:00 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        TALENT HUNT
+                    </td>
+                    <td>
+                        22-05-2021
+                    </td>
+                    <td>
+                        2:30 PM – 6:00 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CHESS
+                    </td>
+                    <td>
+                        23-05-2021
+                    </td>
+                    <td>
+                        10:00 AM – 11:30 AM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        VIRTUAL TREASURE HUNT
+                    </td>
+                    <td>
+                        23-05-2021
+                    </td>
+                    <td>
+                        1:30 PM – 4:30 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        C QUIZ – ROUND 2
+                    </td>
+                    <td>
+                        23-05-2021
+                    </td>
+                    <td>
+                        12:00 PM – 12:30 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        GK QUIZ – ROUND 2
+                    </td>
+                    <td>
+                        23-05-2021
+                    </td>
+                    <td>
+                        12:30 PM – 1:00 PM
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <footer class="" style="background-color: rgba(255,255,255,0.1);">
