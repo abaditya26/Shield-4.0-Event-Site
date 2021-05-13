@@ -34,6 +34,17 @@ window.onload = function () {
             document.location = './';
         }
     });
+
+    firebase.database().ref("Links/"+quizId).on('value',(snapshot)=>{
+        try{
+            if(snapshot.child("event").exists()){ }else{
+                alert('Time Up');
+                document.location='./dashboard.php';
+            }
+        }catch(e){
+            alert('no link');
+        }
+    });
 }
 
 function loadOld() {

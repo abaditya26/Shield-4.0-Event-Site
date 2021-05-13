@@ -33,8 +33,9 @@ function chechIfUserExists(user) {
         hideLoading();
     }).catch((error) => {
         hideLoading();
-        alert('error');
+        alert('user not registered');
         console.log(error);
+        document.location='../registration.php';
     });
 }
 
