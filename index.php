@@ -167,7 +167,7 @@
                 TIMING
             </h3>
         </center>
-        <table class="table table-stripped table-hover">
+        <table class="table table-stripped table-hovered table-bordered">
             <thead>
                 <th>
                     EVENT
@@ -203,8 +203,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        PROJECT COMPETITION
+                    <td rowspan="2" style="vertical-align: middle;">
+                        PROJECT COMPETITION (DAY 1)
                     </td>
                     <td>
                         22-05-2021
@@ -214,9 +214,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        PROJECT COMPETITION
-                    </td>
+                    <!-- <td>
+                        PROJECT COMPETITION (DAY 2)
+                    </td> -->
                     <td>23-05-2021
                     </td>
                     <td>

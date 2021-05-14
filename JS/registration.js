@@ -210,6 +210,7 @@ function registerUser() {
 
 function registerEntry(user, event) {
     firebase.database().ref('Users/' + user.uid).set(user).then((result) => {
+        console.log('asd')
         if (event == "project") {
             const c = parseInt(document.getElementById('participantCount').value);
             firebase.database().ref('Events/' + event + '/' + user.uid + '/Participant1').set({
@@ -287,9 +288,10 @@ function registerEntry(user, event) {
                     });
                 }).catch((error) => {
                     alert('Error => ' + error);
+                    console.log(error)
                 });
             } else {
-                if (event == "CQuiz" || entry == "GkQuiz") {
+                if (event == "CQuiz" || event == "GkQuiz") {
                     firebase.database().ref('Events/' + event).once('value').then((s2) => {
                         var totalEntries = 0;
                         s2.forEach(element => {
@@ -322,6 +324,7 @@ function registerEntry(user, event) {
                                 });
                             }).catch((error) => {
                                 alert('Error => ' + error);
+                                console.log(error)
                             });
                         }
                     }).catch((error2) => {
@@ -329,6 +332,7 @@ function registerEntry(user, event) {
                         alert(error2);
                     })
                 } else {
+                    console.log('12')
                     firebase.database().ref('Events/' + event + '/' + user.uid).set({
                         name: user.name,
                         phoneNo: user.phoneNo,
@@ -340,6 +344,7 @@ function registerEntry(user, event) {
                         type: "participant",
                         date: getDateTime()
                     }).then((result1) => {
+                        console.log('1')
                         firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
                             uid: user.uid,
                             event: event
@@ -353,12 +358,14 @@ function registerEntry(user, event) {
                         });
                     }).catch((error) => {
                         alert('Error => ' + error);
+                        console.log(error)
                     });
                 }
             }
         }
     }).catch((e) => {
         alert('Error => ' + e);
+        console.log(e)
     });
     return false;
 }
