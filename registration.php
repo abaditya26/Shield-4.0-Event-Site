@@ -77,6 +77,8 @@ if (isset($_GET['id'])) {
                 Registrations
             </h3>
             <button onclick="document.location='./viewRegistrations.php'" type="button" id="old-reg-btn" style="display: none;" class="btn btn-sm btn-secondary">View Old Registrations</button>
+            <br>
+            <span style="color:red;">For Diploma students only</span>
         </center>
         <div class="form-group">
             <label for="name">
