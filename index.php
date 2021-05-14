@@ -225,7 +225,7 @@
                 </tr>
                 <tr>
                     <td>
-                        PPT/POSTER PRESENTATION
+                        POSTER PRESENTATION
                     </td>
                     <td>
                         22-05-2021

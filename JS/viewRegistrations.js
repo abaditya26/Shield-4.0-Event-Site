@@ -16,11 +16,11 @@ eventData = {
     },
     "ppt": {
         id: "ppt",
-        name: "PPT/Poster Presentation"
+        name: "Poster Presentation"
     },
     "project": {
         id: "project",
-        name: "Project Copetition"
+        name: "Project Competition"
     },
     "chess": {
         id: "chess",
