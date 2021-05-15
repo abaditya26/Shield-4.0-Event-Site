@@ -16,7 +16,12 @@
         color: #FFFFFF;
         min-height: 400px;
     }
+    .sp-logo{
+        margin-bottom: 2px;
+        max-height: 60px;
+    }
 </style>
+
 
 
 
@@ -56,8 +61,9 @@
         </h3>
         <div class="container" id="sponsors">
         <center>
-            <a href=" https://infoplanet.classpro.in/"><img src="./images/sponsors/infoplanet.jpg" alt="info planet" style="max-height: 70px;"></a>
-            <a href="https://deepstambh.org/"><img src="./images/sponsors/deepstambh.png" alt="deepsthamb" style="max-height: 70px;"></a>
+            <a href=" https://infoplanet.classpro.in/"><img class="sp-logo"  src="./images/sponsors/infoplanet.jpg" alt="info planet"></a>
+            <a href="https://deepstambh.org/"><img class="sp-logo" src="./images/sponsors/deepstambh.png" alt="deepsthamb"></a>
+            <a href="https://libityinfotech.in/"><img class="sp-logo" src="./images/sponsors/libity.png" alt="libity"></a>
         </center>
         </div>
     </center>
