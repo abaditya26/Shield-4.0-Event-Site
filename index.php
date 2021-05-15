@@ -63,6 +63,7 @@
         <center>
             <a href=" https://infoplanet.classpro.in/"><img class="sp-logo"  src="./images/sponsors/infoplanet.jpg" alt="info planet"></a>
             <a href="https://deepstambh.org/"><img class="sp-logo" src="./images/sponsors/deepstambh.png" alt="deepsthamb"></a>
+            <a href="https://www.seedinfotech.com/"><img class="sp-logo" src="./images/sponsors/seed.png" alt="seed"></a>
             <a href="https://libityinfotech.in/"><img class="sp-logo" src="./images/sponsors/libity.png" alt="libity"></a>
         </center>
         </div>

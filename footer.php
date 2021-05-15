@@ -1,33 +1,33 @@
 <?php
-$user_ip=$_SERVER['REMOTE_ADDR'];
-$conn = mysqli_connect('localhost','root','','shield');
+// $user_ip=$_SERVER['REMOTE_ADDR'];
+// $conn = mysqli_connect('localhost','root','','shield');
 
-$check_ip = mysqli_query($conn,"SELECT * FROM `useripadd` WHERE `userip` = '$user_ip'");
-if(mysqli_num_rows($check_ip)>=1)
-{
-	$user=[];
-	while($row=mysqli_fetch_row($check_ip)){
-		$temp=[];
-		array_push($temp,$row[0]);
-		array_push($temp,$row[1]);
-		array_push($temp,$row[2]);
-		array_push($user,$temp);
-	}
-	$id=$user[0][0];
-	$count=$user[0][2];
-	if(isset($_SESSION['ipcount'])){
-	}else{	
-		$r=mysqli_query($conn,"UPDATE `useripadd` SET `count`=$count+1 WHERE _id=$id");
-		$_SESSION['ipcount']=1;
-	}
-}
-else
-{
-	  $query="INSERT INTO `useripadd`(`userip`, `count`) VALUES ('$user_ip',1)";
-	  mysqli_query($conn,$query) or die(mysqli_error($conn));
-	  $_SESSION['ipcount']=1;
+// $check_ip = mysqli_query($conn,"SELECT * FROM `useripadd` WHERE `userip` = '$user_ip'");
+// if(mysqli_num_rows($check_ip)>=1)
+// {
+// 	$user=[];
+// 	while($row=mysqli_fetch_row($check_ip)){
+// 		$temp=[];
+// 		array_push($temp,$row[0]);
+// 		array_push($temp,$row[1]);
+// 		array_push($temp,$row[2]);
+// 		array_push($user,$temp);
+// 	}
+// 	$id=$user[0][0];
+// 	$count=$user[0][2];
+// 	if(isset($_SESSION['ipcount'])){
+// 	}else{	
+// 		$r=mysqli_query($conn,"UPDATE `useripadd` SET `count`=$count+1 WHERE _id=$id");
+// 		$_SESSION['ipcount']=1;
+// 	}
+// }
+// else
+// {
+// 	  $query="INSERT INTO `useripadd`(`userip`, `count`) VALUES ('$user_ip',1)";
+// 	  mysqli_query($conn,$query) or die(mysqli_error($conn));
+// 	  $_SESSION['ipcount']=1;
 
-}
+// }
 
 
 ?>
