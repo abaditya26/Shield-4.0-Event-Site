@@ -78,7 +78,7 @@ if (isset($_GET['id'])) {
             </h3>
             <button onclick="document.location='./viewRegistrations.php'" type="button" id="old-reg-btn" style="display: none;" class="btn btn-sm btn-secondary">View Old Registrations</button>
             <br>
-            <span style="color:red;">For Diploma students only</span>
+            <span style="color:red;">For Diploma students only<br>*project competition for Computer Engineering and Information Technology department only.</span>
         </center>
         <div class="form-group">
             <label for="name">
@@ -124,9 +124,9 @@ if (isset($_GET['id'])) {
                 <option value="select">--Select Event--</option>
                 <?php for ($i = 0; $i < sizeof($eventData); $i++) {
                     // disable chess
-                     if($eventData[$i][0]=="chess"){
-                        continue;
-                     }
+                    //  if($eventData[$i][0]=="chess"){
+                    //     continue;
+                    //  }
 
                 ?>
                     <option value="<?php echo $eventData[$i][0]; ?>" <?php if ($eId == $eventData[$i][0]) { echo "selected"; } ?>><?php echo $eventData[$i][1]; ?></option>
@@ -204,7 +204,7 @@ if (isset($_GET['id'])) {
         </div>
         
     <center>
-        <span style="color:red;">*chess entries are full</span>
+        <!--<span style="color:red;">*chess entries are full</span>-->
     </center>
     </form>
 </div>
@@ -430,6 +430,7 @@ function registerEntry(user, event) {
         console.log('asd')
         if (event == "project") {
             const c = parseInt(document.getElementById('participantCount').value);
+            console.log(c)
             firebase.database().ref('Events/' + event + '/' + user.uid + '/Participant1').set({
                 name: user.name,
                 phoneNo: user.phoneNo,
@@ -443,6 +444,11 @@ function registerEntry(user, event) {
                 date: getDateTime()
             }).then((res) => {
                 var ct = 0;
+                if(ct==0){
+                    alert('Registration Complete.');
+                    document.location = './viewRegistrations.php';
+                }
+                console.log('reg1')
                 for (i = 0; i < c; i++) {
                     const n = document.getElementById('participant' + (i + 1) + 'name').value;
                     const e = document.getElementById('participant' + (i + 1) + 'email').value;
@@ -459,6 +465,8 @@ function registerEntry(user, event) {
                         date: getDateTime()
                     }).then((res) => {
                         ct++;
+                        console.log(ct)
+                        console.log(c)
                         if (ct == c) {
                             firebase.database().ref('Registrations/' + user.uid + '/' + event).set({
                                 uid: user.uid,
