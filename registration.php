@@ -517,7 +517,7 @@ function registerEntry(user, event) {
                         s2.forEach(element => {
                             totalEntries++;
                         });
-                        if (totalEntries >= 100) {
+                        if (totalEntries >= 250) {
                             alert('Sorry! Entry Full!');
                         } else {
                             firebase.database().ref('Events/' + event + '/' + user.uid).set({
