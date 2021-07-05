@@ -3,17 +3,22 @@
 <?php
 $imageData = [
     ["./images/background.png", "Shield Background"],
-    ["./images/gallery/banner.jpeg", "Shield 4.0 banner"],
-    ["./images/gallery/s21_1.jpeg", "Shield 4.0 1"],
-    ["./images/gallery/s21_2.jpeg", "Shield 4.0 2"],
-    ["./images/gallery/s21_3.jpeg", "Shield 4.0 3"],
-    ["./images/gallery/s21_4.jpeg", "Shield 4.0 4"],
-    ["./images/gallery/s21_5.jpeg", "Shield 4.0 5"],
-    ["./images/gallery/s21_6.jpeg", "Shield 4.0 6"],
-    ["./images/gallery/s21_7.jpeg", "Shield 4.0 7"],
-    ["./images/gallery/s21_8.jpeg", "Shield 4.0 8"],
-    ["./images/gallery/s21_9.jpeg", "Shield 4.0 9"],
-    ["./images/gallery/s21_10.jpeg", "Shield 4.0 10"],
+    ["./images/gallery/1.jpg", "Shield Gallery 1"],
+    ["./images/gallery/2.jpg", "Shield Gallery 2"],
+    ["./images/gallery/3.jpg", "Shield Gallery 3"],
+    ["./images/gallery/4.jpg", "Shield Gallery 4"],
+    ["./images/gallery/5.jpg", "Shield Gallery 5"],
+    ["./images/gallery/7.jpg", "Shield Gallery 7"],
+    ["./images/gallery/8.jpg", "Shield Gallery 8"],
+    ["./images/gallery/9.jpg", "Shield Gallery 9"],
+    ["./images/gallery/10.jpg", "Shield Gallery 10"],
+    ["./images/gallery/11.jpg", "Shield Gallery 11"],
+    ["./images/gallery/12.jpg", "Shield Gallery 12"],
+    ["./images/gallery/14.jpg", "Shield Gallery 14"],
+    ["./images/gallery/15.jpg", "Shield Gallery 15"],
+    ["./images/gallery/16.jpg", "Shield Gallery 16"],
+    ["./images/gallery/17.jpg", "Shield Gallery 17"],
+    ["./images/gallery/18.jpg", "Shield Gallery 18"]
 ]
 ?>
 
@@ -33,13 +38,13 @@ $imageData = [
 </style>
 
 <!-- content goes here -->
-        <center>
-            <h3 class="font-styled-header">
-                Shield 4.0 Gallery
-            </h3>
-        </center><br>
 <div class="container">
     <div>
+        <center>
+            <h3 class="font-styled-header">
+                Shield 3.0 Gallery
+            </h3>
+        </center><br>
         <div id="carousel" class="carousel slide" data-ride="carousel" style="background: rgba(255, 255, 255, 0.1); border-radius:20px;">
             <ol class="carousel-indicators">
                 <?php for ($i = 0; $i < sizeof($imageData) && $i < 5; $i++) { ?>
@@ -82,11 +87,11 @@ $imageData = [
         <?php
         } ?>
     </div>
+</div>
     <center>
-        <a href="./gallery20.php" class="btn btn-outline-success">Shield 3.0 Galllery</a>
+        <a href="./gallery.php" class="btn btn-outline-success">Shield 4.0 Galllery</a>
     </center>
     <br><br>
-</div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

@@ -1,4 +1,6 @@
 <?php include "./header.php"; ?>
+
+<?php if(false){ ?>
 <?php include "./data.php"; ?>
 <?php
 $eId = "";
@@ -206,14 +208,26 @@ if (isset($_GET['id'])) {
         </div>
 
         <center>
-            <!--<span style="color:red;">*chess entries are full</span>-->
+            <span style="color:red;">*chess entries are full</span>
         </center>
     </form>
 </div>
 
 <br><br>
+<?php } ?>
+
+<center>
+
+                <h1 class="font-styled-header">
+                    Registration Closed...
+                </h1>
+                <h3 class="font-styled-header">
+                    Event on 22 & 23 May 2021
+                </h3>
+</center>
 
 <?php include "./footer.php"; ?>
+<?php exit; ?>
 <script>
     var userData = [];
     var userId = "";
@@ -405,6 +419,26 @@ if (isset($_GET['id'])) {
             // check if the user has already registered for the current event
 
             firebase.database().ref('Events/' + event + '/' + userId).once('value').then((snapshot) => {
+                if (event == "chess") {
+                    alert('Entries full for chess.')
+                    return;
+                }
+                if(event=="ppt"){
+                    alert('Entries full for Poster Presentation.')
+                    return;
+                }
+                if(event=="treasure"){
+                    alert('Entries full for Treasure Hunt.')
+                    return;
+                }
+                if(event=="project"){
+                    alert('Entries full for Project.')
+                    return;
+                }
+                if(event=="talent"){
+                    alert('Entries full for Talent Hunt.')
+                    return;
+                }
                 if (snapshot.child('uid').exists()) {
                     if (confirm('You have already registered to this event.\nDo You want to overwrite entry?')) {
                         //do entry
